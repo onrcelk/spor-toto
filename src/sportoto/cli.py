@@ -18,7 +18,7 @@ from pathlib import Path
 from .dataset import evaluate_next_week, refresh_news_memory, refresh_sportoto_memory
 from .model import MatchModel
 from .train import generate_synthetic_training_records, train_model
-from .coupon import CouponRules, CouponResult, MatchPref, format_coupon, generate_coupon, apply_filter_by_surprise, apply_filter_by_draws, apply_filter_by_streak
+from .coupon import CouponRules, CouponResult, MatchPref, format_coupon, generate_coupon, apply_filter_by_surprise, apply_filter_by_draws, apply_filter_by_streak, filter_segment
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -50,6 +50,10 @@ def build_parser() -> argparse.ArgumentParser:
     coupon_parser.add_argument("--max-home-streak", type=int, default=None)
     coupon_parser.add_argument("--max-draw-streak", type=int, default=None)
     coupon_parser.add_argument("--max-away-streak", type=int, default=None)
+    coupon_parser.add_argument("--segment-1-9-max-draws", type=int, default=None)
+    coupon_parser.add_argument("--segment-10-15-max-draws", type=int, default=None)
+    coupon_parser.add_argument("--segment-1-9-max-surprise", type=int, default=None)
+    coupon_parser.add_argument("--segment-10-15-max-surprise", type=int, default=None)
     return parser
 
 
@@ -171,6 +175,14 @@ def main(argv: list[str] | None = None) -> int:
             candidates = [i for i, p in enumerate(prefs) if not p.is_closed and not p.is_double and not p.is_banko]
             for idx in candidates[:closed_needed]:
                 prefs[idx] = MatchPref(match_id=prefs[idx].match_id, pick=prefs[idx].pick, is_banko=prefs[idx].is_banko, is_double=prefs[idx].is_double, is_closed=True, tags=prefs[idx].tags)
+        if args.segment_1_9_max_draws is not None:
+            prefs = filter_segment(prefs, 1, 9, max_draws=args.segment_1_9_max_draws)
+        if args.segment_10_15_max_draws is not None:
+            prefs = filter_segment(prefs, 10, 15, max_draws=args.segment_10_15_max_draws)
+        if args.segment_1_9_max_surprise is not None:
+            prefs = filter_segment(prefs, 1, 9, max_surprise=args.segment_1_9_max_surprise)
+        if args.segment_10_15_max_surprise is not None:
+            prefs = filter_segment(prefs, 10, 15, max_surprise=args.segment_10_15_max_surprise)
         rules = CouponRules(guarantee=args.guarantee, columns=9)
         if args.closed is not None:
             rules = CouponRules(guarantee=args.guarantee, columns=9, min_closed_for_14=args.closed, min_closed_for_13=args.closed, min_closed_for_12=args.closed)

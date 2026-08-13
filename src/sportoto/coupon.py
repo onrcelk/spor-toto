@@ -164,8 +164,10 @@ def apply_filter_by_streak(prefs: Sequence[MatchPref], max_home_streak: int, max
 
 def filter_segment(prefs: Sequence[MatchPref], start: int, end: int, max_surprise: int | None = None, max_draws: int | None = None) -> list[MatchPref]:
     # Belirli bir maç aralığındaki filtreleri uygula.
-    if start < 1 or end > len(prefs) or start > end:
+    length = len(prefs)
+    if start < 1 or start > length or start > end:
         return list(prefs)
+    end = min(end, length)
     segment = list(prefs[start - 1:end])
     if max_surprise is not None:
         segment = apply_filter_by_surprise(segment, max_surprise)
@@ -193,5 +195,8 @@ __all__ = [
     'CouponResult',
     'generate_coupon',
     'apply_filter_by_surprise',
+    'apply_filter_by_draws',
+    'apply_filter_by_streak',
+    'filter_segment',
     'format_coupon',
 ]
