@@ -54,3 +54,8 @@ def contrarian_signal(predicted_pick: str, model_probability: float, public_shar
         pick, float(public_share), float(model_probability), value, multiplier,
         "Model olasılığı korunurken halkın düşük seçtiği sonuç daha yüksek ikramiye değeri taşıyabilir."
     )
+
+
+def draw_value(model_probability: float, estimated_public_share: float) -> float:
+    """Value score for an X pick; draws are often under-selected by the public."""
+    return float(model_probability) * (1.0 - float(estimated_public_share))

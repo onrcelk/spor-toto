@@ -8,6 +8,11 @@ def test_contrarian_signal_rewards_low_public_share():
     assert low.expected_winners_multiplier > high.expected_winners_multiplier
 
 
+def test_draw_value_rewards_underselected_draw():
+    from sportoto.jackpot import draw_value
+    assert draw_value(0.30, 0.10) > draw_value(0.30, 0.70)
+
+
 def test_coupon_multiplier_is_conservative_and_positive():
     assert estimate_coupon_winner_multiplier([0.5] * 15) > 1
     assert estimate_coupon_winner_multiplier([]) == 1
