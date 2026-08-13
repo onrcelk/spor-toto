@@ -1,0 +1,33 @@
+{
+  "match_id": "besiktas-hradec-kralove-2026-08-13",
+  "competition": "UEFA Europa League qualifying, third round, second leg",
+  "source_urls": [
+    "https://www.sofascore.com/football/match/besiktas-jk-fc-hradec-kralove/rUsalb",
+    "https://www.espn.com/soccer/match/_/gameId/401902935/fc-hradec-kralove-besiktas",
+    "https://www.flashscore.com/match/football/besiktas-IDmErJCR/hradec-kralove-vFXjbHms/"
+  ],
+  "observations": [
+    {
+      "observed_at": "current external check",
+      "status": "halftime",
+      "minute": "45+2",
+      "score": "Beşiktaş 1-0 Hradec Kralove",
+      "scorer": "Václav Cerný 40'",
+      "assist": "Junior Olaitan",
+      "aggregate": "Beşiktaş 2-0",
+      "stats": {
+        "possession": {"home": 59, "away": 41},
+        "shots_on_goal": {"home": 3, "away": 1},
+        "big_chances_created": {"home": 1, "away": 0},
+        "corners": {"home": 1, "away": 1},
+        "accurate_passes": {"home": 261, "away": 153},
+        "pass_accuracy": {"home": 89, "away": 77},
+        "duels_won": {"home": 26, "away": 17},
+        "saves": {"home": 1, "away": 2},
+        "fouls": {"home": 4, "away": 10}
+      }
+    }
+  ],
+  "provenance": "cross_checked_external_sources",
+  "note": "This is a live/halftime snapshot, not the final result."
+}
