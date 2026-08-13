@@ -1,0 +1,17 @@
+{
+  "records_total": 6738,
+  "train_records": 5390,
+  "test_records": 1348,
+  "temporal_1x2_accuracy": 0.47700296735905046,
+  "sources": {
+    "football-data.co.uk": 6738
+  },
+  "competitions": {
+    "Italy Serie A": 3040,
+    "Germany Bundesliga": 918,
+    "Spain La Liga": 760,
+    "England Premier League": 760,
+    "Turkey Super Lig": 648,
+    "France Ligue 1": 612
+  }
+}

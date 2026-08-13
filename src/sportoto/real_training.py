@@ -8,6 +8,7 @@ from __future__ import annotations
 import io
 import re
 from collections import defaultdict, deque
+from datetime import datetime
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable
@@ -26,6 +27,17 @@ FOOTBALL_DATA_URLS = {
     "france-2024-2025": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
     "spain-2025-2026": "https://www.football-data.co.uk/mmz4281/2526/SP1.csv",
     "spain-2024-2025": "https://www.football-data.co.uk/mmz4281/2425/SP1.csv",
+    "germany-2025-2026": "https://www.football-data.co.uk/mmz4281/2526/D1.csv",
+    "germany-2024-2025": "https://www.football-data.co.uk/mmz4281/2425/D1.csv",
+    "germany-2023-2024": "https://www.football-data.co.uk/mmz4281/2324/D1.csv",
+    "italy-2025-2026": "https://www.football-data.co.uk/mmz4281/2526/I1.csv",
+    "italy-2024-2025": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+    "italy-2023-2024": "https://www.football-data.co.uk/mmz4281/2324/I1.csv",
+    "italy-2022-2023": "https://www.football-data.co.uk/mmz4281/2223/I1.csv",
+    "italy-2021-2022": "https://www.football-data.co.uk/mmz4281/2122/I1.csv",
+    "italy-2020-2021": "https://www.football-data.co.uk/mmz4281/2021/I1.csv",
+    "italy-2019-2020": "https://www.football-data.co.uk/mmz4281/1920/I1.csv",
+    "italy-2018-2019": "https://www.football-data.co.uk/mmz4281/1819/I1.csv",
 }
 
 @dataclass(frozen=True)
@@ -57,6 +69,10 @@ def fetch_football_data(seasons: Iterable[str] = FOOTBALL_DATA_URLS) -> list[His
                 competition = "France Ligue 1"
             elif "spain" in season:
                 competition = "Spain La Liga"
+            elif "germany" in season:
+                competition = "Germany Bundesliga"
+            elif "italy" in season:
+                competition = "Italy Serie A"
             else:
                 competition = "Turkey Super Lig"
             rows.append(HistoricalMatch(str(item["Date"]), str(item["HomeTeam"]), str(item["AwayTeam"]), int(item["FTHG"]), int(item["FTAG"]), "football-data.co.uk", competition))
@@ -84,11 +100,20 @@ def parse_mackolik_archive(html: str) -> list[HistoricalMatch]:
 
 
 def build_training_frame(matches: list[HistoricalMatch]) -> pd.DataFrame:
+    def sort_key(match: HistoricalMatch) -> tuple[int, str]:
+        for fmt in ("%d/%m/%Y", "%d/%m/%y", "%d/%m/%Y"):
+            try:
+                return (0, datetime.strptime(match.date, fmt).strftime("%Y-%m-%d"))
+            except ValueError:
+                pass
+        return (1, match.date)
+
+    matches = sorted(matches, key=sort_key)
     history: dict[str, deque[tuple[int, int, int]]] = defaultdict(lambda: deque(maxlen=5))
     records: list[dict] = []
     for index, match in enumerate(matches):
-        home = history[match.home_team]
-        away = history[match.away_team]
+        home = history[f"{match.competition}:{match.home_team}"]
+        away = history[f"{match.competition}:{match.away_team}"]
         def avg(team: deque[tuple[int, int, int]], pos: int) -> float:
             return sum(x[pos] for x in team) / len(team) if team else 1.2
         home_points = sum(x[2] for x in home) / len(home) if home else 1.0
