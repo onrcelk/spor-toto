@@ -1,0 +1,18 @@
+{
+  "source": "SportToto Master.xlsx",
+  "valid_matches": 4996,
+  "skipped_rows": 220,
+  "periods": 335,
+  "train_matches": 3996,
+  "test_matches": 1000,
+  "temporal_1x2_accuracy": 0.466,
+  "class_distribution": {
+    "0": 2207,
+    "1": 1200,
+    "2": 1589
+  },
+  "date_range": [
+    "01.01.2022 15:30",
+    "31.12.2023 17:00"
+  ]
+}
