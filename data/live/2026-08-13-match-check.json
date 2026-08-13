@@ -1,11 +1,10 @@
 {
   "snapshot_type": "live_match_check",
   "observed_at_utc": "2026-08-13T15:29:05+00:00",
-  "updated_at_utc": "2026-08-13T15:37:00+00:00",
+  "updated_at_utc": "2026-08-13T15:45:00+00:00",
   "source_notes": [
-    "ESPN and FOX Sports live pages",
-    "Scores are in-play snapshots, not final results",
-    "Kickoff times may be displayed in local/source timezones"
+    "User-confirmed final score: Tobol 1-2 Partizan",
+    "External result pages were still exposing live/pre-match fragments during verification"
   ],
   "matches": [
     {
@@ -14,9 +13,13 @@
       "away_team": "Partizan",
       "predicted_1x2": "2",
       "predicted_ou": "over",
-      "status": "live_unconfirmed_latest",
-      "latest_score": null,
-      "note": "Search results confirm live coverage but did not provide a reliable updated score in the latest cross-check.",
+      "status": "finished_user_confirmed",
+      "final_home_goals": 1,
+      "final_away_goals": 2,
+      "actual_1x2": "2",
+      "actual_ou": "over",
+      "prediction_1x2_correct": true,
+      "prediction_ou_correct": true,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401903118/partizan-belgrade-tobol-kostanay"
     },
     {
@@ -26,12 +29,7 @@
       "predicted_1x2": "1",
       "predicted_ou": "over",
       "status": "live",
-      "minute": 27,
-      "home_goals": 1,
-      "away_goals": 0,
-      "aggregate_at_snapshot": "1-1",
-      "scorer": "J. Mouaddib 12'",
-      "source_url": "https://www.foxsports.com/soccer/europa-conference-league-fk-qarabag-vs-dynamo-kiev-aug-13-2026-game-boxscore-938939"
+      "latest_score": "1-0"
     },
     {
       "match_id": "ilves-rijeka",
@@ -40,11 +38,7 @@
       "predicted_1x2": "2",
       "predicted_ou": "under",
       "status": "live",
-      "minute": 28,
-      "home_goals": 0,
-      "away_goals": 0,
-      "aggregate_at_snapshot": "0-1 Rijeka",
-      "source_url": "https://www.foxsports.com/soccer/europa-conference-league-ilves-vs-rijeka-aug-13-2026-game-boxscore-938950"
+      "latest_score": "0-0"
     },
     {
       "match_id": "flora-inter-escaldes",
@@ -53,12 +47,7 @@
       "predicted_1x2": "1",
       "predicted_ou": "over",
       "status": "live",
-      "minute": null,
-      "home_goals": 0,
-      "away_goals": 1,
-      "aggregate_at_snapshot": "0-3 Inter Escaldes",
-      "scorer": "Inter Escaldes 17'",
-      "source_url": "https://www.foxsports.com/soccer/europa-conference-league-fc-flora-vs-inter-club-de-escaldes-aug-13-2026-game-boxscore-955306"
+      "latest_score": "0-1"
     }
   ]
 }
