@@ -19,6 +19,7 @@ from .dataset import evaluate_next_week, refresh_news_memory, refresh_sportoto_m
 from .model import MatchModel
 from .train import generate_synthetic_training_records, train_model
 from .real_training import build_training_frame, fetch_football_data
+from .current_list import save_current_list
 from .coupon import CouponRules, CouponResult, MatchPref, format_coupon, generate_coupon, apply_filter_by_surprise, apply_filter_by_draws, apply_filter_by_streak, filter_segment
 
 
@@ -35,6 +36,9 @@ def build_parser() -> argparse.ArgumentParser:
     refresh_news_parser = subparsers.add_parser("refresh-news", help="Refresh news memory")
     refresh_news_parser.add_argument("--output", default="~/.sportoto/raw/news_latest.jsonl")
     refresh_news_parser.add_argument("--limit", type=int, default=20)
+
+    current_parser = subparsers.add_parser("refresh-current-list", help="Fetch the current 15-match Spor Toto list")
+    current_parser.add_argument("--output", default="data/current_sportoto_list.json")
 
     train_parser = subparsers.add_parser("train", help="Train prediction model")
     train_parser.add_argument("--model-path", default="~/.sportoto/models/match_model.joblib")
@@ -150,6 +154,10 @@ def main(argv: list[str] | None = None) -> int:
     if args.command == "refresh-news":
         items = refresh_news_memory(Path(args.output).expanduser(), limit=args.limit)
         print(f"Refreshed news: {len(items)}")
+        return 0
+    if args.command == "refresh-current-list":
+        rows = save_current_list(args.output)
+        print(f"Current Spor Toto matches: {len(rows)}")
         return 0
     if args.command == "train":
         if args.real:

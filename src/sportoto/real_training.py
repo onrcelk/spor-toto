@@ -17,10 +17,15 @@ import requests
 from bs4 import BeautifulSoup
 
 FOOTBALL_DATA_URLS = {
-    "2025-2026": "https://www.football-data.co.uk/mmz4281/2526/T1.csv",
-    "2024-2025": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
-    "2023-2024": "https://www.football-data.co.uk/mmz4281/2324/T1.csv",
-    "2022-2023": "https://www.football-data.co.uk/mmz4281/2223/T1.csv",
+    # Current Spor Toto can mix Turkey and major European leagues.
+    "turkey-2025-2026": "https://www.football-data.co.uk/mmz4281/2526/T1.csv",
+    "turkey-2024-2025": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+    "england-2025-2026": "https://www.football-data.co.uk/mmz4281/2526/E0.csv",
+    "england-2024-2025": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+    "france-2025-2026": "https://www.football-data.co.uk/mmz4281/2526/F1.csv",
+    "france-2024-2025": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+    "spain-2025-2026": "https://www.football-data.co.uk/mmz4281/2526/SP1.csv",
+    "spain-2024-2025": "https://www.football-data.co.uk/mmz4281/2425/SP1.csv",
 }
 
 @dataclass(frozen=True)
@@ -31,6 +36,7 @@ class HistoricalMatch:
     home_goals: int
     away_goals: int
     source: str
+    competition: str = "Unknown"
 
 
 def fetch_football_data(seasons: Iterable[str] = FOOTBALL_DATA_URLS) -> list[HistoricalMatch]:
@@ -44,7 +50,16 @@ def fetch_football_data(seasons: Iterable[str] = FOOTBALL_DATA_URLS) -> list[His
         if not needed.issubset(frame.columns):
             continue
         for item in frame.dropna(subset=["HomeTeam", "AwayTeam", "FTHG", "FTAG"]).to_dict("records"):
-            rows.append(HistoricalMatch(str(item["Date"]), str(item["HomeTeam"]), str(item["AwayTeam"]), int(item["FTHG"]), int(item["FTAG"]), "football-data.co.uk"))
+            competition = season.split("-")[0].replace("turkey", "Turkey")
+            if "england" in season:
+                competition = "England Premier League"
+            elif "france" in season:
+                competition = "France Ligue 1"
+            elif "spain" in season:
+                competition = "Spain La Liga"
+            else:
+                competition = "Turkey Super Lig"
+            rows.append(HistoricalMatch(str(item["Date"]), str(item["HomeTeam"]), str(item["AwayTeam"]), int(item["FTHG"]), int(item["FTAG"]), "football-data.co.uk", competition))
     return rows
 
 
@@ -64,7 +79,7 @@ def parse_mackolik_archive(html: str) -> list[HistoricalMatch]:
             continue
         team_links = [a.get_text(" ", strip=True) for a in parent.find_all("a", href=re.compile(r"/takim/"))]
         if len(team_links) >= 2:
-            result.append(HistoricalMatch("", team_links[0], team_links[1], int(score), 0, "mackolik"))
+            result.append(HistoricalMatch("", team_links[0], team_links[1], int(score), 0, "mackolik", "Mackolik archive"))
     return result
 
 
@@ -80,7 +95,7 @@ def build_training_frame(matches: list[HistoricalMatch]) -> pd.DataFrame:
         away_points = sum(x[2] for x in away) / len(away) if away else 1.0
         records.append({
             "match_id": f"REAL-{index+1}", "home_team": match.home_team, "away_team": match.away_team,
-            "league": "Turkey-Super-Lig", "kickoff_iso": match.date,
+            "league": match.competition, "kickoff_iso": match.date,
             "home_goals_avg": avg(home, 0), "away_goals_avg": avg(away, 0),
             "home_conceded_avg": avg(home, 1), "away_conceded_avg": avg(away, 1),
             "home_form_points": home_points, "away_form_points": away_points,

@@ -8,6 +8,7 @@ Read-only; no posting or automated publishing.
 from __future__ import annotations
 
 import json
+import re
 from dataclasses import dataclass, asdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -44,6 +45,7 @@ class SportotoMatchRow:
     time_text: str
     source_url: str
     fetched_at: str
+    competition: str = "Spor Toto"
 
 
 def _utc_now_iso() -> str:
@@ -95,58 +97,51 @@ def _parse_browser_text_to_rows(text: str) -> list[SportotoMatchRow]:
     rows: list[SportotoMatchRow] = []
     seen_matches: set[str] = set()
     current: dict[str, str] = {}
+
+    def flush() -> None:
+        if not current.get("match") or not current.get("date") or not current.get("time"):
+            return
+        parsed = _parse_match_line(current["match"])
+        if not parsed:
+            return
+        home_team, away_team = parsed
+        key = f"{home_team}|{away_team}|{current['date']}|{current['time']}"
+        if key in seen_matches:
+            return
+        seen_matches.add(key)
+        rows.append(SportotoMatchRow(
+            match_index=len(rows) + 1,
+            home_team=home_team,
+            away_team=away_team,
+            date_text=current["date"],
+            time_text=current["time"],
+            source_url=_SPOR_TOTO_LIST_URL,
+            fetched_at=_utc_now_iso(),
+            competition="Spor Toto",
+        ))
+
+    weekdays = ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi", "Pazar"]
     for raw_line in text.splitlines():
         line = raw_line.strip()
         if not line:
-            if current.get("match") and current.get("date") and current.get("time"):
-                parsed = _parse_match_line(current["match"])
-                if parsed:
-                    home_team, away_team = parsed
-                    key = f"{home_team}|{away_team}|{current['date']}|{current['time']}"
-                    if key not in seen_matches:
-                        seen_matches.add(key)
-                        rows.append(
-                            SportotoMatchRow(
-                                match_index=len(rows) + 1,
-                                home_team=home_team,
-                                away_team=away_team,
-                                date_text=current["date"],
-                                time_text=current["time"],
-                                source_url=_SPOR_TOTO_LIST_URL,
-                                fetched_at=_utc_now_iso(),
-                            )
-                        )
-            current = {}
             continue
-        if " - " in line and not current.get("match"):
+        if line in {"-", "Skor", "Sonuç"} or line.isdigit():
+            continue
+        if " - " in line:
+            if current.get("match"):
+                flush()
+                current = {}
             current["match"] = line
-        elif any(day in line for day in ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi", "Pazar"]):
-            if current.get("date") and " " not in current["date"]:
+        elif re.fullmatch(r"\d{1,2}[./]\d{1,2}[./]\d{4}", line) and not current.get("date"):
+            current["date"] = line
+        elif any(day in line for day in weekdays):
+            if current.get("date") and line not in current["date"]:
                 current["date"] = f"{current['date']} {line}"
             else:
                 current["date"] = line
-        elif ":" in line and len(line) <= 8 and not current.get("time"):
+        elif re.fullmatch(r"\d{1,2}:\d{2}", line) and not current.get("time"):
             current["time"] = line
-        elif not current.get("date") and line and "/" in line:
-            current["date"] = line
-    if current.get("match") and current.get("date") and current.get("time"):
-        parsed = _parse_match_line(current["match"])
-        if parsed:
-            home_team, away_team = parsed
-            key = f"{home_team}|{away_team}|{current['date']}|{current['time']}"
-            if key not in seen_matches:
-                seen_matches.add(key)
-                rows.append(
-                    SportotoMatchRow(
-                        match_index=len(rows) + 1,
-                        home_team=home_team,
-                        away_team=away_team,
-                        date_text=current["date"],
-                        time_text=current["time"],
-                        source_url=_SPOR_TOTO_LIST_URL,
-                        fetched_at=_utc_now_iso(),
-                    )
-                )
+    flush()
     return rows
 
 
@@ -195,8 +190,10 @@ def fetch_sportoto_list(url: str = _SPOR_TOTO_LIST_URL) -> list[SportotoMatchRow
         from browser_exec import browser_exec
         result = browser_exec(code=f"goto_url('{url}')\nwait_for_load()\ntext = js('document.body.innerText')\nprint(text)")
         text = result.get("output", "")
-        if text and ("Galatasaray" in text or "Fenerbahçe" in text):
-            return _parse_browser_text_to_rows(text)
+        if text and "Spor Toto Listeler" in text:
+            rows = _parse_browser_text_to_rows(text)
+            if rows:
+                return rows
     except Exception:
         pass
     # Fallback to direct HTTP.

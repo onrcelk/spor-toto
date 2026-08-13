@@ -1,0 +1,22 @@
+{
+  "source": "https://www.sportoto.gov.tr/spor-toto-listeler",
+  "fetched_at": "2026-08-13T15:15:00+00:00",
+  "match_count": 15,
+  "matches": [
+    {"match_index":1,"home_team":"Galatasaray","away_team":"Çorum FK","date_text":"14.08.2026 Cuma","time_text":"21:30","competition":"Türkiye Süper Lig"},
+    {"match_index":2,"home_team":"Kasımpaşa","away_team":"Trabzonspor","date_text":"15.08.2026 Cumartesi","time_text":"19:00","competition":"Türkiye Süper Lig"},
+    {"match_index":3,"home_team":"Konyaspor","away_team":"Çaykur Rizespor","date_text":"15.08.2026 Cumartesi","time_text":"19:00","competition":"Türkiye Süper Lig"},
+    {"match_index":4,"home_team":"Gaziantep FK","away_team":"Corendon Alanyaspor","date_text":"15.08.2026 Cumartesi","time_text":"21:30","competition":"Türkiye Süper Lig"},
+    {"match_index":5,"home_team":"Gençlerbirliği","away_team":"Fenerbahçe","date_text":"15.08.2026 Cumartesi","time_text":"21:30","competition":"Türkiye Süper Lig"},
+    {"match_index":6,"home_team":"Rams Başakşehir","away_team":"Kocaelispor","date_text":"16.08.2026 Pazar","time_text":"19:00","competition":"Türkiye Süper Lig"},
+    {"match_index":7,"home_team":"Amed Sportif Faaliyetler","away_team":"Erzurumspor FK","date_text":"16.08.2026 Pazar","time_text":"21:30","competition":"Türkiye Süper Lig"},
+    {"match_index":8,"home_team":"Beşiktaş","away_team":"Eyüpspor","date_text":"16.08.2026 Pazar","time_text":"21:30","competition":"Türkiye Süper Lig"},
+    {"match_index":9,"home_team":"Samsunspor","away_team":"Göztepe","date_text":"17.08.2026 Pazartesi","time_text":"21:30","competition":"Türkiye Süper Lig"},
+    {"match_index":10,"home_team":"Arsenal","away_team":"Manchester City","date_text":"16.08.2026 Pazar","time_text":"17:00","competition":"İngiltere Premier League"},
+    {"match_index":11,"home_team":"Lens","away_team":"Paris St Germain","date_text":"16.08.2026 Pazar","time_text":"21:45","competition":"Fransa Ligue 1"},
+    {"match_index":12,"home_team":"Sevilla","away_team":"Rayo Vallecano","date_text":"15.08.2026 Cumartesi","time_text":"22:30","competition":"İspanya La Liga"},
+    {"match_index":13,"home_team":"Racing Santander","away_team":"Villarreal","date_text":"16.08.2026 Pazar","time_text":"18:00","competition":"İspanya La Liga"},
+    {"match_index":14,"home_team":"Espanyol","away_team":"Levante","date_text":"16.08.2026 Pazar","time_text":"20:00","competition":"İspanya La Liga"},
+    {"match_index":15,"home_team":"Celta Vigo","away_team":"Osasuna","date_text":"16.08.2026 Pazar","time_text":"22:30","competition":"İspanya La Liga"}
+  ]
+}
