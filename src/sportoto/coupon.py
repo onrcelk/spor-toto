@@ -122,6 +122,60 @@ def apply_filter_by_surprise(prefs: Sequence[MatchPref], max_surprise: int) -> l
     return filtered
 
 
+def apply_filter_by_draws(prefs: Sequence[MatchPref], max_draws: int) -> list[MatchPref]:
+    # Filtre: toplam beraberlik sayısını max_draws ile sınırla; öncelikle son maçları koru.
+    if max_draws < 0:
+        return list(prefs)
+    filtered: list[MatchPref] = []
+    draws_seen = 0
+    for p in reversed(prefs):
+        if p.pick == 'X':
+            if draws_seen < max_draws:
+                filtered.append(p)
+                draws_seen += 1
+        else:
+            filtered.append(p)
+    return list(reversed(filtered))
+
+
+def apply_filter_by_streak(prefs: Sequence[MatchPref], max_home_streak: int, max_draw_streak: int, max_away_streak: int) -> list[MatchPref]:
+    # Filtre: art arda gelen aynı sonuç sayısını sınırla.
+    # Kapalı maçları filtreleme dışındadır; banko ve çifteleri de korur.
+    if len(prefs) < 2:
+        return list(prefs)
+    filtered: list[MatchPref] = []
+    streak_type: str | None = None
+    streak_count = 0
+    for p in prefs:
+        if p.is_closed or p.is_banko or p.is_double:
+            filtered.append(p)
+            continue
+        current_type = p.pick
+        if current_type == streak_type:
+            streak_count += 1
+        else:
+            streak_type = current_type
+            streak_count = 1
+        limit = max_home_streak if streak_type == '1' else max_draw_streak if streak_type == 'X' else max_away_streak
+        if streak_count <= limit:
+            filtered.append(p)
+    return filtered
+
+
+def filter_segment(prefs: Sequence[MatchPref], start: int, end: int, max_surprise: int | None = None, max_draws: int | None = None) -> list[MatchPref]:
+    # Belirli bir maç aralığındaki filtreleri uygula.
+    if start < 1 or end > len(prefs) or start > end:
+        return list(prefs)
+    segment = list(prefs[start - 1:end])
+    if max_surprise is not None:
+        segment = apply_filter_by_surprise(segment, max_surprise)
+    if max_draws is not None:
+        segment = apply_filter_by_draws(segment, max_draws)
+    before = list(prefs[: start - 1])
+    after = list(prefs[end:])
+    return before + segment + after
+
+
 def format_coupon(result: CouponResult, prefs: Sequence[MatchPref]) -> str:
     lines = []
     lines.append(

@@ -23,6 +23,8 @@ class MatchPrediction:
     pred_under_2_5: float
     confidence: float
     created_at: str
+    predicted_1x2: str | None = None
+    predicted_ou: str | None = None
 
 
 class MatchModel:
@@ -69,6 +71,12 @@ class MatchModel:
         over = float(np.clip(total_expected / 5.0, 0.05, 0.95))
         under = 1.0 - over
         confidence = float(np.clip(max(home, draw, away), 0.0, 1.0))
+        predicted_1x2 = '1'
+        if draw > home and draw > away:
+            predicted_1x2 = 'X'
+        elif away > home and away > draw:
+            predicted_1x2 = '2'
+        predicted_ou = 'over' if over >= 0.5 else 'under'
         return MatchPrediction(
             match_id=match.match_id,
             pred_home_win=home,
@@ -78,6 +86,8 @@ class MatchModel:
             pred_under_2_5=under,
             confidence=confidence,
             created_at=__import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat(),
+            predicted_1x2=predicted_1x2,
+            predicted_ou=predicted_ou,
         )
 
     def save(self, path: Path | str) -> None:

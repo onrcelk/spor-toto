@@ -1,4 +1,4 @@
-from sportoto.coupon import MatchPref, CouponRules, CouponResult, generate_coupon, format_coupon, apply_filter_by_surprise
+from sportoto.coupon import MatchPref, CouponRules, CouponResult, generate_coupon, format_coupon, apply_filter_by_surprise, apply_filter_by_draws, apply_filter_by_streak, filter_segment
 
 
 def make_prefs():
@@ -51,3 +51,26 @@ def test_format_coupon():
     out = format_coupon(res, prefs)
     assert '14 Garantili' in out
     assert 'Kolon 01' in out
+
+
+def test_apply_filter_by_draws():
+    prefs = [MatchPref(match_id='M01', pick='1'), MatchPref(match_id='M02', pick='X'), MatchPref(match_id='M03', pick='2'), MatchPref(match_id='M04', pick='X')]
+    filtered = apply_filter_by_draws(prefs, 1)
+    assert len(filtered) == 3
+    assert filtered[2].match_id == 'M04'
+
+
+
+def test_apply_filter_by_streak_limits_sequence():
+    # Sequence: 2, 1, 1, X, 2, 2, 1, X
+    # With max_home_streak=1 and max_away_streak=1, consecutive same non-draw picks are removed.
+    prefs = [MatchPref(match_id=f'M{i:02d}', pick=pick) for i, pick in enumerate(['2','1','1','X','2','2','1','X'], start=1)]
+    filtered = apply_filter_by_streak(prefs, 1, 2, 1)
+    assert [p.match_id for p in filtered] == ['M01','M02','M04','M05','M07','M08']
+
+
+def test_filter_segment_limits_subset():
+    prefs = [MatchPref(match_id=f'M{i:02d}', pick='X' if i % 3 == 0 else '1') for i in range(1, 11)]
+    filtered = filter_segment(prefs, 3, 7, max_draws=0)
+    assert all(p.match_id not in {'M03', 'M06'} or p.pick != 'X' for p in filtered[2:7])
+

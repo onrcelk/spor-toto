@@ -187,6 +187,7 @@ def main() -> int:
                     "confidence": a.prediction.confidence,
                     "market_odds": match.get("market_odds", {}),
                     "analyzed_at": a.analyzed_at,
+                    "predicted_1x2": a.prediction.predicted_1x2,
                 }
                 for a, match in zip(analyses, MATCHES)
             ],

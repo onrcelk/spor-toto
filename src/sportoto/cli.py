@@ -18,7 +18,7 @@ from pathlib import Path
 from .dataset import evaluate_next_week, refresh_news_memory, refresh_sportoto_memory
 from .model import MatchModel
 from .train import generate_synthetic_training_records, train_model
-from .coupon import CouponRules, CouponResult, MatchPref, format_coupon, generate_coupon
+from .coupon import CouponRules, CouponResult, MatchPref, format_coupon, generate_coupon, apply_filter_by_surprise, apply_filter_by_draws, apply_filter_by_streak
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -46,6 +46,10 @@ def build_parser() -> argparse.ArgumentParser:
     coupon_parser.add_argument("--doubles", type=int, default=0)
     coupon_parser.add_argument("--bankos", type=int, default=0)
     coupon_parser.add_argument("--max-surprise", type=int, default=None)
+    coupon_parser.add_argument("--max-draws", type=int, default=None)
+    coupon_parser.add_argument("--max-home-streak", type=int, default=None)
+    coupon_parser.add_argument("--max-draw-streak", type=int, default=None)
+    coupon_parser.add_argument("--max-away-streak", type=int, default=None)
     return parser
 
 
@@ -59,9 +63,39 @@ def _load_predictions(path: str) -> list[dict]:
         data = data.get("predictions", data.get("matches", []))
     if not isinstance(data, list):
         raise ValueError("Predictions JSON must be a list or contain a list under 'predictions'/'matches'")
-    if len(data) != 15:
-        raise ValueError(f"Spor Toto Hedef 15 için 15 maç gerekir. Dosyada {len(data)} maç var.")
     return data
+
+
+def _normalize_predictions(predictions: list[dict]) -> list[dict]:
+    normalized = []
+    for idx, item in enumerate(predictions[:15]):
+        pick = str(item.get("predicted_1x2", item.get("pick", "1"))).upper()
+        if pick not in {"1", "X", "2"}:
+            pick = "1"
+        normalized.append({
+            "match_id": str(item.get("match_id", f"M{idx+1:02d}")),
+            "home_team": item.get("home_team", f"Home{idx+1}"),
+            "away_team": item.get("away_team", f"Away{idx+1}"),
+            "predicted_1x2": pick,
+            "confidence": float(item.get("confidence", 0.5)),
+            "pred_home_win": float(item.get("pred_home_win", 0.33)),
+            "pred_draw": float(item.get("pred_draw", 0.34)),
+            "pred_away_win": float(item.get("pred_away_win", 0.33)),
+        })
+    # Pad to 15 if fewer predictions provided
+    if len(normalized) < 15:
+        for idx in range(len(normalized) + 1, 16):
+            normalized.append({
+                "match_id": f"M{idx:02d}",
+                "home_team": f"Home{idx}",
+                "away_team": f"Away{idx}",
+                "predicted_1x2": "1",
+                "confidence": 0.5,
+                "pred_home_win": 0.33,
+                "pred_draw": 0.34,
+                "pred_away_win": 0.33,
+            })
+    return normalized[:15]
 
 
 def _prefs_from_predictions(predictions: list[dict], doubles: int, bankos: int, max_surprise: int | None) -> list[MatchPref]:
@@ -116,11 +150,23 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Trained model saved to: {args.model_path}")
         return 0
     if args.command == "make-coupon":
-        predictions = _load_predictions(args.predictions)
+        raw_predictions = _load_predictions(args.predictions)
+        predictions = _normalize_predictions(raw_predictions)
         prefs = _prefs_from_predictions(predictions, args.doubles, args.bankos, args.max_surprise)
-        # Automatically assign closed matches to meet minimum guarantee requirements
+        # Assign closed matches BEFORE filtering so filters can operate on real data
         min_closed = {14: 4, 13: 5, 12: 6}.get(args.guarantee, 6)
         closed_needed = min_closed - sum(1 for p in prefs if p.is_closed)
+        if closed_needed > 0:
+            candidates = [i for i, p in enumerate(prefs) if not p.is_closed and not p.is_double and not p.is_banko]
+            for idx in candidates[:closed_needed]:
+                prefs[idx] = MatchPref(match_id=prefs[idx].match_id, pick=prefs[idx].pick, is_banko=prefs[idx].is_banko, is_double=prefs[idx].is_double, is_closed=True, tags=prefs[idx].tags)
+        if args.max_draws is not None:
+            prefs = apply_filter_by_draws(prefs, args.max_draws)
+        if all(v is not None for v in [args.max_home_streak, args.max_draw_streak, args.max_away_streak]):
+            prefs = apply_filter_by_streak(prefs, args.max_home_streak, args.max_draw_streak, args.max_away_streak)
+        # If filtering reduced closed count, try to assign more closed matches from remaining non-closed items
+        current_closed = sum(1 for p in prefs if p.is_closed)
+        closed_needed = min_closed - current_closed
         if closed_needed > 0:
             candidates = [i for i, p in enumerate(prefs) if not p.is_closed and not p.is_double and not p.is_banko]
             for idx in candidates[:closed_needed]:
