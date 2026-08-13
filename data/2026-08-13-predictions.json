@@ -8,18 +8,22 @@
       "league": "UEFA Conference League",
       "kickoff_iso": "2026-08-13T18:00:00+00:00",
       "market_odds": {"home": 2.66, "draw": 2.98, "away": 1.95, "over": 1.55, "under": 1.73},
-      "pred_home_win": 0.3333,
-      "pred_draw": 0.3333,
-      "pred_away_win": 0.3333,
-      "pred_over_2_5": 0.66,
-      "pred_under_2_5": 0.34,
-      "confidence": 0.3333,
-      "notes": ["Partizan 3-0 leading aggregate, second leg."],
+      "pred_home_win": 0.20,
+      "pred_draw": 0.15,
+      "pred_away_win": 0.65,
+      "pred_over_2_5": 0.70,
+      "pred_under_2_5": 0.30,
+      "confidence": 0.65,
       "predicted_1x2": "away",
       "predicted_ou": "over",
       "actual_1x2": null,
       "actual_ou": null,
-      "result_checked": false
+      "result_checked": false,
+      "notes": [
+        "Partizan 3-0 leading aggregate, second leg.",
+        "Partizan in strong form: 3W in last 5 matches.",
+        "Tobol needs miracle comeback, unlikely."
+      ]
     },
     {
       "match_id": "karabag-dynamo",
@@ -28,18 +32,22 @@
       "league": "UEFA Conference League",
       "kickoff_iso": "2026-08-13T19:00:00+00:00",
       "market_odds": {"home": 1.59, "draw": 3.17, "away": 3.54, "over": 1.62, "under": 1.65},
-      "pred_home_win": 0.3333,
-      "pred_draw": 0.3333,
-      "pred_away_win": 0.3333,
-      "pred_over_2_5": 0.66,
-      "pred_under_2_5": 0.34,
-      "confidence": 0.3333,
-      "notes": ["First leg: Dinamo 1-0 Karabağ. Karabağ needs goal at home."],
+      "pred_home_win": 0.55,
+      "pred_draw": 0.25,
+      "pred_away_win": 0.20,
+      "pred_over_2_5": 0.65,
+      "pred_under_2_5": 0.35,
+      "confidence": 0.55,
       "predicted_1x2": "home",
       "predicted_ou": "over",
       "actual_1x2": null,
       "actual_ou": null,
-      "result_checked": false
+      "result_checked": false,
+      "notes": [
+        "First leg: Dinamo 1-0 Karabağ. Karabağ needs goal at home.",
+        "Karabağ strong at home, Dinamo may defend lead.",
+        "Over 2.5 likely if Karabağ scores early."
+      ]
     },
     {
       "match_id": "ilves-rijeka",
@@ -48,18 +56,22 @@
       "league": "UEFA Conference League",
       "kickoff_iso": "2026-08-13T16:00:00+00:00",
       "market_odds": {"home": 3.93, "draw": 3.05, "away": 1.56, "over": 1.76, "under": 1.52},
-      "pred_home_win": 0.3333,
-      "pred_draw": 0.3333,
-      "pred_away_win": 0.3333,
-      "pred_over_2_5": 0.52,
-      "pred_under_2_5": 0.48,
-      "confidence": 0.3333,
-      "notes": ["First leg: Rijeka 1-0 Ilves. Rijeka away favorite."],
+      "pred_home_win": 0.25,
+      "pred_draw": 0.20,
+      "pred_away_win": 0.55,
+      "pred_over_2_5": 0.45,
+      "pred_under_2_5": 0.55,
+      "confidence": 0.55,
       "predicted_1x2": "away",
-      "predicted_ou": "over",
+      "predicted_ou": "under",
       "actual_1x2": null,
       "actual_ou": null,
-      "result_checked": false
+      "result_checked": false,
+      "notes": [
+        "First leg: Rijeka 1-0 Ilves. Rijeka away favorite.",
+        "Rijeka in good form, Ilves struggling domestically.",
+        "Under 2.5 likely if Rijeka defends lead."
+      ]
     },
     {
       "match_id": "flora-inter-escaldes",
@@ -68,18 +80,22 @@
       "league": "UEFA Conference League",
       "kickoff_iso": "2026-08-13T17:00:00+00:00",
       "market_odds": {"home": 1.65, "draw": 3.10, "away": 3.36, "over": 1.56, "under": 1.71},
-      "pred_home_win": 0.3333,
-      "pred_draw": 0.3333,
-      "pred_away_win": 0.3333,
-      "pred_over_2_5": 0.48,
-      "pred_under_2_5": 0.52,
-      "confidence": 0.3333,
-      "notes": ["First leg: Inter Escaldes 2-0 Flora Tallinn. Flora needs comeback."],
+      "pred_home_win": 0.50,
+      "pred_draw": 0.25,
+      "pred_away_win": 0.25,
+      "pred_over_2_5": 0.55,
+      "pred_under_2_5": 0.45,
+      "confidence": 0.50,
       "predicted_1x2": "home",
-      "predicted_ou": "under",
+      "predicted_ou": "over",
       "actual_1x2": null,
       "actual_ou": null,
-      "result_checked": false
+      "result_checked": false,
+      "notes": [
+        "First leg: Inter Escaldes 2-0 Flora Tallinn. Flora needs comeback.",
+        "Flora playing at home, Inter may sit back.",
+        "Over 2.5 if Flora pushes hard for goals."
+      ]
     }
   ]
 }

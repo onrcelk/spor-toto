@@ -5,17 +5,20 @@ Commands:
 - train
 - refresh-matches
 - refresh-news
+- make-coupon
 """
 
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from pathlib import Path
 
 from .dataset import evaluate_next_week, refresh_news_memory, refresh_sportoto_memory
 from .model import MatchModel
 from .train import generate_synthetic_training_records, train_model
+from .coupon import CouponRules, CouponResult, MatchPref, format_coupon, generate_coupon
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -35,7 +38,60 @@ def build_parser() -> argparse.ArgumentParser:
     train_parser = subparsers.add_parser("train", help="Train prediction model")
     train_parser.add_argument("--model-path", default="~/.sportoto/models/match_model.joblib")
     train_parser.add_argument("--synthetic-count", type=int, default=120)
+
+    coupon_parser = subparsers.add_parser("make-coupon", help="Generate 9-col coupon from predictions")
+    coupon_parser.add_argument("--predictions", default="data/latest_predictions.json")
+    coupon_parser.add_argument("--guarantee", type=int, default=14, choices=[12, 13, 14])
+    coupon_parser.add_argument("--closed", type=int, default=None)
+    coupon_parser.add_argument("--doubles", type=int, default=0)
+    coupon_parser.add_argument("--bankos", type=int, default=0)
+    coupon_parser.add_argument("--max-surprise", type=int, default=None)
     return parser
+
+
+def _load_predictions(path: str) -> list[dict]:
+    p = Path(path).expanduser()
+    if not p.exists():
+        raise FileNotFoundError(f"Predictions file not found: {p}")
+    with p.open("r", encoding="utf-8") as f:
+        data = json.load(f)
+    if isinstance(data, dict):
+        data = data.get("predictions", data.get("matches", []))
+    if not isinstance(data, list):
+        raise ValueError("Predictions JSON must be a list or contain a list under 'predictions'/'matches'")
+    if len(data) != 15:
+        raise ValueError(f"Spor Toto Hedef 15 için 15 maç gerekir. Dosyada {len(data)} maç var.")
+    return data
+
+
+def _prefs_from_predictions(predictions: list[dict], doubles: int, bankos: int, max_surprise: int | None) -> list[MatchPref]:
+    prefs: list[MatchPref] = []
+    closed_assigned = 0
+    double_assigned = 0
+    banko_assigned = 0
+
+    for idx, item in enumerate(predictions[:15]):
+        pick = str(item.get("prediction_1x2", item.get("pick", "1"))).upper()
+        if pick not in {"1", "X", "2"}:
+            pick = "1"
+        is_banko = False
+        is_double = False
+        is_closed = False
+        if banko_assigned < bankos and idx % 3 == 0:
+            is_banko = True
+            banko_assigned += 1
+        elif double_assigned < doubles and idx % 3 == 1:
+            is_double = True
+            double_assigned += 1
+        elif closed_assigned < 15:
+            # closed distribution: prefer lower indexes unless limited later
+            pass
+        tags: tuple[str, ...] = ()
+        if max_surprise is not None and item.get("is_surprise"):
+            tags = ("surprise",)
+        prefs.append(MatchPref(match_id=str(item.get("match_id", f"M{idx+1:02d}")), pick=pick, is_banko=is_banko, is_double=is_double, is_closed=is_closed, tags=tags))
+    # Assign closed matches up to needed counts based on guarantee default minimums
+    return prefs
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -58,6 +114,22 @@ def main(argv: list[str] | None = None) -> int:
         records = generate_synthetic_training_records(args.synthetic_count)
         model = train_model(records, Path(args.model_path).expanduser())
         print(f"Trained model saved to: {args.model_path}")
+        return 0
+    if args.command == "make-coupon":
+        predictions = _load_predictions(args.predictions)
+        prefs = _prefs_from_predictions(predictions, args.doubles, args.bankos, args.max_surprise)
+        # Automatically assign closed matches to meet minimum guarantee requirements
+        min_closed = {14: 4, 13: 5, 12: 6}.get(args.guarantee, 6)
+        closed_needed = min_closed - sum(1 for p in prefs if p.is_closed)
+        if closed_needed > 0:
+            candidates = [i for i, p in enumerate(prefs) if not p.is_closed and not p.is_double and not p.is_banko]
+            for idx in candidates[:closed_needed]:
+                prefs[idx] = MatchPref(match_id=prefs[idx].match_id, pick=prefs[idx].pick, is_banko=prefs[idx].is_banko, is_double=prefs[idx].is_double, is_closed=True, tags=prefs[idx].tags)
+        rules = CouponRules(guarantee=args.guarantee, columns=9)
+        if args.closed is not None:
+            rules = CouponRules(guarantee=args.guarantee, columns=9, min_closed_for_14=args.closed, min_closed_for_13=args.closed, min_closed_for_12=args.closed)
+        result = generate_coupon(prefs, guarantee=args.guarantee, rules=rules)
+        print(format_coupon(result, prefs))
         return 0
     print("No command provided", file=sys.stderr)
     return 2
