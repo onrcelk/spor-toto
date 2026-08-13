@@ -1,0 +1,23 @@
+{
+  "analysis_type": "post_match_error_analysis",
+  "prediction_artifact": "data/2026-08-13-predictions.json",
+  "matches": [
+    {"match_id":"tobol-partizan","predicted":"2","actual":"2","correct":true,"key_issue":"none; aggregate-state reading was useful"},
+    {"match_id":"karabag-dynamo","predicted":"1","actual":"1","correct":true,"key_issue":"none; home response to first-leg deficit was captured"},
+    {"match_id":"flora-inter-escaldes","predicted":"1","actual":"2","correct":false,"key_issue":"overweighted home advantage and comeback narrative; underweighted Inter's 2-0 first-leg lead and qualification-state incentives"},
+    {"match_id":"ilves-rijeka","predicted":"2","actual":"X","correct":false,"key_issue":"treated away favorite and first-leg lead as sufficient for away win; underweighted draw probability in a low-event second leg"}
+  ],
+  "summary": {
+    "matches": 4,
+    "correct_1x2": 2,
+    "accuracy": 0.5,
+    "errors": ["state-dependent second-leg dynamics", "draw underestimation", "single-outcome coupon without protection"]
+  },
+  "lessons": [
+    "A first-leg lead predicts qualification/game state, not automatically an away win.",
+    "A team trailing 0-2 at home may create pressure but can also be vulnerable to counterattacks; home advantage must not override opponent strength.",
+    "In low-total-goal second legs, X should receive more probability and may be a jackpot-value candidate.",
+    "The model probabilities were too compressed: Flora home 0.50 vs away 0.25 and Ilves away 0.55 vs draw 0.20 did not reflect enough draw/upset risk.",
+    "For a 4-match test coupon, Flora and Ilves should have been doubles rather than unprotected singles unless confidence was materially higher."
+  ]
+}
