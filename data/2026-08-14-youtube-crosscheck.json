@@ -1,0 +1,26 @@
+{
+  "source_count": 4,
+  "source_type": "Turkish auto-generated YouTube transcripts supplied by user",
+  "scope": "Spor Toto 1. hafta, 15 maç",
+  "notes": [
+    "Otomatik altyazı hataları nedeniyle sonuçlar 1/X/2 anlamı korunarak normalize edildi.",
+    "Yorumcuların seçimleri doğruluk garantisi değil; ortak görüş ve halk eğilimi göstergesidir."
+  ],
+  "matches": [
+    {"no":1,"match":"Galatasaray-Corum FK","consensus":"1","value":"X","updated":"1X"},
+    {"no":2,"match":"Kasimpasa-Trabzonspor","consensus":"X2","value":"X","updated":"X2"},
+    {"no":3,"match":"Konyaspor-Caykur Rizespor","consensus":"1X","value":"X","updated":"1X"},
+    {"no":4,"match":"Gaziantep FK-Alanyaspor","consensus":"X2","value":"X","updated":"X2"},
+    {"no":5,"match":"Genclerbirligi-Fenerbahce","consensus":"2","value":"X","updated":"2"},
+    {"no":6,"match":"Basaksehir-Kocaelispor","consensus":"uncertain","value":"2","updated":"1X2"},
+    {"no":7,"match":"Amed Sportif-Erzurumspor","consensus":"X","value":"2","updated":"1X2"},
+    {"no":8,"match":"Besiktas-Eyupspor","consensus":"1","value":"X","updated":"1X"},
+    {"no":9,"match":"Samsunspor-Goztepe","consensus":"X/1X","value":"X","updated":"1X"},
+    {"no":10,"match":"Arsenal-Manchester City","consensus":"X/1X","value":"X","updated":"1X"},
+    {"no":11,"match":"Lens-PSG","consensus":"2/X2","value":"X","updated":"X2"},
+    {"no":12,"match":"Sevilla-Rayo Vallecano","consensus":"X2","value":"X","updated":"X2"},
+    {"no":13,"match":"Racing Santander-Villarreal","consensus":"2","value":"1","updated":"X2"},
+    {"no":14,"match":"Espanyol-Levante","consensus":"uncertain","value":"X/2","updated":"1X2"},
+    {"no":15,"match":"Celta Vigo-Osasuna","consensus":"1","value":"X","updated":"1X"}
+  ]
+}
