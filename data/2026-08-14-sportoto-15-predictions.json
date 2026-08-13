@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-08-13T16:10:00+00:00",
+  "source_list": "data/current_sportoto_list.json",
+  "model_context": "Sport Toto Master workbook + multi-league historical model + jackpot-aware second-leg/draw rules",
+  "status": "pre_match_provisional",
+  "matches": [
+    {"no":1,"home":"Galatasaray","away":"Çorum FK","pick":"1","cover":"1","tag":"banko","reason":"Ev sahibi kalite farkı; piyasa sinyali de güçlü ev galibiyetini gösteriyor."},
+    {"no":2,"home":"Kasımpaşa","away":"Trabzonspor","pick":"X","cover":"X2","tag":"beraberlik_değeri","reason":"Trabzonspor kalite avantajına rağmen deplasman; X riski yüksek."},
+    {"no":3,"home":"Konyaspor","away":"Çaykur Rizespor","pick":"X","cover":"1X","tag":"beraberlik_adayı","reason":"Dengeli eşleşme; tek tarafı banko yapmak için yeterli ayrışma yok."},
+    {"no":4,"home":"Gaziantep FK","away":"Alanyaspor","pick":"X","cover":"X2","tag":"beraberlik_değeri","reason":"Savunma/tempo belirsizliği; beraberlik ve deplasman tarafı korunmalı."},
+    {"no":5,"home":"Gençlerbirliği","away":"Fenerbahçe","pick":"2","cover":"2","tag":"banko_adayı","reason":"Kadrosal kalite ve deplasman gücü farkı."},
+    {"no":6,"home":"Başakşehir","away":"Kocaelispor","pick":"1","cover":"1X","tag":"ev_favorisi","reason":"Başakşehir iç saha ve kalite avantajına sahip; beraberlik koruması değerli."},
+    {"no":7,"home":"Amed Sportif","away":"Erzurumspor","pick":"X","cover":"1X","tag":"denge_macı","reason":"Yeni sezon/lig bağlamında belirsizlik yüksek; X olasılığı göz ardı edilmemeli."},
+    {"no":8,"home":"Beşiktaş","away":"Eyüpspor","pick":"1","cover":"1X","tag":"ev_favorisi","reason":"Beşiktaş evinde favori; ancak sezon başlangıcı nedeniyle X koruması düşünülebilir."},
+    {"no":9,"home":"Samsunspor","away":"Göztepe","pick":"X","cover":"1X","tag":"beraberlik_adayı","reason":"Dengeli maç; halkın ev sahibi yönelimine karşı X değeri var."},
+    {"no":10,"home":"Arsenal","away":"Manchester City","pick":"X","cover":"X2","tag":"yüksek_risk_değer","reason":"Büyük maçta taraf seçimi riskli; X ve City tarafı birlikte korunmalı."},
+    {"no":11,"home":"Lens","away":"Paris Saint-Germain","pick":"2","cover":"X2","tag":"deplasman_favorisi","reason":"PSG kalite farkı nedeniyle önde; Lens iç saha beraberliği kuponu korur."},
+    {"no":12,"home":"Sevilla","away":"Rayo Vallecano","pick":"X","cover":"1X","tag":"beraberlik_adayı","reason":"Düşük fark ve kontrollü maç senaryosu; X az seçilebilir değer taşıyor."},
+    {"no":13,"home":"Racing Santander","away":"Villarreal","pick":"2","cover":"X2","tag":"deplasman_favorisi","reason":"Villarreal kalite avantajlı; Santander iç saha nedeniyle beraberlik riski var."},
+    {"no":14,"home":"Espanyol","away":"Levante","pick":"X","cover":"1X","tag":"beraberlik_adayı","reason":"Dengeli eşleşme; tek başına ev galibiyeti için güven düşük."},
+    {"no":15,"home":"Celta Vigo","away":"Osasuna","pick":"1","cover":"1X","tag":"ev_favorisi","reason":"Celta iç saha avantajlı; Osasuna beraberlik ihtimali nedeniyle X koruması değerli."}
+  ],
+  "main_line": "1-X-X-X-2-1-X-1-X-X-2-X-2-X-1",
+  "value_x_candidates": [2,3,4,7,9,10,12,14],
+  "banko_candidates": [1,5],
+  "notes": [
+    "Bu çıktı resmi kupon yerine ön analizdir; kapanış oranları, kadrolar ve Cuma YouTube tahminleri gelince güncellenecek.",
+    "X seçimleri yalnızca ikramiye için zorlanmadı; sportif belirsizlik ve düşük halk seçimi birlikte dikkate alındı.",
+    "İlk model olasılıkları %60 altındaysa tek seçim banko kabul edilmemeli; cover alanı çift seçim önerisidir.",
+    "Spor Toto ana formatı yalnızca 1/X/2'dir; cover alanı kolon tasarımı içindir."
+  ]
+}
