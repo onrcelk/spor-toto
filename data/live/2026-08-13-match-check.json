@@ -1,9 +1,10 @@
 {
   "snapshot_type": "live_match_check",
   "observed_at_utc": "2026-08-13T15:29:05+00:00",
+  "updated_at_utc": "2026-08-13T15:37:00+00:00",
   "source_notes": [
-    "ESPN live page for Tobol-Partizan",
-    "Flashscore match pages for Qarabag-Dynamo Kyiv, Ilves-Rijeka, Flora-Inter Escaldes",
+    "ESPN and FOX Sports live pages",
+    "Scores are in-play snapshots, not final results",
     "Kickoff times may be displayed in local/source timezones"
   ],
   "matches": [
@@ -11,56 +12,53 @@
       "match_id": "tobol-partizan",
       "home_team": "Tobol",
       "away_team": "Partizan",
-      "kickoff_listed": "18:00",
       "predicted_1x2": "2",
       "predicted_ou": "over",
-      "status": "live",
-      "minute": 30,
-      "home_goals": 1,
-      "away_goals": 0,
-      "aggregate_before": "0-3 Partizan",
-      "aggregate_at_snapshot": "1-3 Partizan",
-      "scorer": "Islam Chesnokov 7'",
+      "status": "live_unconfirmed_latest",
+      "latest_score": null,
+      "note": "Search results confirm live coverage but did not provide a reliable updated score in the latest cross-check.",
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401903118/partizan-belgrade-tobol-kostanay"
     },
     {
       "match_id": "karabag-dynamo",
       "home_team": "Karabağ",
       "away_team": "Dinamo Kiev",
-      "kickoff_listed": "19:00",
       "predicted_1x2": "1",
       "predicted_ou": "over",
-      "status": "pre_match_or_unconfirmed_live",
-      "home_goals": null,
-      "away_goals": null,
-      "aggregate_before": "0-1 Dinamo Kiev",
-      "source_url": "https://www.flashscore.com/match/football/dynamo-kyiv-nNpqXMwH/qarabag-agdam-Qgd3eSin/"
+      "status": "live",
+      "minute": 27,
+      "home_goals": 1,
+      "away_goals": 0,
+      "aggregate_at_snapshot": "1-1",
+      "scorer": "J. Mouaddib 12'",
+      "source_url": "https://www.foxsports.com/soccer/europa-conference-league-fk-qarabag-vs-dynamo-kiev-aug-13-2026-game-boxscore-938939"
     },
     {
       "match_id": "ilves-rijeka",
       "home_team": "Ilves",
       "away_team": "Rijeka",
-      "kickoff_listed": "18:00",
       "predicted_1x2": "2",
       "predicted_ou": "under",
-      "status": "pre_match_or_unconfirmed_live",
-      "home_goals": null,
-      "away_goals": null,
-      "aggregate_before": "0-1 Rijeka",
-      "source_url": "https://www.flashscore.com/match/football/ilves-pYGmWmwa/rijeka-zXKuUR5J/"
+      "status": "live",
+      "minute": 28,
+      "home_goals": 0,
+      "away_goals": 0,
+      "aggregate_at_snapshot": "0-1 Rijeka",
+      "source_url": "https://www.foxsports.com/soccer/europa-conference-league-ilves-vs-rijeka-aug-13-2026-game-boxscore-938950"
     },
     {
       "match_id": "flora-inter-escaldes",
       "home_team": "Flora Tallinn",
       "away_team": "Inter Escaldes",
-      "kickoff_listed": "19:00",
       "predicted_1x2": "1",
       "predicted_ou": "over",
-      "status": "pre_match_or_unconfirmed_live",
-      "home_goals": null,
-      "away_goals": null,
-      "aggregate_before": "0-2 Inter Escaldes",
-      "source_url": "https://www.flashscore.com/match/football/flora-zLFV5ykn/inter-escaldes-4CambolL/"
+      "status": "live",
+      "minute": null,
+      "home_goals": 0,
+      "away_goals": 1,
+      "aggregate_at_snapshot": "0-3 Inter Escaldes",
+      "scorer": "Inter Escaldes 17'",
+      "source_url": "https://www.foxsports.com/soccer/europa-conference-league-fc-flora-vs-inter-club-de-escaldes-aug-13-2026-game-boxscore-955306"
     }
   ]
 }
