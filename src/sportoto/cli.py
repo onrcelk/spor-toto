@@ -18,6 +18,7 @@ from pathlib import Path
 from .dataset import evaluate_next_week, refresh_news_memory, refresh_sportoto_memory
 from .model import MatchModel
 from .train import generate_synthetic_training_records, train_model
+from .real_training import build_training_frame, fetch_football_data
 from .coupon import CouponRules, CouponResult, MatchPref, format_coupon, generate_coupon, apply_filter_by_surprise, apply_filter_by_draws, apply_filter_by_streak, filter_segment
 
 
@@ -38,6 +39,8 @@ def build_parser() -> argparse.ArgumentParser:
     train_parser = subparsers.add_parser("train", help="Train prediction model")
     train_parser.add_argument("--model-path", default="~/.sportoto/models/match_model.joblib")
     train_parser.add_argument("--synthetic-count", type=int, default=120)
+    train_parser.add_argument("--real", action="store_true", help="Train from football-data.co.uk historical results")
+    train_parser.add_argument("--data-path", default="data/real_training.parquet")
 
     coupon_parser = subparsers.add_parser("make-coupon", help="Generate 9-col coupon from predictions")
     coupon_parser.add_argument("--predictions", default="data/latest_predictions.json")
@@ -149,7 +152,15 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Refreshed news: {len(items)}")
         return 0
     if args.command == "train":
-        records = generate_synthetic_training_records(args.synthetic_count)
+        if args.real:
+            frame = build_training_frame(fetch_football_data())
+            Path(args.data_path).expanduser().parent.mkdir(parents=True, exist_ok=True)
+            frame.to_parquet(Path(args.data_path).expanduser(), index=False)
+            from .train import load_records_from_store
+            records = load_records_from_store(args.data_path)
+            print(f"Real records loaded: {len(records)}")
+        else:
+            records = generate_synthetic_training_records(args.synthetic_count)
         model = train_model(records, Path(args.model_path).expanduser())
         print(f"Trained model saved to: {args.model_path}")
         return 0
