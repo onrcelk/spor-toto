@@ -1,0 +1,44 @@
+{
+  "snapshot_type": "user_screenshot_live_match_odds",
+  "observed_at": "20:48 local device time",
+  "source": "user-provided screenshot",
+  "match": {
+    "home_team": "Beşiktaş",
+    "away_team": "H. Kralove",
+    "competition": "unclear; likely UEFA qualifying/friendly context",
+    "minute": 41,
+    "home_goals": 1,
+    "away_goals": 0,
+    "halftime_score_visible": "1-0",
+    "scorer": "Vaclav Cerny",
+    "scorer_team": "Beşiktaş",
+    "scorer_minute": 41,
+    "cards_visible": {
+      "home": {"yellow": 1, "red": 1},
+      "away": {"yellow": 1, "red": 1},
+      "interpretation_note": "The small icons may be app status/discipline indicators; exact card ownership/status should be treated as screenshot-level data only."
+    }
+  },
+  "odds": {
+    "match_result": {"ms_1": null, "ms_x": 6.39, "ms_2": 17.20},
+    "qualify": {"home_or_first": null, "away_or_second": 12.05},
+    "remaining_time_winner_1_0": {"1": 1.44, "x": 2.76, "2": 5.72},
+    "handicap_0_2": {"hms_1": 2.89, "hms_x": 2.75, "hms_2": 1.91},
+    "handicap_0_3": {"hms_1": 7.34, "hms_x": 4.39, "hms_2": 1.15},
+    "handicap_0_5": {"hms_1": 17.20, "hms_x": 15.70, "hms_2": null},
+    "result_and_btts": {
+      "ms_1_and_yes": 3.15,
+      "ms_x_and_yes": 6.97,
+      "ms_2_and_yes": 17.20,
+      "ms_1_and_no": 1.32,
+      "ms_x_and_no": null,
+      "ms_2_and_no": null
+    }
+  },
+  "data_quality": {
+    "score_and_minute": "clear",
+    "odds": "clear except greyed/blank unavailable cells",
+    "competition": "not visible",
+    "match_status": "live at screenshot time"
+  }
+}
