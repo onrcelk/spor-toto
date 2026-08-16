@@ -1,0 +1,174 @@
+{
+  "status": "source_crosscheck_complete",
+  "source_count": 15,
+  "normalization": {
+    "transcript_0": "X",
+    "spor_toto_codes": [
+      "1",
+      "X",
+      "2"
+    ]
+  },
+  "matches": [
+    {
+      "no": 1,
+      "source_picks": [
+        "1X",
+        "1"
+      ],
+      "consensus_pool": "1X",
+      "assessment": "Galatasaray strong but X tail due to preparation/tension."
+    },
+    {
+      "no": 2,
+      "source_picks": [
+        "X2",
+        "2",
+        "1X2"
+      ],
+      "consensus_pool": "X2",
+      "assessment": "Trabzon quality, away opening risk; home is minor."
+    },
+    {
+      "no": 3,
+      "source_picks": [
+        "1X",
+        "1X",
+        "12"
+      ],
+      "consensus_pool": "1X",
+      "assessment": "Home non-loss/draw; away win minor."
+    },
+    {
+      "no": 4,
+      "source_picks": [
+        "X2",
+        "1X",
+        "X2"
+      ],
+      "consensus_pool": "X2",
+      "assessment": "Draw/away consensus."
+    },
+    {
+      "no": 5,
+      "source_picks": [
+        "2",
+        "2",
+        "2"
+      ],
+      "consensus_pool": "2",
+      "assessment": "Clear Fenerbahce direction."
+    },
+    {
+      "no": 6,
+      "source_picks": [
+        "1X",
+        "X2",
+        "1X2"
+      ],
+      "consensus_pool": "1X2",
+      "assessment": "Major disagreement after European elimination."
+    },
+    {
+      "no": 7,
+      "source_picks": [
+        "X",
+        "1X",
+        "1X2"
+      ],
+      "consensus_pool": "1X2",
+      "assessment": "Two new teams; draw recurrent."
+    },
+    {
+      "no": 8,
+      "source_picks": [
+        "1",
+        "1",
+        "1X"
+      ],
+      "consensus_pool": "1",
+      "assessment": "Strong Besiktas home direction."
+    },
+    {
+      "no": 9,
+      "source_picks": [
+        "X",
+        "1X2",
+        "1X"
+      ],
+      "consensus_pool": "X",
+      "assessment": "Draw strongest value signal."
+    },
+    {
+      "no": 10,
+      "source_picks": [
+        "X",
+        "X2",
+        "1X2"
+      ],
+      "consensus_pool": "X",
+      "assessment": "Cup match; draw primary."
+    },
+    {
+      "no": 11,
+      "source_picks": [
+        "X2",
+        "2",
+        "X2"
+      ],
+      "consensus_pool": "X2",
+      "assessment": "PSG direction, cup draw tail."
+    },
+    {
+      "no": 12,
+      "source_picks": [
+        "1X",
+        "X2",
+        "1X"
+      ],
+      "consensus_pool": "1X",
+      "assessment": "Sevilla non-loss/draw split."
+    },
+    {
+      "no": 13,
+      "source_picks": [
+        "X2",
+        "2",
+        "X2"
+      ],
+      "consensus_pool": "X2",
+      "assessment": "Villarreal quality/readiness."
+    },
+    {
+      "no": 14,
+      "source_picks": [
+        "1X",
+        "1X2",
+        "1X2"
+      ],
+      "consensus_pool": "1X",
+      "assessment": "Home non-loss but Levante upset tail."
+    },
+    {
+      "no": 15,
+      "source_picks": [
+        "1X",
+        "1",
+        "1X"
+      ],
+      "consensus_pool": "1X",
+      "assessment": "Celta home, draw protection."
+    }
+  ],
+  "global_findings": [
+    "İlk hafta: düşük güvenli maçlarda kapama/çift.",
+    "Güçlü omurga: 5=2, 8=1; 1 ve 13 ana yön.",
+    "Ayrışanlar: 6,7,9,10,14.",
+    "Değer X havuzu: 2,4,7,9,10,12,14."
+  ],
+  "rejected_claims": [
+    "Ortak kolon paketi tamamı oynanmadıkça garanti değildir.",
+    "Geçmiş başarı iddiaları doğruluk kanıtı değildir.",
+    "Formül sitesinin yüzde iddiası matematiksel garanti değildir."
+  ]
+}

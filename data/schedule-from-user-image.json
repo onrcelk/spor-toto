@@ -1,0 +1,21 @@
+{
+  "source": "user_attached_schedule_image",
+  "status": "image_extracted_pending_official_crosscheck",
+  "matches": [
+    {"match_index": 1, "home_team": "Galatasaray", "away_team": "Çorum FK", "day_label": "Bugün", "time": "21:30", "competition": "Türkiye Süper Lig"},
+    {"match_index": 2, "home_team": "Kasımpaşa", "away_team": "Trabzonspor", "day_label": "Yarın", "time": "19:00", "competition": "Türkiye Süper Lig"},
+    {"match_index": 3, "home_team": "Konyaspor", "away_team": "Rizespor", "day_label": "Yarın", "time": "19:00", "competition": "Türkiye Süper Lig"},
+    {"match_index": 4, "home_team": "Cadiz", "away_team": "Celta Vigo B", "day_label": "Yarın", "time": "20:00", "competition": "İspanya 2. Ligi"},
+    {"match_index": 5, "home_team": "Gençlerbirliği", "away_team": "Fenerbahçe", "day_label": "Yarın", "time": "21:30", "competition": "Türkiye Süper Lig"},
+    {"match_index": 6, "home_team": "Gaziantep FK", "away_team": "Alanyaspor", "day_label": "Yarın", "time": "21:30", "competition": "Türkiye Süper Lig"},
+    {"match_index": 7, "home_team": "Sevilla", "away_team": "Vallecano", "day_label": "Yarın", "time": "22:30", "competition": "İspanya La Liga"},
+    {"match_index": 8, "home_team": "Arsenal", "away_team": "Manchester City", "day_label": "Pazar", "time": "17:00", "competition": "İngiltere Community Shield"},
+    {"match_index": 9, "home_team": "Santander", "away_team": "Villarreal", "day_label": "Pazar", "time": "18:00", "competition": "İspanya La Liga"},
+    {"match_index": 10, "home_team": "Başakşehir", "away_team": "Kocaelispor", "day_label": "Pazar", "time": "19:00", "competition": "Türkiye Süper Lig"},
+    {"match_index": 11, "home_team": "Espanyol", "away_team": "Levante", "day_label": "Pazar", "time": "20:00", "competition": "İspanya La Liga"},
+    {"match_index": 12, "home_team": "Amed Sportif", "away_team": "Erzurumspor FK", "day_label": "Pazar", "time": "21:30", "competition": "Türkiye Süper Lig"},
+    {"match_index": 13, "home_team": "Beşiktaş", "away_team": "Eyüpspor", "day_label": "Pazar", "time": "21:30", "competition": "Türkiye Süper Lig"},
+    {"match_index": 14, "home_team": "RC Lens", "away_team": "PSG", "day_label": "Pazar", "time": "21:45", "competition": "Fransa Şampiyonlar Kupası"},
+    {"match_index": 15, "home_team": "Samsunspor", "away_team": "Göztepe", "day_label": "Pazartesi", "time": "21:30", "competition": "Türkiye Süper Lig"}
+  ]
+}

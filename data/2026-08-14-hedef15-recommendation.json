@@ -1,0 +1,36 @@
+{
+  "status": "pre_match_provisional",
+  "scope": "ana kupon ve Hedef15 filtre reçetesi; bütçe/kolon maliyeti dahil değil",
+  "source_list": "data/current_sportoto_list.json",
+  "main_coupon": [
+    {"no": 1, "match": "Galatasaray - Çorum FK", "selection": "1X", "role": "çifte"},
+    {"no": 2, "match": "Kasımpaşa - Trabzonspor", "selection": "X2", "role": "çifte"},
+    {"no": 3, "match": "Konyaspor - Çaykur Rizespor", "selection": "1X", "role": "çifte"},
+    {"no": 4, "match": "Gaziantep FK - Alanyaspor", "selection": "X2", "role": "çifte"},
+    {"no": 5, "match": "Gençlerbirliği - Fenerbahçe", "selection": "2", "role": "banko"},
+    {"no": 6, "match": "Başakşehir - Kocaelispor", "selection": "1X2", "role": "kapalı"},
+    {"no": 7, "match": "Amed Sportif - Erzurumspor", "selection": "1X2", "role": "kapalı"},
+    {"no": 8, "match": "Beşiktaş - Eyüpspor", "selection": "1", "role": "banko"},
+    {"no": 9, "match": "Samsunspor - Göztepe", "selection": "1X", "role": "çifte"},
+    {"no": 10, "match": "Arsenal - Manchester City", "selection": "X2", "role": "çifte"},
+    {"no": 11, "match": "Lens - PSG", "selection": "X2", "role": "çifte"},
+    {"no": 12, "match": "Sevilla - Rayo Vallecano", "selection": "1X", "role": "çifte"},
+    {"no": 13, "match": "Racing Santander - Villarreal", "selection": "X2", "role": "çifte"},
+    {"no": 14, "match": "Espanyol - Levante", "selection": "1X2", "role": "kapalı"},
+    {"no": 15, "match": "Celta Vigo - Osasuna", "selection": "1X", "role": "çifte"}
+  ],
+  "structure": {"bankos": 2, "doubles": 10, "closed": 3, "raw_columns": 27648},
+  "filters": {
+    "total_surprise": {"match_group": "all_variable_matches", "matches": [1,2,3,4,6,7,9,10,11,12,13,14,15], "allowed_counts": [6,7,8,9,10], "enabled": true, "reason": "İlk hafta belirsizliği nedeniyle geniş orta aralık; 0-5 ve 11-13 uç senaryolar elenir."},
+    "draw_count": {"match_group": "all_variable_matches", "matches": [1,2,3,4,6,7,9,10,11,12,13,14,15], "allowed_counts": [2,3,4,5,6], "enabled": true, "reason": "Çok sayıda X içeren çifte/kapalı yapı var; 0-1 ve 7+ beraberlik uçları elenir."},
+    "reverse_surprise": {"match_group": "selected_favorite_1_or_2_matches", "matches": [1,2,3,4,6,9,11,12,13,15], "allowed_counts": [0,1,2,3,4], "enabled": true, "reason": "Ters sürpriz tamamen dışlanmıyor; 5+ ters dönüşlü kolonlar elenir."},
+    "ones_count": {"match_group": "all_15", "allowed_counts": [4,5,6,7,8,9], "enabled": true, "reason": "İki sabit 1/2 banko ve değişken maç yapısına göre orta ev galibiyeti aralığı."},
+    "twos_count": {"match_group": "all_15", "allowed_counts": [3,4,5,6,7,8], "enabled": true, "reason": "Fenerbahçe bankosu ve deplasman adayları korunurken aşırı 2 yoğunluğu elenir."},
+    "special_group_surprise": {"match_group": "selected_matches", "matches": [6,7,10,14], "allowed_counts": [2,3], "enabled": true, "reason": "En belirsiz dört maçta en az iki, en fazla üç sürpriz senaryosu korunuyor."},
+    "max_consecutive_1": {"enabled": false, "reason": "İlk uygulamada şans filtresi olarak kullanılmıyor."},
+    "max_consecutive_X": {"enabled": false, "reason": "İlk uygulamada şans filtresi olarak kullanılmıyor."},
+    "max_consecutive_2": {"enabled": false, "reason": "İlk uygulamada şans filtresi olarak kullanılmıyor."}
+  },
+  "main_line": "1-X-1-X-2-1-X-1-X-X-2-1-2-X-1",
+  "warning": "Bu öneri koşullu filtre senaryosudur; kesin sonuç veya koşulsuz 15 garantisi değildir. Maç listesi/kadro bilgileri tekrar kontrol edilmeden oynanmamalıdır."
+}

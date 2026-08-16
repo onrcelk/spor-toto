@@ -1,0 +1,81 @@
+Spor Toto Hedef15 — Uygulama Sırasına Göre Filtre Reçetesi
+
+ANA KUPON
+1: 1X
+2: X2
+3: 1X
+4: X2
+5: 2 BANKO
+6: 1X2 KAPALI
+7: 1X2 KAPALI
+8: 1 BANKO
+9: 1X
+10: X2
+11: X2
+12: 1X
+13: X2
+14: 1X2 KAPALI
+15: 1X
+
+FİLTRELER — Hedef15 ekranındaki sıra
+
+1. 15 Maçta Toplam Sürpriz (Beraberlik + Ters Sürpriz) Sayısı
+   Seç: 6, 7, 8, 9, 10
+
+2. 15 Maçta Beklediğiniz Beraberlik Sayısı
+   Seç: 2, 3, 4, 5, 6
+
+3. 15 Maçta Beklediğiniz Ters (Sert) Sürpriz Sayısı
+   Seç: 0, 1, 2, 3, 4
+
+4. 15 Maçta Beklediğiniz 1'lerin Sayısı
+   Seç: 4, 5, 6, 7, 8, 9
+
+5. 15 Maçta Beklediğiniz 2'lerin Sayısı
+   Seç: 3, 4, 5, 6, 7, 8
+
+6. 1-9 Maçlarında Beklediğiniz Toplam Sürpriz Sayısı
+   Değişken maç grubu: 1, 2, 3, 4, 6, 7, 9
+   Seç: 3, 4, 5, 6
+
+7. 1-9 Maçlarında Beklediğiniz Beraberlik Sayısı
+   Aynı grup: 1, 2, 3, 4, 6, 7, 9
+   Seç: 1, 2, 3, 4
+
+8. 1-9 Maçlarında Beklediğiniz Ters Sürpriz Sayısı
+   Değerlendirilecek maçlar: 1, 2, 3, 4, 6, 9
+   Seç: 0, 1, 2, 3
+
+9. 10-15 Maçlarında Beklediğiniz Toplam Sürpriz Sayısı
+   Değişken maç grubu: 10, 11, 12, 13, 14, 15
+   Seç: 2, 3, 4, 5
+
+10. 10-15 Maçlarında Beklediğiniz Beraberlik Sayısı
+    Aynı grup: 10, 11, 12, 13, 14, 15
+    Seç: 1, 2, 3, 4
+
+11. 10-15 Maçlarında Beklediğiniz Ters Sürpriz Sayısı
+    Değerlendirilecek maçlar: 11, 12, 13, 15
+    Seç: 0, 1, 2, 3
+
+12. 15 Maçta En Fazla Art Arda Gelecek Beraberlik (X) Sayısı
+    Bankolar/tekler art ardaya dahil değil.
+    Seç: 3
+
+13. 15 Maçta En Fazla Art Arda Gelecek Deplasman (2) Sayısı
+    Bankolar/tekler art ardaya dahil değil.
+    Seç: 3
+
+14. Sürpriz Beklediğiniz Maçlardan Seçiniz
+    Seçilecek maçlar:
+    1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15
+
+    Bu liste, banko olmayan tüm çifte/kapalı maçlardır.
+
+NOTLAR
+- 5 ve 8 banko olduğu için sürpriz beklenen maç grubuna dahil edilmedi.
+- Toplam 1 ve 2 sayıları 15 maçın tamamında hesaplanır; bankolar bu iki sayıya dahil edilir.
+- Beraberlik ve sürpriz filtreleri yalnızca çifte/kapalı maçlarda değerlendirilir.
+- Ters sürpriz: favori 1 ise 2; favori 2 ise 1. Beraberlik ters sürpriz değildir.
+- Art arda filtrelerinde bankolar/tekler seri hesabına dahil edilmez.
+- Bu filtreler ilk hafta belirsizliği nedeniyle orta-geniş aralıklardır; koşulsuz 15 garantisi değildir.

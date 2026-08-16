@@ -1,0 +1,56 @@
+{
+  "scope": "first_5_matches",
+  "actual_results": {"1":"X", "2":"X", "3":"2", "4":"X", "5":"1"},
+  "played_main_line": ["1X", "X2", "1X", "X2", "2"],
+  "primary_picks": ["1", "X", "X", "X", "2"],
+  "coverage_hits": 3,
+  "coverage_total": 5,
+  "primary_hits": 2,
+  "primary_total": 5,
+  "errors": [
+    {
+      "match": 1,
+      "type": "wrong_primary_direction",
+      "primary": "1",
+      "actual": "X",
+      "coverage": "1X",
+      "coverage_result": "hit",
+      "root_cause": "Public concentration and Friday/opening-match risk were recognized too late and not reflected in the primary direction."
+    },
+    {
+      "match": 3,
+      "type": "missed_away_upset_and_coupon_coverage_failure",
+      "primary": "X",
+      "actual": "2",
+      "coverage": "1X",
+      "coverage_result": "miss",
+      "root_cause": "The away scenario was excluded from every column despite a balanced match and opening-week uncertainty. This eliminated all 58 columns."
+    },
+    {
+      "match": 5,
+      "type": "missed_home_upset",
+      "primary": "2",
+      "actual": "1",
+      "coverage": "2",
+      "coverage_result": "miss",
+      "root_cause": "Fenerbahce was treated as a banko-like fixed away result; opening-match surprise risk and squad/rotation uncertainty were not allowed into the coverage."
+    }
+  ],
+  "non_errors": [
+    {"match": 2, "primary": "X", "actual": "X", "coverage": "X2", "result": "hit"},
+    {"match": 4, "primary": "X", "actual": "X", "coverage": "X2", "result": "hit"}
+  ],
+  "system_errors": [
+    "Opening/Friday risk was noted as a user signal but not converted into a formal pre-match penalty or coverage rule.",
+    "Market/public pick percentages were treated as context, not as an explicit overload-risk feature with a required draw/opposite-result review.",
+    "Balanced matches were sometimes covered with a double that omitted the opposite result; M3 1X had no 2, while M5 single 2 had no 1/X.",
+    "The live-data workflow initially over-relied on frozen pages; freshness and source disagreement were not consistently separated until later.",
+    "Column survival was previously reported from per-match coverage rather than exact column intersection; this produced the false 22-active-columns claim."
+  ],
+  "next_actions": [
+    "For opening/Friday matches, require explicit 1/X/2 review before any banko or two-way cover.",
+    "For a balanced match, do not call 1X or X2 safe without documenting why the omitted result is materially less likely.",
+    "Persist full played columns before kickoff and recompute survival after every final result.",
+    "Use at least 3 independent current/final sources for post-match verification and label stale sources."
+  ]
+}

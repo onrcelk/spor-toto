@@ -21,6 +21,8 @@ from .train import generate_synthetic_training_records, train_model
 from .real_training import build_training_frame, fetch_football_data
 from .current_list import save_current_list
 from .coupon import CouponRules, CouponResult, MatchPref, format_coupon, generate_coupon, apply_filter_by_surprise, apply_filter_by_draws, apply_filter_by_streak, filter_segment
+from .live_monitor import collect_live
+from .next_week import build_next_week_report
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -39,6 +41,16 @@ def build_parser() -> argparse.ArgumentParser:
 
     current_parser = subparsers.add_parser("refresh-current-list", help="Fetch the current 15-match Spor Toto list")
     current_parser.add_argument("--output", default="data/current_sportoto_list.json")
+
+    live_parser = subparsers.add_parser("collect-live", help="Read-only match-day snapshots")
+    live_parser.add_argument("--output-dir", default="data/live")
+    live_parser.add_argument("--no-tff", action="store_true", help="Skip TFF result snapshot")
+
+    next_parser = subparsers.add_parser("analyze-next-week", help="Build recent team-form report")
+    next_parser.add_argument("--matches", default="data/current_sportoto_list.json")
+    next_parser.add_argument("--history", default="data/sportoto_master_training.parquet")
+    next_parser.add_argument("--output", default="data/next_week_analysis.json")
+    next_parser.add_argument("--last-n", type=int, default=5)
 
     train_parser = subparsers.add_parser("train", help="Train prediction model")
     train_parser.add_argument("--model-path", default="~/.sportoto/models/match_model.joblib")
@@ -158,6 +170,15 @@ def main(argv: list[str] | None = None) -> int:
     if args.command == "refresh-current-list":
         rows = save_current_list(args.output)
         print(f"Current Spor Toto matches: {len(rows)}")
+        return 0
+    if args.command == "collect-live":
+        result = collect_live(Path(args.output_dir).expanduser(), include_tff=not args.no_tff)
+        print(json.dumps(result, ensure_ascii=False))
+        return 0 if any("error" not in value for value in result["sources"].values()) else 1
+    if args.command == "analyze-next-week":
+        result = build_next_week_report(args.matches, args.history, args.output, args.last_n)
+        print(f"Next-week report: {args.output}")
+        print(f"Matches: {result['match_count']}")
         return 0
     if args.command == "train":
         if args.real:
