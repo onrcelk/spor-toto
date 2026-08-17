@@ -33,3 +33,14 @@ uv run python -m sportoto.cli advanced-statsbomb \
 ```
 
 Çıktı; takım bazında StatsBomb xG toplamı, şut koordinatları, şut sonucu, freeze-frame sayısı, açıkça işaretlenmiş key pass ve defansif aksiyonları içerir. StatsBomb payload'ında doğrudan bulunmayan xA ve exact PPDA boş bırakılır; proxy metrikler resmi xA/PPDA diye etiketlenmez. StatsBomb verisi araştırma/analitik koşulları ve kaynak gösterimiyle kullanılmalıdır.
+
+Leakage-safe xG rolling ve Poisson backtest:
+
+```bash
+uv run python -m sportoto.cli advanced-backtest \
+  --input data/advanced_match_rows.json \
+  --min-history 3 \
+  --output data/analysis/advanced-backtest.json
+```
+
+Girdi satırları tarih, takım, gol, xG, xA ve şut alanlarını içerir. Özellikler her maçtan önceki maçlarla hesaplanır; hedef maçın kendi xG/golü feature üretimine girmez. Sonuç raporu 1/X/2 ve Alt/Üst 2.5 doğruluğunu ayrı verir.

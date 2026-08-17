@@ -23,6 +23,7 @@ from .train import generate_synthetic_training_records, train_model
 from .real_training import build_training_frame, fetch_football_data
 from .current_list import save_current_list
 from .advanced_analytics import fetch_statsbomb_events, parse_statsbomb_events
+from .advanced_pipeline import poisson_backtest
 from .coupon import CouponRules, CouponResult, MatchPref, format_coupon, generate_coupon, apply_filter_by_surprise, apply_filter_by_draws, apply_filter_by_streak, filter_segment
 from .live_monitor import collect_live
 from .next_week import build_next_week_report
@@ -60,6 +61,11 @@ def build_parser() -> argparse.ArgumentParser:
     advanced_parser = subparsers.add_parser("advanced-statsbomb", help="Parse StatsBomb Open Data event JSON")
     advanced_parser.add_argument("--url", required=True)
     advanced_parser.add_argument("--output", default="data/analysis/statsbomb_metrics.json")
+
+    backtest_parser = subparsers.add_parser("advanced-backtest", help="Run leakage-safe xG Poisson backtest")
+    backtest_parser.add_argument("--input", required=True, help="JSON list of dated match rows")
+    backtest_parser.add_argument("--output", default="data/analysis/advanced-backtest.json")
+    backtest_parser.add_argument("--min-history", type=int, default=3)
 
     next_parser = subparsers.add_parser("analyze-next-week", help="Build recent team-form report")
     next_parser.add_argument("--matches", default="data/current_sportoto_list.json")
@@ -245,6 +251,19 @@ def main(argv: list[str] | None = None) -> int:
         }
         output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(json.dumps({"output": str(output), "events": metrics.event_count, "shots": len(metrics.shots), "xg": metrics.xg_by_team}, ensure_ascii=False))
+        return 0
+    if args.command == "advanced-backtest":
+        input_path = Path(args.input).expanduser()
+        rows = json.loads(input_path.read_text(encoding="utf-8"))
+        if isinstance(rows, dict):
+            rows = rows.get("matches", rows.get("rows", []))
+        if not isinstance(rows, list):
+            raise ValueError("advanced-backtest input must be a JSON list or contain matches/rows")
+        result = poisson_backtest(rows, min_history=args.min_history)
+        output = Path(args.output).expanduser()
+        output.parent.mkdir(parents=True, exist_ok=True)
+        output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        print(json.dumps({"output": str(output), **result}, ensure_ascii=False))
         return 0
     if args.command == "analyze-next-week":
         result = build_next_week_report(args.matches, args.history, args.output, args.last_n)
