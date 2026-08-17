@@ -26,7 +26,7 @@ from pathlib import Path
 from typing import Any, Callable
 
 from .market import closing_line_delta, remove_vig
-from .identity import normalize_team_name
+from .identity import normalize_team_name, resolve_team
 
 JsonOpener = Callable[[urllib.request.Request], dict[str, Any]]
 
@@ -168,17 +168,84 @@ def fetch_fdccouk(season: str = "2324", league: str = "T1",
     return out
 
 
+# The Odds API (https://the-odds-api.com) — FREE tier 500 credits/month, no card.
+# Covers soccer_turkey_super_league + all major leagues. Requires API key.
+_THEODDS_BASE = "https://api.the-odds-api.com/v4"
+
+
+def fetch_theodds(sport: str = "soccer_turkey_super_league", api_key: str | None = None,
+                  regions: str = "eu", bookmaker: str | None = None) -> list[MatchOdds]:
+    """Fetch LIVE 1X2 + O/U odds from The Odds API (free 500 credits/mo).
+
+    sport: e.g. soccer_turkey_super_league, soccer_epl, soccer_spain_la_liga.
+    Returns opening_1x2=first snapshot, closing_1x2=latest (we keep the last
+    bookmaker's h2h as the working line; for multi-bookmaker CLV use oddsformat).
+    """
+    key = api_key or os.getenv("THE_ODDS_API_KEY", "")
+    if not key:
+        raise ValueError("THE_ODDS_API_KEY required (free tier: the-odds-api.com)")
+    params = urllib.parse.urlencode({
+        "apiKey": key, "regions": regions,
+        "markets": "h2h,totals", "oddsFormat": "decimal",
+    })
+    if bookmaker:
+        params += f"&bookmakers={bookmaker}"
+    url = f"{_THEODDS_BASE}/sports/{sport}/odds?{params}"
+    data = _request_json(url, {"Accept": "application/json"}, None)
+    out = []
+    for ev in data:
+        home = ev.get("home_team", "")
+        away = ev.get("away_team", "")
+        # h2h ve totals ayrı bookmaker'larda olabilir; tümünü tara
+        bms = ev.get("bookmakers", [])
+        if not bms:
+            continue
+        one_x_two = None
+        ou = None
+        for bm in bms:
+            for mkt in bm.get("markets", []):
+                if mkt.get("key") == "h2h" and one_x_two is None:
+                    one_x_two = {_outcome_key(o["name"], home, away): float(o["price"])
+                                 for o in mkt.get("outcomes", [])}
+                elif mkt.get("key") == "totals" and ou is None:
+                    for o in mkt.get("outcomes", []):
+                        nm = o["name"].lower()
+                        if nm.startswith("over"):
+                            ou = {"over": float(o["price"]), "under": None}
+                        elif nm.startswith("under") and ou is not None:
+                            ou["under"] = float(o["price"])
+            if one_x_two and ou:
+                break
+        if one_x_two and len(one_x_two) == 3:
+            out.append(MatchOdds(
+                source="the-odds-api", home_team=home, away_team=away,
+                bookmaker=bms[0].get("title", bms[0].get("key", "unknown")),
+                opening_1x2=one_x_two, closing_1x2=dict(one_x_two),
+                opening_ou=ou, closing_ou=ou, fetched_at=_now(),
+            ))
+    return out
+
+
+def _outcome_key(name: str, home: str, away: str) -> str:
+    nl = name.lower()
+    if nl == home.lower():
+        return "1"
+    if nl == away.lower():
+        return "2"
+    return "X"  # "Draw" / "Berabere"
+
+
 def market_vs_model(odds: list[MatchOdds], predictions: list[dict]) -> list[dict]:
     """Join real odds with model predictions and compute EV + closing-line delta."""
     pred_by_team = {}
     for p in predictions:
-        nh = normalize_team_name(p["home_team"])
-        na = normalize_team_name(p["away_team"])
+        nh = resolve_team(p["home_team"])
+        na = resolve_team(p["away_team"])
         pred_by_team[(nh, na)] = p
 
     out = []
     for o in odds:
-        key = (normalize_team_name(o.home_team), normalize_team_name(o.away_team))
+        key = (resolve_team(o.home_team), resolve_team(o.away_team))
         pred = pred_by_team.get(key)
         if not pred:
             continue
@@ -218,4 +285,31 @@ def compute_ev_safe(model_prob, decimal_odds):
         return None
 
 
-__all__ = ["MatchOdds", "fetch_api_sports_odds", "load_local_odds", "market_vs_model"]
+def fetch_fdccouk_results(season: str = "2324", league: str = "T1") -> list[dict]:
+    """Fetch REAL final scores from football-data.co.uk (FREE, no key).
+
+    Returns rows compatible with audit._match_real: {home_team, away_team,
+    home_goals, away_goals, source}. Used as an independent results source for
+    the audit module (proves hit/miss without paid APIs).
+    """
+    url = f"{_FDCOUK_BASE}/{season}/{league}.csv"
+    import csv, io
+    with urllib.request.urlopen(url, timeout=30) as resp:
+        text = resp.read().decode("utf-8", "replace")
+    reader = csv.DictReader(io.StringIO(text))
+    out = []
+    for row in reader:
+        try:
+            hg = int(row.get("FTHG"))
+            ag = int(row.get("FTAG"))
+        except (TypeError, ValueError):
+            continue
+        out.append({
+            "home_team": row.get("HomeTeam", ""), "away_team": row.get("AwayTeam", ""),
+            "home_goals": hg, "away_goals": ag, "source": "football-data.co.uk",
+        })
+    return out
+
+
+__all__ = ["MatchOdds", "fetch_api_sports_odds", "load_local_odds", "market_vs_model",
+           "fetch_fdccouk", "fetch_theodds", "fetch_fdccouk_results"]

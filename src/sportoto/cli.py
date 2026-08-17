@@ -30,7 +30,7 @@ from .next_week import build_next_week_report
 from .predict_week import build_predictions
 from .audit import run_audit
 from .multi_source import fetch_api_sports, fetch_football_data as fetch_football_data_source, fetch_openfootball
-from .odds import fetch_api_sports_odds, load_local_odds, market_vs_model, fetch_fdccouk
+from .odds import fetch_api_sports_odds, load_local_odds, market_vs_model, fetch_fdccouk, fetch_theodds
 from .value_backtest import run_value_backtest
 
 
@@ -66,8 +66,8 @@ def build_parser() -> argparse.ArgumentParser:
     odds_parser.add_argument("--date", default=date.today().isoformat())
     odds_parser.add_argument("--predictions", default="data/predictions/2026-08-21-predictions_HYBRID.json")
     odds_parser.add_argument("--local-odds", default=None, help="Optional local odds JSON (fixture/cache)")
-    odds_parser.add_argument("--source", default="fdccouk", choices=["fdccouk", "api-sports", "local"],
-                              help="Odds source: fdccouk=football-data.co.uk (FREE,no key), api-sports (paid), local")
+    odds_parser.add_argument("--source", default="fdccouk", choices=["fdccouk", "api-sports", "local", "the-odds"],
+                              help="Odds source: fdccouk=football-data.co.uk (FREE,no key), the-odds=The Odds API (free 500/mo key), api-sports (paid), local")
     odds_parser.add_argument("--season", default="2324", help="football-data.co.uk season (e.g. 2324)")
     odds_parser.add_argument("--league", default="T1", help="football-data.co.uk league (T1=Turkey, E0=EPL, SP1, D1, I1, F1)")
     odds_parser.add_argument("--bookmaker", default="B365", help="bookmaker column prefix (B365, PS, Avg...)")
@@ -107,6 +107,10 @@ def build_parser() -> argparse.ArgumentParser:
     audit_parser.add_argument("--predictions", default="data/predictions/2026-08-21-predictions.json")
     audit_parser.add_argument("--date", default=None, help="API-Sports date filter YYYY-MM-DD")
     audit_parser.add_argument("--no-api", action="store_true", help="Skip API-Sports")
+    audit_parser.add_argument("--use-fdccouk", action="store_true",
+                               help="Use football-data.co.uk real results (FREE, no key) as results source")
+    audit_parser.add_argument("--fdccouk-season", default="2324")
+    audit_parser.add_argument("--fdccouk-league", default="T1")
     audit_parser.add_argument("--output-dir", default="data/live/audit")
 
     train_parser = subparsers.add_parser("train", help="Train prediction model")
@@ -336,6 +340,18 @@ def main(argv: list[str] | None = None) -> int:
             except Exception as exc:
                 print(f"API-Sports odds erişilemedi (muhtemelen Free plan): {exc}", file=sys.stderr)
                 return 1
+        elif args.source == "the-odds":
+            try:
+                sport = {"T1": "soccer_turkey_super_league", "E0": "soccer_epl",
+                         "SP1": "soccer_spain_la_liga", "D1": "soccer_germany_bundesliga",
+                         "I1": "soccer_italy_serie_a", "F1": "soccer_france_ligue_one"}.get(
+                            args.league, "soccer_turkey_super_league")
+                odds = fetch_theodds(sport, bookmaker=args.bookmaker if args.bookmaker != "B365" else None)
+                src_note = f"the-odds:{sport}"
+            except Exception as exc:
+                print(f"The Odds API erişilemedi: {exc}", file=sys.stderr)
+                print("Ücretsiz key için: https://the-odds-api.com/#get-access (500 kredi/ay)", file=sys.stderr)
+                return 1
         else:
             print("Oran kaynağı belirtin: --source fdccouk|local|api-sports", file=sys.stderr)
             return 2
@@ -359,7 +375,11 @@ def main(argv: list[str] | None = None) -> int:
         print(f"  Not: {res['note']}")
         return 0
     if args.command == "audit-results":
-        summary = run_audit(args.predictions, args.output_dir, api_date=args.date, use_api_sports=not args.no_api)
+        summary = run_audit(args.predictions, args.output_dir, api_date=args.date,
+                           use_api_sports=not args.no_api,
+                           use_fdccouk=args.use_fdccouk,
+                           fdccouk_season=args.fdccouk_season,
+                           fdccouk_league=args.fdccouk_league)
         print(f"Audit: {summary['matches_with_result']}/{summary['matches_total']} maçta sonuç var")
         print(f"1X2 isabet: {summary['hit_1x2']}/{summary['matches_with_result']} = {summary['accuracy_1x2']}")
         if summary["matches_with_ou"]:

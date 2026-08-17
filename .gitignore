@@ -22,3 +22,6 @@ Thumbs.db
 # temp prediction files
 data/predictions/_gen_tmp.json
 data/predictions/_sl_tmp.json
+
+# live odds snapshot (runtime data)
+data/live/odds_latest.json

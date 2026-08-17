@@ -20,16 +20,17 @@ from pathlib import Path
 import pandas as pd
 
 from .multi_source import fetch_api_sports, fetch_football_data
-from .identity import normalize_team_name
+from .identity import normalize_team_name, resolve_team
+from .odds import fetch_fdccouk_results
 
 
 def _match_real(rows: list[dict], home: str, away: str) -> dict | None:
-    nh = normalize_team_name(home)
-    na = normalize_team_name(away)
+    nh = resolve_team(home)
+    na = resolve_team(away)
     best = None
     for r in rows:
-        rh = normalize_team_name(r.get("home_team", ""))
-        ra = normalize_team_name(r.get("away_team", ""))
+        rh = resolve_team(r.get("home_team", ""))
+        ra = resolve_team(r.get("away_team", ""))
         if (rh == nh and ra == na) or (rh == na and ra == nh):
             best = r
             if r.get("home_goals") is not None and r.get("away_goals") is not None:
@@ -71,6 +72,9 @@ def run_audit(
     api_date: str | None = None,
     use_api_sports: bool = True,
     use_football_data: bool = True,
+    use_fdccouk: bool = False,
+    fdccouk_season: str = "2324",
+    fdccouk_league: str = "T1",
 ) -> dict:
     preds = json.loads(Path(predictions_path).expanduser().read_text(encoding="utf-8"))
     _load_dotenv_local()
@@ -92,6 +96,12 @@ def run_audit(
             sources_used.append("football-data.org")
         except Exception as exc:
             sources_used.append(f"football-data-err:{exc}")
+    if use_fdccouk:
+        try:
+            real_rows += fetch_fdccouk_results(fdccouk_season, fdccouk_league)
+            sources_used.append(f"football-data.co.uk:{fdccouk_season}-{fdccouk_league}")
+        except Exception as exc:
+            sources_used.append(f"fdccouk-err:{exc}")
 
     audit_lines = []
     total_1x2 = total_ou = hit_1x2 = hit_ou = 0
