@@ -312,4 +312,57 @@ def fetch_fdccouk_results(season: str = "2324", league: str = "T1") -> list[dict
 
 
 __all__ = ["MatchOdds", "fetch_api_sports_odds", "load_local_odds", "market_vs_model",
-           "fetch_fdccouk", "fetch_theodds", "fetch_fdccouk_results"]
+           "fetch_fdccouk", "fetch_theodds", "fetch_fdccouk_results", "fetch_betbetter"]
+
+
+# Bet Better (https://betbetter.world/api/) — FREE, NO KEY, CC BY 4.0.
+# Independent model win-probabilities + fair odds across 9 sports. Soccer:
+# /soccer/{league}/  (EPL, La Liga, Serie A, Bundesliga, Ligue 1, MLS, World Cup).
+# Used as a CROSS-CHECK source for our own model (independent probability),
+# NOT as the primary odds feed. Active mainly during the soccer season.
+_BETBETTER_BASE = "https://betbetter.world"
+
+
+def fetch_betbetter(league: str = "epl") -> list[MatchOdds]:
+    """Fetch Bet Better model probabilities + fair odds for a soccer league.
+
+    Returns MatchOdds where closing_1x2 = Bet Better's fair odds (no bookmaker
+    margin) and an extra ``model_prob`` is NOT stored here — callers should use
+    market_vs_model with our own predictions; Bet Better is the independent ref.
+    """
+    hdr = {"User-Agent": "Mozilla/5.0 (compatible; SportotoBot/1.0)"}
+    url = f"{_BETBETTER_BASE}/soccer/{league}/"
+    req = urllib.request.Request(url, headers=hdr)
+    with urllib.request.urlopen(req, timeout=25) as resp:
+        html = resp.read().decode("utf-8", "replace")
+    # Bet Better renders matchup links like /soccer/epl/matchups/team-a-vs-team-b
+    import re
+    matchups = re.findall(r'href="(/soccer/[a-z0-9]+/matchups/[^"]+)"', html)
+    out = []
+    for m in matchups:
+        # team-a-vs-team-b -> parse probabilities from the matchup page JSON
+        try:
+            murl = f"{_BETBETTER_BASE}{m}"
+            mreq = urllib.request.Request(murl, headers=hdr)
+            mhtml = urllib.request.urlopen(mreq, timeout=25).read().decode("utf-8", "replace")
+            # look for embedded JSON with probabilities (best-effort)
+            js = re.search(r'\{[^{}]*"home"[^}]*"away"[^}]*\}', mhtml)
+            if not js:
+                continue
+            data = json.loads(js.group(0))
+            home = data.get("home", {}).get("name", "")
+            away = data.get("away", {}).get("name", "")
+            ph = float(data.get("home", {}).get("prob", 0.33))
+            pa = float(data.get("away", {}).get("prob", 0.33))
+            pd = max(0.01, 1 - ph - pa)
+            # fair odds = 1/prob (no margin)
+            out.append(MatchOdds(
+                source="betbetter", home_team=home, away_team=away,
+                bookmaker="betbetter-model",
+                opening_1x2={"1": round(1/ph, 2), "X": round(1/pd, 2), "2": round(1/pa, 2)},
+                closing_1x2={"1": round(1/ph, 2), "X": round(1/pd, 2), "2": round(1/pa, 2)},
+                opening_ou=None, closing_ou=None, fetched_at=_now(),
+            ))
+        except Exception:
+            continue
+    return out

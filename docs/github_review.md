@@ -39,3 +39,26 @@ değerlendirmesi aşağıda.
 ## İleride değerlendirilebilir
 - Featuretools ile otomatik feature (ParthK7) → acc 0.509'u artırabilir.
 - The Odds API ücretsiz 500 kredi/ay → canlı maç günü oranı için (kayıt gerekir).
+
+## public-apis (github.com/public-apis/public-apis) triyajı — 2026-08-17
+Spor/odds kategorisi tarandı (README 235KB).
+
+Spor/odds API'leri ve durumları:
+- **Bet Better** (betbetter.world/api): BEDAVA, NO KEY, CC BY 4.0. Model kazanma
+  olasılığı + fair odds (9 spor). Futbol: /soccer/{league}/ (EPL, La Liga, Serie A,
+  Bundesliga, Ligue 1, MLS, WC). → BİZİM MODELE ÇAPRAZ KONTROL kaynağı.
+  DURUM: Şu an futbol sezonu kapalı (sadece tenis veriyor); 403 (Cloudflare) —
+  adapter hazır (fetch_betbetter) ama sezon açılınca test edilecek.
+- **Football-Data** (football-data.org): ZATEN KULLANIYORUZ (football-data.co.uk
+  ile aynı veri; oran ücretli, sonuçlar ücretsiz).
+- **Oddsmagnet** (data.oddsmagnet.com): Bedava oran geçmişi (UK) → 403 (bot block),
+  erişilemez.
+- **Sportmonks Football** (docs.sportmonks.com): score/schedule/stats/history →
+  API KEY gerekir (football-data.org gibi).
+
+SONUÇ: public-apis listesinden şu an Spor Toto'ya YENİ gerçek entegrasyon kazancı
+sınırlı. Bet Better (sezon açılınca çapraz kontrol için değerli) adapter olarak
+hazırlandı; diğerleri ya zaten var ya erişilemez ya key gerektiriyor.
+
+Not: Bet Better 403 aldığı için fetch_betbetter() şu an boş/exception dönebilir;
+Cloudflare bypass gerektirir (production'da kullanılmayacak kadar korumalı).
