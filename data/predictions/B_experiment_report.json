@@ -1,0 +1,25 @@
+{
+  "experiment": "B - Süper Lig (TR) only model vs genel model",
+  "generated_at": "2026-08-17T09:00:00+00:00",
+  "conclusion": "TR-only filtre modeli genel modelden DAHA KOTU; üretimde kullanilmadi.",
+  "reason": "Mevcut training verisinde 'league' ayrimi yok (tek etiket: 'Sport Toto mixed'). TR-only filtre 724 satira duser (324 train), featurelar lig-bagimsiz oldugu icin model ogrenemiyor. Ayrica Avrupa maclari TR-only setinde gecmisiz kaldigi icin lig ortalamasina dusup yanlislikla 'X' tahmin ediyor.",
+  "metrics": {
+    "general_model": {"holdout_acc": 0.378, "brier": 0.6837, "logloss": 1.1313, "train_rows": 4196},
+    "tr_only_model": {"holdout_acc": 0.343, "brier": 0.7405, "logloss": 1.2427, "train_rows": 324}
+  },
+  "this_week_comparison": {
+    "general_pick_dist": {"1": 10, "X": 2, "2": 3},
+    "tr_only_pick_dist": {"1": 2, "X": 10, "2": 3},
+    "note": "TR-only model Avrupa maclarinda (Dortmund-Bayern, Marsilya-Strasbourg, Betis-Sociedad, Atletico-Villarreal, Torino-Milan) gecmisizlik nedeniyle 'X' tahmin ediyor; gecersiz."
+  },
+  "what_would_actually_improve_B": [
+    "TFF entegrasyonu yenilenirse (su an 0 satir donuyor, sayfa yapisi degismis) saf TR gecmis verisiyle egitim.",
+    "football-data.org TSL erisimi yok (403/404) - ucretli plan veya baska kaynak gerekir.",
+    "TR takimlari icin ev-sahibi avantaji ve form agirlikli ozel feature muhendisligi.",
+    "Opta/FotMob gibi tahminsel ozellik kaynagi entegre edilirse."
+  ],
+  "saved_artifacts": {
+    "tr_only_model": "data/models/sportoto_tr_only_model.joblib (egitildi ama kullanilmadi)",
+    "tr_only_predictions": "data/predictions/2026-08-21-predictions_TRONLY.json"
+  }
+}

@@ -28,6 +28,7 @@ from .coupon import CouponRules, CouponResult, MatchPref, format_coupon, generat
 from .live_monitor import collect_live
 from .next_week import build_next_week_report
 from .predict_week import build_predictions
+from .audit import run_audit
 from .multi_source import fetch_api_sports, fetch_football_data as fetch_football_data_source, fetch_openfootball
 
 
@@ -80,6 +81,12 @@ def build_parser() -> argparse.ArgumentParser:
     week_parser.add_argument("--model", default="data/models/sportoto_master_model.joblib")
     week_parser.add_argument("--output", default="data/predictions/2026-08-21-predictions.json")
     week_parser.add_argument("--last-n", type=int, default=8)
+
+    audit_parser = subparsers.add_parser("audit-results", help="Match saved predictions against real results (hit/miss + O/U)")
+    audit_parser.add_argument("--predictions", default="data/predictions/2026-08-21-predictions.json")
+    audit_parser.add_argument("--date", default=None, help="API-Sports date filter YYYY-MM-DD")
+    audit_parser.add_argument("--no-api", action="store_true", help="Skip API-Sports")
+    audit_parser.add_argument("--output-dir", default="data/live/audit")
 
     train_parser = subparsers.add_parser("train", help="Train prediction model")
     train_parser.add_argument("--model-path", default="~/.sportoto/models/match_model.joblib")
@@ -285,6 +292,14 @@ def main(argv: list[str] | None = None) -> int:
             print(f"  M{p['match_index']:>2} {p['home_team'][:20]:20} - {p['away_team'][:20]:20} "
                   f"=> {p['predicted_1x2']} (conf {p['confidence']}) | O/U {p['predicted_ou']} "
                   f"(O {p['pred_over_2_5']})")
+        return 0
+    if args.command == "audit-results":
+        summary = run_audit(args.predictions, args.output_dir, api_date=args.date, use_api_sports=not args.no_api)
+        print(f"Audit: {summary['matches_with_result']}/{summary['matches_total']} maçta sonuç var")
+        print(f"1X2 isabet: {summary['hit_1x2']}/{summary['matches_with_result']} = {summary['accuracy_1x2']}")
+        if summary["matches_with_ou"]:
+            print(f"Alt/Üst isabet: {summary['hit_ou']}/{summary['matches_with_ou']} = {summary['accuracy_ou']}")
+        print("Kaynaklar:", summary["sources_used"])
         return 0
     if args.command == "train":
         if args.real:

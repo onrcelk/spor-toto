@@ -8,7 +8,8 @@ from collections.abc import Mapping, Sequence
 
 def normalize_team_name(name: str) -> str:
     value = unicodedata.normalize("NFKD", str(name)).encode("ascii", "ignore").decode().lower()
-    value = re.sub(r"\b(a\.s\.|a s|sk|fk|fc|cf|afc|as|spor kulubu|futbol kulubu)\b", " ", value)
+    value = re.sub(r"\b(a\.?s\.?|s\.?k\.?|f\.?k\.?|f\.?c\.?|c\.?f\.?|a\.?f\.?c\.?|as|spor kulubu|futbol kulubu)\b", " ", value)
+    value = re.sub(r"\.?", "", value)
     return re.sub(r"[^a-z0-9]+", "", value)
 
 
