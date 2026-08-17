@@ -1,0 +1,21 @@
+{
+  "source":"user_message",
+  "week_id":null,
+  "status":"example_coupon_not_ours_filter_result_pending_verification",
+  "format":"Hedef15 12 Garantili Formül",
+  "selections":["1X","X2","X2","X2","12","1X","12","1X","1","12","12","1","X2","12","1"],
+  "selection_sets":[["1","X"],["X","2"],["X","2"],["X","2"],["1","2"],["1","X"],["1","2"],["1","X"],["1"],["1","2"],["1","2"],["1"],["X","2"],["1","2"],["1"]],
+  "two_way_matches":12,
+  "single_matches":3,
+  "raw_cartesian_columns":4096,
+  "claimed_formula":"12 Garantili",
+  "claimed_filtered_columns":28,
+  "stake_tl":280,
+  "claimed_probabilities":{"15":0.007,"14":0.089,"13":0.51},
+  "verification":{
+    "raw_column_count":"verified",
+    "filtered_28_columns":"not_verified_without_explicit_filter_rules_or_full_column_list",
+    "probabilities":"user_claims_not_independently_verified",
+    "required_for_audit":["full 28-column list or exact filter algorithm","filter constraints and UI values","official Hedef15 guarantee semantics","final results for the same week"]
+  }
+}
