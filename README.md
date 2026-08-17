@@ -44,3 +44,14 @@ uv run python -m sportoto.cli advanced-backtest \
 ```
 
 Girdi satırları tarih, takım, gol, xG, xA ve şut alanlarını içerir. Özellikler her maçtan önceki maçlarla hesaplanır; hedef maçın kendi xG/golü feature üretimine girmez. Sonuç raporu 1/X/2 ve Alt/Üst 2.5 doğruluğunu ayrı verir.
+
+## Model güvenilirliği ve audit katmanları
+
+- `sportoto.market`: implied probability, vig removal, EV ve closing-line delta.
+- `sportoto.dixon_coles`: xG'den ortak 1/X/2, Alt/Üst, BTTS ve doğru skor posterioru.
+- `sportoto.calibration`: multiclass Brier, log-loss ve reliability bins.
+- `sportoto.identity`: provider takım adı/alias canonicalization.
+- `sportoto.evidence`: kaynaklı, zaman damgalı ve etkisi etiketli kanıt paketleri.
+- `sportoto.availability`: doğrulanmış/beklenen kadro belirsizliğini xG'ye sınırlı ağırlık olarak yansıtır.
+
+Bu modüller bağımsız ve test edilebilirdir; eksik xA/PPDA veya sakatlık verisi varsayımla doldurulmaz.
