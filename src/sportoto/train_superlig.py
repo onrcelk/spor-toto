@@ -117,10 +117,16 @@ def walk_forward_accuracy(df: pd.DataFrame) -> float:
 
 
 def main() -> int:
-    df = build_frame()
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--input", default=INPUT)
+    ap.add_argument("--output", default=OUTPUT)
+    ap.add_argument("--model-out", default=MODEL_OUT)
+    args = ap.parse_args()
+    df = build_frame(args.input, args.output)
     acc = walk_forward_accuracy(df)
     base = float((df["actual_1x2"].to_numpy() == 0).mean())
-    print(f"Training frame: {len(df)} rows -> {OUTPUT}")
+    print(f"Training frame: {len(df)} rows -> {args.output}")
     print(f"Walk-forward accuracy: {acc:.3f} (baseline home={base:.3f}, lift={acc-base:+.3f})")
     # refit on ALL data for production model
     X = df[FEATURE_COLS].to_numpy(dtype=float)
@@ -131,10 +137,10 @@ def main() -> int:
                                            learning_rate=0.05, random_state=42)),
     ])
     clf.fit(X, y)
-    Path(MODEL_OUT).expanduser().parent.mkdir(parents=True, exist_ok=True)
+    Path(args.model_out).expanduser().parent.mkdir(parents=True, exist_ok=True)
     import joblib
-    joblib.dump(clf, str(Path(MODEL_OUT).expanduser()))
-    print(f"Model saved -> {MODEL_OUT}")
+    joblib.dump(clf, str(Path(args.model_out).expanduser()))
+    print(f"Model saved -> {args.model_out}")
     return 0
 
 

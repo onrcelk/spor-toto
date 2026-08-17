@@ -30,9 +30,9 @@ def _is_superlig(home: str, away: str) -> bool:
 
 def build_hybrid(
     list_path: str = "data/current_sportoto_list_2026-08-21.json",
-    history_sl: str = "data/superlig_training_2022_2024.parquet",
-    history_general: str = "data/sportoto_master_training.parquet",
-    model_sl: str = "data/models/superlig_model.joblib",
+    history_sl: str = "data/superlig_training_2022_2026.parquet",
+    history_general: str = "data/sportoto_master_training_2026.parquet",
+    model_sl: str = "data/models/superlig_model_2026.joblib",
     model_general: str = "data/models/sportoto_master_model.joblib",
     output: str = "data/predictions/2026-08-21-predictions_HYBRID.json",
 ) -> dict:

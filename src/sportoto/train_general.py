@@ -16,7 +16,7 @@ from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
-PARQUET = "data/sportoto_master_training.parquet"
+PARQUET = "data/sportoto_master_training_2026.parquet"
 MODEL_OUT = "data/models/sportoto_master_model.joblib"
 FEATURE_COLS = [
     "home_goals_avg", "away_goals_avg", "home_conceded_avg", "away_conceded_avg",
