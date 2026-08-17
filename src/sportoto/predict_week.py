@@ -1,13 +1,10 @@
 """Gerçek hafta listesini tarihsel training verisinden üretilen özelliklerle modele besler.
 
-Bu modül:
-- Kullanıcının verdiği 21-25 Ağu Spor Toto listesini okur.
-- Her takım için training parquet'inden son N maçın ortalamalarını hesaplar
-  (atılan/yenen gol, xG, form puanı).
-- İki takım arasındaki H2H oranlarını hesaplar.
-- Hazır modeli (sportoto_master_model.joblib) yükleyip 15 maçın 1X2 + Alt/Üst
-  tahminini üretir.
-- Tahminleri JSON olarak kaydeder.
+DÜZELTME (2026-08-17): _team_aggregates artık takımın EV+DEPLASMAN tüm maçlarını
+normalize_team_name ile eşleştirip genel gol/güç ortalamasını hesaplıyor. Önceki
+sürümde (a) isim normalize edilmediği için 2025-26 takımları parquet'te bulunamıyor
+(sample_size=0 -> lig ortalaması -> tüm SL maçları aynı X tahmini) ve (b) sadece ev
+maçları filtrelenip yanlış gol ortalaması hesaplanıyordu.
 """
 from __future__ import annotations
 
@@ -29,19 +26,11 @@ DEFAULT_OUTPUT = "data/predictions/2026-08-21-predictions.json"
 LAST_N = 8
 
 
-def _casefold_eq(a: str, b: str) -> bool:
-    return normalize_team_name(a) == normalize_team_name(b)
-
-
-def _team_rows(frame: pd.DataFrame, team: str) -> pd.DataFrame:
-    mask = frame["home_team"].astype(str).str.casefold() == team.casefold()
-    mask |= frame["away_team"].astype(str).str.casefold() == team.casefold()
-    return frame[mask].copy()
-
-
 def _team_aggregates(frame: pd.DataFrame, team: str, before: pd.Timestamp, last_n: int = LAST_N) -> dict:
-    rows = _team_rows(frame, team)
-    rows = rows[rows["kickoff_iso"] < before].copy()
+    team_n = normalize_team_name(team)
+    mask = (frame["home_team"].map(normalize_team_name) == team_n) | \
+           (frame["away_team"].map(normalize_team_name) == team_n)
+    rows = frame[mask & (frame["kickoff_iso"] < before)].copy()
     rows = rows.sort_values("kickoff_iso").tail(last_n)
     if rows.empty:
         return {
@@ -52,45 +41,42 @@ def _team_aggregates(frame: pd.DataFrame, team: str, before: pd.Timestamp, last_
             "elo_diff": 0.0,
             "sample_size": 0,
         }
-    home = rows[rows["home_team"].astype(str).str.casefold() == team.casefold()]
-    away = rows[rows["away_team"].astype(str).str.casefold() == team.casefold()]
-    goals_for_home = home["home_goals_avg"].mean() if not home.empty else np.nan
-    conceded_home = home["home_conceded_avg"].mean() if not home.empty else np.nan
-    xg_home = home["home_xg_avg"].mean() if not home.empty else np.nan
-    form_home = home["home_form_points"].mean() if not home.empty else np.nan
-    goals_for_away = away["away_goals_avg"].mean() if not away.empty else np.nan
-    conceded_away = away["away_conceded_avg"].mean() if not away.empty else np.nan
-    xg_away = away["away_xg_avg"].mean() if not away.empty else np.nan
-    form_away = away["away_form_points"].mean() if not away.empty else np.nan
-    elo_diff = rows["elo_diff"].iloc[-1] if "elo_diff" in rows.columns else 0.0
+    gf, ga, xg, form = [], [], [], []
+    for _, r in rows.iterrows():
+        is_home = normalize_team_name(str(r["home_team"])) == team_n
+        # parquet'te hazır feature'lar: takımın o maç öncesi genel ortalamaları
+        gf.append(float(r["home_goals_avg"]) if is_home else float(r["away_goals_avg"]))
+        ga.append(float(r["away_conceded_avg"]) if is_home else float(r["home_conceded_avg"]))
+        xg.append(float(r["home_xg_avg"]) if is_home else float(r["away_xg_avg"]))
+        form.append(float(r["home_form_points"]) if is_home else float(r["away_form_points"]))
     return {
-        "home_goals_avg": float(np.nanmean([goals_for_home])),
-        "away_goals_avg": float(np.nanmean([goals_for_away])),
-        "home_conceded_avg": float(np.nanmean([conceded_home])),
-        "away_conceded_avg": float(np.nanmean([conceded_away])),
-        "home_xg_avg": float(np.nanmean([xg_home])),
-        "away_xg_avg": float(np.nanmean([xg_away])),
-        "home_form_points": float(np.nanmean([form_home])),
-        "away_form_points": float(np.nanmean([form_away])),
-        "elo_diff": float(elo_diff),
+        "home_goals_avg": float(np.mean(gf)),
+        "away_goals_avg": float(np.mean(ga)),
+        "home_conceded_avg": float(np.mean(ga)),
+        "away_conceded_avg": float(np.mean(gf)),
+        "home_xg_avg": float(np.mean(xg)),
+        "away_xg_avg": float(np.mean(xg)),
+        "home_form_points": float(np.mean(form)),
+        "away_form_points": float(np.mean(form)),
+        "elo_diff": float(rows["elo_diff"].iloc[-1]) if "elo_diff" in rows.columns else 0.0,
         "sample_size": int(len(rows)),
     }
 
 
 def _h2h(frame: pd.DataFrame, home: str, away: str, before: pd.Timestamp) -> dict:
+    hn, an = normalize_team_name(home), normalize_team_name(away)
     mask = (
-        ((frame["home_team"].astype(str).str.casefold() == home.casefold()) &
-         (frame["away_team"].astype(str).str.casefold() == away.casefold()))
-        |
-        ((frame["home_team"].astype(str).str.casefold() == away.casefold()) &
-         (frame["away_team"].astype(str).str.casefold() == home.casefold()))
+        ((frame["home_team"].map(normalize_team_name) == hn) &
+         (frame["away_team"].map(normalize_team_name) == an)) |
+        ((frame["home_team"].map(normalize_team_name) == an) &
+         (frame["away_team"].map(normalize_team_name) == hn))
     )
     sub = frame[mask & (frame["kickoff_iso"] < before)].copy()
     if sub.empty:
         return {"h2h_home_win_rate": 0.5, "h2h_draw_rate": 0.25, "h2h_away_win_rate": 0.25, "h2h_sample": 0}
     home_wins = draws = away_wins = 0
     for _, r in sub.iterrows():
-        rh = str(r["home_team"]).casefold() == home.casefold()
+        rh = normalize_team_name(str(r["home_team"])) == hn
         res = r["actual_1x2"]
         if res == 1:
             draws += 1
@@ -226,7 +212,7 @@ def main() -> int:
     for p in payload["predictions"]:
         print(f"  M{p['match_index']:>2} {p['home_team'][:20]:20} - {p['away_team'][:20]:20} "
               f"=> {p['predicted_1x2']} (conf {p['confidence']}) | O/U {p['predicted_ou']} "
-              f"(O{p['pred_over_2_5']})")
+              f"(O{p['pred_over_2_5']}) | sz={p['features']['home_sample_size']}")
     return 0
 
 
