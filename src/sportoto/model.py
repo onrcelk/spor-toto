@@ -2,7 +2,6 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any
 
 import joblib
 import numpy as np
@@ -10,6 +9,7 @@ from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
+from .dixon_coles import market_probabilities
 from .features import MatchFeatures
 
 
@@ -52,7 +52,6 @@ class MatchModel:
     def fit(self, features: list[list[float]], labels_1x2: list[int], labels_ou: list[int]) -> None:
         x = np.asarray(features, dtype=float)
         y1 = np.asarray(labels_1x2, dtype=int)
-        you = np.asarray(labels_ou, dtype=int)
         self.pipeline.fit(x, y1)
         self.classes_ = self.pipeline.named_steps["clf"].classes_
         self.fitted = True
@@ -67,9 +66,11 @@ class MatchModel:
         home = float(probs[self.classes_ == 0][0]) if np.any(self.classes_ == 0) else 0.0
         draw = float(probs[self.classes_ == 1][0]) if np.any(self.classes_ == 1) else 0.0
         away = float(probs[self.classes_ == 2][0]) if np.any(self.classes_ == 2) else 0.0
-        total_expected = match.home_goals_avg + match.away_goals_avg
-        over = float(np.clip(total_expected / 5.0, 0.05, 0.95))
-        under = 1.0 - over
+        home_xg = match.home_xg_avg if match.home_xg_avg > 0 else match.home_goals_avg
+        away_xg = match.away_xg_avg if match.away_xg_avg > 0 else match.away_goals_avg
+        market = market_probabilities(home_xg, away_xg)
+        over = float(market["over_2.5"])
+        under = float(market["under_2.5"])
         confidence = float(np.clip(max(home, draw, away), 0.0, 1.0))
         predicted_1x2 = '1'
         if draw > home and draw > away:
