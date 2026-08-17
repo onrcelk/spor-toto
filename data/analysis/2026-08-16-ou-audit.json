@@ -1,0 +1,33 @@
+{
+  "source": "https://nsn.li/O90Ck0",
+  "coupon_date": "2026-08-14 16:37",
+  "stake_tl": 50,
+  "total_odds": 823.91,
+  "line": 2.5,
+  "status": "14_resolved_1_pending",
+  "matches": [
+    {"no":1,"match":"Galatasaray-Corum FK","prediction":"over","odds":1.36,"score":"2-2","goals":4,"actual":"over","hit":true,"reason":"Four goals; prediction correct."},
+    {"no":2,"match":"Kasimpasa-Trabzonspor","prediction":"over","odds":1.58,"score":"1-1","goals":2,"actual":"under","hit":false,"reason":"Over relied on attacking quality/opening-match expectation; match stayed at two goals."},
+    {"no":3,"match":"Konyaspor-Rizespor","prediction":"under","odds":1.70,"score":"0-1","goals":1,"actual":"under","hit":true,"reason":"Low-event match; correct."},
+    {"no":4,"match":"Cadiz-Celta Vigo B","prediction":"under","odds":1.61,"score":"0-0","goals":0,"actual":"under","hit":true,"reason":"Correct; this is the Nesine coupon event, not the official Spor Toto match 4."},
+    {"no":5,"match":"Gaziantep-Alanyaspor","prediction":"over","odds":1.68,"score":"1-1","goals":2,"actual":"under","hit":false,"reason":"Two goals only; early chances did not convert into a third goal."},
+    {"no":6,"match":"Genclerbirligi-Fenerbahce","prediction":"over","odds":1.51,"score":"2-1","goals":3,"actual":"over","hit":true,"reason":"Three goals; correct."},
+    {"no":7,"match":"Sevilla-Rayo Vallecano","prediction":"under","odds":1.44,"score":"2-1","goals":3,"actual":"over","hit":false,"reason":"Late goal/penalty events pushed the match over the line; under was too sensitive to late-game variance."},
+    {"no":8,"match":"Arsenal-Manchester City","prediction":"over","odds":1.67,"score":"3-0","goals":3,"actual":"over","hit":true,"reason":"Three goals; correct."},
+    {"no":9,"match":"Racing Santander-Villarreal","prediction":"over","odds":1.59,"score":"2-2","goals":4,"actual":"over","hit":true,"reason":"Four goals; correct."},
+    {"no":10,"match":"Basaksehir-Kocaelispor","prediction":"under","odds":1.71,"score":"2-0","goals":2,"actual":"under","hit":true,"reason":"Correct; two goals."},
+    {"no":11,"match":"Espanyol-Levante","prediction":"under","odds":1.48,"score":"3-0","goals":3,"actual":"over","hit":false,"reason":"Espanyol's early scoring and game control produced three goals; under failed to account for home attacking upside."},
+    {"no":12,"match":"Amed Sportif-Erzurumspor FK","prediction":"under","odds":1.77,"score":"3-0","goals":3,"actual":"over","hit":false,"reason":"Amed scored three; under was invalidated by a one-sided home performance."},
+    {"no":13,"match":"Besiktas-Eyupspor","prediction":"over","odds":1.36,"score":"1-0","goals":1,"actual":"under","hit":false,"reason":"Strong favorite expectation was converted into an over; Beşiktaş won but the match remained low scoring."},
+    {"no":14,"match":"Lens-PSG","prediction":"over","odds":1.51,"score":"1-0","goals":1,"actual":"under","hit":false,"reason":"Lens led early, PSG failed to convert; red-card/game-state noise did not create a second goal."},
+    {"no":15,"match":"Samsunspor-Goztepe","prediction":"under","odds":1.57,"score":null,"goals":null,"actual":null,"hit":null,"reason":"Pending/unverified in the retrieved coupon page."}
+  ],
+  "summary": {"resolved":14,"hits":7,"misses":7,"hit_rate":0.5,"pending":1},
+  "lessons": [
+    "The coupon's actual Alt/Under record was much better documented than the project files suggested.",
+    "Over selections were often driven by favorite quality or expected attacking pressure; that did not guarantee three goals.",
+    "Under selections failed in matches with early home control or late penalties/late goals.",
+    "The Nesine coupon event list is not identical to the official Spor Toto 1-15 list: it contains Cadiz-Celta Vigo B and Samsunspor-Goztepe, so the two lists must remain separate.",
+    "Future Alt/Under records must preserve the exact Nesine event order, odds, source URL, timestamp, prediction, and final status."
+  ]
+}
