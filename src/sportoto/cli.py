@@ -31,6 +31,7 @@ from .predict_week import build_predictions
 from .audit import run_audit
 from .multi_source import fetch_api_sports, fetch_football_data as fetch_football_data_source, fetch_openfootball
 from .odds import fetch_api_sports_odds, load_local_odds, market_vs_model, fetch_fdccouk
+from .value_backtest import run_value_backtest
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -72,6 +73,13 @@ def build_parser() -> argparse.ArgumentParser:
     odds_parser.add_argument("--bookmaker", default="B365", help="bookmaker column prefix (B365, PS, Avg...)")
     odds_parser.add_argument("--output", default="data/live/odds_latest.json")
     odds_parser.add_argument("--no-api", action="store_true", help="Skip API-Sports (use --local-odds)")
+
+    value_parser = subparsers.add_parser("value-backtest", help="Same-season +EV backtest vs real closing odds")
+    value_parser.add_argument("--season", default="2324")
+    value_parser.add_argument("--league", default="T1", help="T1=Turkey, E0=EPL, SP1, D1, I1, F1")
+    value_parser.add_argument("--bookmaker", default="B365")
+    value_parser.add_argument("--stake", type=float, default=1.0)
+    value_parser.add_argument("--all-bets", action="store_true", help="Bet every pick (not only +EV)")
 
     advanced_parser = subparsers.add_parser("advanced-statsbomb", help="Parse StatsBomb Open Data event JSON")
     advanced_parser.add_argument("--url", required=True)
@@ -340,6 +348,15 @@ def main(argv: list[str] | None = None) -> int:
             ev = r["ev"]
             print(f"  {r['home_team'][:16]:16} - {r['away_team'][:16]:16} pick={r['predicted_1x2']} "
                   f"model={r['model_prob']} odds={r['odds']} EV={ev}")
+        return 0
+    if args.command == "value-backtest":
+        res = run_value_backtest(season=args.season, league=args.league,
+                                 bookmaker=args.bookmaker, stake=args.stake,
+                                 only_positive_ev=not args.all_bets)
+        print(f"Value backtest ({res['season']} {res['league']} {res['bookmaker']}):")
+        print(f"  Pencere maç: {res['window_matches']} | Oran eşleşen: {res['odds_matched']}")
+        print(f"  Bahis: {res['bets_placed']} | PnL: {res['pnl']} | ROI: {res['roi_pct']}% | Kazanma: {res['win_rate']}")
+        print(f"  Not: {res['note']}")
         return 0
     if args.command == "audit-results":
         summary = run_audit(args.predictions, args.output_dir, api_date=args.date, use_api_sports=not args.no_api)
