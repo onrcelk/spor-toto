@@ -1,0 +1,21 @@
+{
+  "week": "2026-08-21_to_2026-08-25",
+  "source": "user_image",
+  "matches": [
+    {"match_index":1,"date":"21.08.2026","time":"21:30","home_team":"Erzurumspor FK","away_team":"Galatasaray A.Ş."},
+    {"match_index":2,"date":"22.08.2026","time":"19:00","home_team":"Çaykur Rizespor A.Ş.","away_team":"Samsunspor A.Ş."},
+    {"match_index":3,"date":"22.08.2026","time":"19:00","home_team":"Çorum FK","away_team":"Kasımpaşa A.Ş."},
+    {"match_index":4,"date":"22.08.2026","time":"21:30","home_team":"Fenerbahçe A.Ş.","away_team":"Konyaspor"},
+    {"match_index":5,"date":"23.08.2026","time":"19:00","home_team":"Eyüpspor","away_team":"Gaziantep F.K. A.Ş."},
+    {"match_index":6,"date":"23.08.2026","time":"19:00","home_team":"Trabzonspor A.Ş.","away_team":"Başakşehir FK"},
+    {"match_index":7,"date":"23.08.2026","time":"21:30","home_team":"Alanyaspor","away_team":"Beşiktaş A.Ş."},
+    {"match_index":8,"date":"23.08.2026","time":"21:30","home_team":"Göztepe A.Ş.","away_team":"Gençlerbirliği"},
+    {"match_index":9,"date":"24.08.2026","time":"21:30","home_team":"Kocaelispor","away_team":"Amed Sportif"},
+    {"match_index":10,"date":"22.08.2026","time":"21:30","home_team":"B. Dortmund","away_team":"Bayern Münih"},
+    {"match_index":11,"date":"21.08.2026","time":"21:45","home_team":"Marsilya","away_team":"Strasbourg"},
+    {"match_index":12,"date":"23.08.2026","time":"18:30","home_team":"Newcastle United","away_team":"Liverpool"},
+    {"match_index":13,"date":"21.08.2026","time":"22:00","home_team":"Real Betis","away_team":"Real Sociedad"},
+    {"match_index":14,"date":"23.08.2026","time":"18:00","home_team":"Atlético Madrid","away_team":"Villarreal"},
+    {"match_index":15,"date":"23.08.2026","time":"21:45","home_team":"Torino","away_team":"AC Milan"}
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-08-17T00:00:00+03:00",
+  "api": {
+    "provider": "API-Sports v3",
+    "base_url": "https://v3.football.api-sports.io",
+    "date_queries": {
+      "2026-08-14": "blocked_by_free_plan",
+      "2026-08-15": "blocked_by_free_plan",
+      "2026-08-16": "success"
+    },
+    "free_plan_message": "Free plans do not have access to this date, try from 2026-08-16 to 2026-08-18."
+  },
+  "matches": [
+    {"date":"2026-08-14","match":"Galatasaray-Corum FK","score":"2-2","result":"X","source":"local multi-source final audit","api_status":"not_available_free_plan"},
+    {"date":"2026-08-15","match":"Kasimpasa-Trabzonspor","score":"1-1","result":"X","source":"local multi-source final audit","api_status":"not_available_free_plan"},
+    {"date":"2026-08-15","match":"Konyaspor-Rizespor","score":"0-1","result":"2","source":"local multi-source final audit","api_status":"not_available_free_plan"},
+    {"date":"2026-08-15","match":"Gaziantep-Alanyaspor","score":"1-1","result":"X","source":"local multi-source final audit","api_status":"not_available_free_plan"},
+    {"date":"2026-08-15","match":"Genclerbirligi-Fenerbahce","score":"2-1","result":"1","source":"local multi-source final audit","api_status":"not_available_free_plan"},
+    {"date":"2026-08-16","match":"Basaksehir-Kocaelispor","fixture_id":1584368,"score":"2-0","result":"1","status":"FT","events":["14 Christopher Operi goal","31 Tayfur Bingöl yellow","51 Abbosbek Fayzullaev yellow","72 Eldor Shomurodov goal","81 Tanguy Zoukrou yellow","90 Ömer Ali Şahiner yellow"],"source":"API-Sports"},
+    {"date":"2026-08-16","match":"Amed-Erzurumspor FK","fixture_id":1584367,"score":"3-0","result":"1","status":"FT","source":"API-Sports"},
+    {"date":"2026-08-16","match":"Besiktas-Eyupspor","fixture_id":1584369,"score":"1-0","result":"1","status":"FT","source":"API-Sports"},
+    {"date":"2026-08-16","match":"Arsenal-Manchester City","fixture_id":1582365,"score":"3-0","result":"1","status":"FT","events":["1 Riccardo Calafiori goal","24 Phil Foden yellow","28 Kai Havertz goal","38 Riccardo Calafiori yellow","48 Martin Ødegaard goal","53 Joško Gvardiol yellow","84 Martin Ødegaard yellow"],"source":"API-Sports"},
+    {"date":"2026-08-16","match":"Lens-Paris Saint Germain","fixture_id":1546791,"score":"1-0","result":"1","status":"FT","source":"API-Sports + Flashscore + 365Scores + FotMob"},
+    {"date":"2026-08-16","match":"Sevilla-Rayo Vallecano","score":"2-1","result":"1","source":"local multi-source final audit","api_status":"not_found_in_target_extract"},
+    {"date":"2026-08-16","match":"Racing Santander-Villarreal","fixture_id":1570339,"score":"2-2","result":"X","status":"FT","events":["21 A. Martin penalty goal","34 S. Martinez goal","45 G. Puerta yellow","45 P. Gueye goal","45 N. Pepe goal","48 J. Foyth yellow","62 J. Lopez yellow","72 P. Gueye yellow","75 P. Ramon yellow","87 S. Mourino yellow","90 C. Romero yellow"],"source":"API-Sports"},
+    {"date":"2026-08-16","match":"Espanyol-Levante","fixture_id":1570338,"score":"3-0","result":"1","status":"FT","events":["5 R. Fernandez Jaen goal","37 U. Gonzalez yellow","40 R. Fernandez Jaen goal","63 A. Calatrava yellow","68 J. Hernandez yellow","80 T. Dolan goal"],"source":"API-Sports"},
+    {"date":"2026-08-16","match":"Celta Vigo-Osasuna","score":null,"result":null,"status":"postponed_or_unverified","source":"local record"}
+  ],
+  "notes": [
+    "API-Sports Free plan does not expose 14-15 August historical date queries.",
+    "16 August target fixtures were found and final scores verified by API-Sports.",
+    "The API returned HTTP 429 while requesting a later events call; event details are therefore recorded only for successful event calls.",
+    "Celta Vigo-Osasuna remains postponed/unverified and is not counted as a played match."
+  ]
+}

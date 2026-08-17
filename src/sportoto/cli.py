@@ -12,7 +12,9 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 from .dataset import evaluate_next_week, refresh_news_memory, refresh_sportoto_memory
@@ -23,6 +25,7 @@ from .current_list import save_current_list
 from .coupon import CouponRules, CouponResult, MatchPref, format_coupon, generate_coupon, apply_filter_by_surprise, apply_filter_by_draws, apply_filter_by_streak, filter_segment
 from .live_monitor import collect_live
 from .next_week import build_next_week_report
+from .multi_source import fetch_api_sports, fetch_football_data as fetch_football_data_source, fetch_openfootball
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -45,6 +48,13 @@ def build_parser() -> argparse.ArgumentParser:
     live_parser = subparsers.add_parser("collect-live", help="Read-only match-day snapshots")
     live_parser.add_argument("--output-dir", default="data/live")
     live_parser.add_argument("--no-tff", action="store_true", help="Skip TFF result snapshot")
+
+    sources_parser = subparsers.add_parser("refresh-sources", help="Refresh configured football data sources")
+    sources_parser.add_argument("--date", default=date.today().isoformat())
+    sources_parser.add_argument("--output", default="data/live/multi_source/latest.json")
+    sources_parser.add_argument("--openfootball-url", default=None)
+    sources_parser.add_argument("--no-api-sports", action="store_true")
+    sources_parser.add_argument("--no-football-data", action="store_true")
 
     next_parser = subparsers.add_parser("analyze-next-week", help="Build recent team-form report")
     next_parser.add_argument("--matches", default="data/current_sportoto_list.json")
@@ -87,6 +97,17 @@ def _load_predictions(path: str) -> list[dict]:
     if not isinstance(data, list):
         raise ValueError("Predictions JSON must be a list or contain a list under 'predictions'/'matches'")
     return data
+
+
+def _load_dotenv(path: Path = Path(".env")) -> None:
+    if not path.exists():
+        return
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        os.environ.setdefault(key.strip(), value.strip().strip('"').strip("'"))
 
 
 def _normalize_predictions(predictions: list[dict]) -> list[dict]:
@@ -175,6 +196,32 @@ def main(argv: list[str] | None = None) -> int:
         result = collect_live(Path(args.output_dir).expanduser(), include_tff=not args.no_tff)
         print(json.dumps(result, ensure_ascii=False))
         return 0 if any("error" not in value for value in result["sources"].values()) else 1
+    if args.command == "refresh-sources":
+        _load_dotenv()
+        report = {"fetched_at": datetime.now(timezone.utc).isoformat(), "date": args.date, "sources": {}}
+        if not args.no_api_sports:
+            try:
+                rows = fetch_api_sports(args.date)
+                report["sources"]["api-sports"] = {"count": len(rows), "matches": [row.to_dict() for row in rows]}
+            except Exception as exc:
+                report["sources"]["api-sports"] = {"error": str(exc), "count": 0}
+        if not args.no_football_data:
+            try:
+                rows = fetch_football_data_source()
+                report["sources"]["football-data.org"] = {"count": len(rows), "matches": [row.to_dict() for row in rows]}
+            except Exception as exc:
+                report["sources"]["football-data.org"] = {"error": str(exc), "count": 0}
+        if args.openfootball_url:
+            try:
+                rows = fetch_openfootball(args.openfootball_url)
+                report["sources"]["openfootball"] = {"count": len(rows), "matches": [row.to_dict() for row in rows]}
+            except Exception as exc:
+                report["sources"]["openfootball"] = {"error": str(exc), "count": 0}
+        output = Path(args.output).expanduser()
+        output.parent.mkdir(parents=True, exist_ok=True)
+        output.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        print(json.dumps({"output": str(output), "sources": {k: v.get("count", 0) for k, v in report["sources"].items()}}, ensure_ascii=False))
+        return 0 if any(v.get("count", 0) > 0 for v in report["sources"].values()) else 1
     if args.command == "analyze-next-week":
         result = build_next_week_report(args.matches, args.history, args.output, args.last_n)
         print(f"Next-week report: {args.output}")
