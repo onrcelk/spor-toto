@@ -1,0 +1,17 @@
+{
+  "source":"user_screenshot",
+  "source_image":"/root/.hermes/cache/images/img_8ecf366f9336.jpg",
+  "status":"played_coupon_ours",
+  "total_columns":58,
+  "main_option_sets":["1X","X2","1X","X2","2","1X2","1X2","1","1X","X2","X2","1X","X2","1X2","1X"],
+  "displayed_scope":"screenshot shows a partial/listed view, not the complete 58 explicit rows",
+  "visible_column_rows":"1-21 visible in the supplied screenshot",
+  "displayed_match_state":{"correct_count":9,"wrong_count":4},
+  "verification":{
+    "total_58_columns":"confirmed by screenshot header",
+    "main_option_sets":"confirmed by screenshot header",
+    "full_explicit_58_column_list":"not visible in this screenshot",
+    "displayed_9_correct_4_wrong":"screenshot state only; not treated as final audit without final results"
+  },
+  "note":"This is our played coupon and must not be merged with the separate 28-column example coupon."
+}
