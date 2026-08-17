@@ -22,6 +22,7 @@ from .model import MatchModel
 from .train import generate_synthetic_training_records, train_model
 from .real_training import build_training_frame, fetch_football_data
 from .current_list import save_current_list
+from .advanced_analytics import fetch_statsbomb_events, parse_statsbomb_events
 from .coupon import CouponRules, CouponResult, MatchPref, format_coupon, generate_coupon, apply_filter_by_surprise, apply_filter_by_draws, apply_filter_by_streak, filter_segment
 from .live_monitor import collect_live
 from .next_week import build_next_week_report
@@ -55,6 +56,10 @@ def build_parser() -> argparse.ArgumentParser:
     sources_parser.add_argument("--openfootball-url", default=None)
     sources_parser.add_argument("--no-api-sports", action="store_true")
     sources_parser.add_argument("--no-football-data", action="store_true")
+
+    advanced_parser = subparsers.add_parser("advanced-statsbomb", help="Parse StatsBomb Open Data event JSON")
+    advanced_parser.add_argument("--url", required=True)
+    advanced_parser.add_argument("--output", default="data/analysis/statsbomb_metrics.json")
 
     next_parser = subparsers.add_parser("analyze-next-week", help="Build recent team-form report")
     next_parser.add_argument("--matches", default="data/current_sportoto_list.json")
@@ -222,6 +227,25 @@ def main(argv: list[str] | None = None) -> int:
         output.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(json.dumps({"output": str(output), "sources": {k: v.get("count", 0) for k, v in report["sources"].items()}}, ensure_ascii=False))
         return 0 if any(v.get("count", 0) > 0 for v in report["sources"].values()) else 1
+    if args.command == "advanced-statsbomb":
+        events = fetch_statsbomb_events(args.url)
+        metrics = parse_statsbomb_events(events)
+        output = Path(args.output).expanduser()
+        output.parent.mkdir(parents=True, exist_ok=True)
+        payload = {
+            "source": "StatsBomb Open Data",
+            "url": args.url,
+            "event_count": metrics.event_count,
+            "xg_by_team": metrics.xg_by_team,
+            "xa_by_team": metrics.xa_by_team,
+            "ppda_by_team": metrics.ppda_by_team,
+            "key_passes_by_team": metrics.key_passes_by_team,
+            "defensive_actions_by_team": metrics.defensive_actions_by_team,
+            "shots": [shot.__dict__ for shot in metrics.shots],
+        }
+        output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        print(json.dumps({"output": str(output), "events": metrics.event_count, "shots": len(metrics.shots), "xg": metrics.xg_by_team}, ensure_ascii=False))
+        return 0
     if args.command == "analyze-next-week":
         result = build_next_week_report(args.matches, args.history, args.output, args.last_n)
         print(f"Next-week report: {args.output}")

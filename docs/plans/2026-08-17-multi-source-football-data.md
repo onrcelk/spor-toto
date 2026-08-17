@@ -64,3 +64,13 @@ Acceptance criteria:
 - Real API calls prove API-Sports and football-data.org are reachable.
 - Open Football sample URL parses successfully.
 - No `.env` or token appears in tracked files or command output.
+
+## Advanced analytics extension
+
+**Goal:** Parse StatsBomb Open Data event JSON without claiming unavailable metrics.
+
+- `statsbomb_xg` is summed from shot events by team.
+- Shot coordinates, outcome, body part, technique and freeze-frame are retained.
+- Key passes/assists are counted where event fields explicitly provide them.
+- `xA` and exact PPDA remain `None` unless the source payload supplies a directly attributable value; no proxy is silently labeled as official xA/PPDA.
+- FBref/Understat remain optional research adapters because they are web sources without official APIs and require terms/rate-limit review.

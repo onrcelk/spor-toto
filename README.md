@@ -21,3 +21,15 @@ uv run python -m sportoto.cli refresh-sources \
 ```
 
 Çıktı her kaynağın `count`, normalize maç kayıtları, kaynak kimliği, durum, sonuç ve Alt/Üst 2.5 alanlarını içerir. API anahtarları rapora yazılmaz.
+
+## Gelişmiş analitik
+
+StatsBomb Open Data olay JSON'larını parse etmek için:
+
+```bash
+uv run python -m sportoto.cli advanced-statsbomb \
+  --url https://raw.githubusercontent.com/statsbomb/open-data/master/data/events/8650.json \
+  --output data/analysis/statsbomb-8650.json
+```
+
+Çıktı; takım bazında StatsBomb xG toplamı, şut koordinatları, şut sonucu, freeze-frame sayısı, açıkça işaretlenmiş key pass ve defansif aksiyonları içerir. StatsBomb payload'ında doğrudan bulunmayan xA ve exact PPDA boş bırakılır; proxy metrikler resmi xA/PPDA diye etiketlenmez. StatsBomb verisi araştırma/analitik koşulları ve kaynak gösterimiyle kullanılmalıdır.

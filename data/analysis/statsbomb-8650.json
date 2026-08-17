@@ -1,0 +1,384 @@
+{
+  "source": "StatsBomb Open Data",
+  "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/events/8650.json",
+  "event_count": 3589,
+  "xg_by_team": {
+    "Belgium": 0.40525613299999996,
+    "Brazil": 2.6091956661999998
+  },
+  "xa_by_team": {},
+  "ppda_by_team": {},
+  "key_passes_by_team": {
+    "Brazil": 21,
+    "Belgium": 4
+  },
+  "defensive_actions_by_team": {
+    "Belgium": 432,
+    "Brazil": 242
+  },
+  "shots": [
+    {
+      "team": "Belgium",
+      "player": "Kevin De Bruyne",
+      "x": 91.0,
+      "y": 51.0,
+      "xg": 0.020460658,
+      "outcome": "Off T",
+      "body_part": "Right Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 12
+    },
+    {
+      "team": "Brazil",
+      "player": "Thiago Emiliano da Silva",
+      "x": 115.0,
+      "y": 39.0,
+      "xg": 0.27402094,
+      "outcome": "Post",
+      "body_part": "Right Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 12
+    },
+    {
+      "team": "Belgium",
+      "player": "Eden Hazard",
+      "x": 106.0,
+      "y": 31.0,
+      "xg": 0.06590014,
+      "outcome": "Blocked",
+      "body_part": "Right Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 10
+    },
+    {
+      "team": "Belgium",
+      "player": "Nacer Chadli",
+      "x": 92.0,
+      "y": 29.0,
+      "xg": 0.022908047,
+      "outcome": "Off T",
+      "body_part": "Right Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 14
+    },
+    {
+      "team": "Brazil",
+      "player": "José Paulo Bezzera Maciel Júnior",
+      "x": 109.0,
+      "y": 46.0,
+      "xg": 0.17421605,
+      "outcome": "Blocked",
+      "body_part": "Right Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 12
+    },
+    {
+      "team": "Brazil",
+      "player": "José Paulo Bezzera Maciel Júnior",
+      "x": 111.0,
+      "y": 37.0,
+      "xg": 0.20371178,
+      "outcome": "Wayward",
+      "body_part": "Right Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 13
+    },
+    {
+      "team": "Belgium",
+      "player": "Marouane Fellaini-Bakkioui",
+      "x": 98.0,
+      "y": 38.0,
+      "xg": 0.078730114,
+      "outcome": "Blocked",
+      "body_part": "Right Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 11
+    },
+    {
+      "team": "Brazil",
+      "player": "Gabriel Fernando de Jesus",
+      "x": 115.0,
+      "y": 37.0,
+      "xg": 0.27625608,
+      "outcome": "Blocked",
+      "body_part": "Left Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 11
+    },
+    {
+      "team": "Brazil",
+      "player": "Philippe Coutinho Correia",
+      "x": 96.0,
+      "y": 33.0,
+      "xg": 0.06166237,
+      "outcome": "Saved",
+      "body_part": "Right Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 14
+    },
+    {
+      "team": "Brazil",
+      "player": "Marcelo Vieira da Silva Júnior",
+      "x": 99.0,
+      "y": 18.0,
+      "xg": 0.011753061,
+      "outcome": "Saved",
+      "body_part": "Left Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 13
+    },
+    {
+      "team": "Brazil",
+      "player": "Fernando Luiz Roza",
+      "x": 103.0,
+      "y": 42.0,
+      "xg": 0.06566521,
+      "outcome": "Blocked",
+      "body_part": "Right Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 17
+    },
+    {
+      "team": "Brazil",
+      "player": "Neymar da Silva Santos Junior",
+      "x": 96.0,
+      "y": 20.0,
+      "xg": 0.009290484,
+      "outcome": "Blocked",
+      "body_part": "Right Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 17
+    },
+    {
+      "team": "Belgium",
+      "player": "Kevin De Bruyne",
+      "x": 102.0,
+      "y": 54.0,
+      "xg": 0.036171924,
+      "outcome": "Goal",
+      "body_part": "Right Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 10
+    },
+    {
+      "team": "Brazil",
+      "player": "Gabriel Fernando de Jesus",
+      "x": 110.0,
+      "y": 45.0,
+      "xg": 0.24829954,
+      "outcome": "Off T",
+      "body_part": "Head",
+      "technique": "Normal",
+      "freeze_frame_count": 11
+    },
+    {
+      "team": "Brazil",
+      "player": "Philippe Coutinho Correia",
+      "x": 98.0,
+      "y": 21.0,
+      "xg": 0.010265937,
+      "outcome": "Saved",
+      "body_part": "Right Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 16
+    },
+    {
+      "team": "Belgium",
+      "player": "Kevin De Bruyne",
+      "x": 99.0,
+      "y": 20.0,
+      "xg": 0.013607446,
+      "outcome": "Saved",
+      "body_part": "Right Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 18
+    },
+    {
+      "team": "Belgium",
+      "player": "Vincent Kompany",
+      "x": 115.0,
+      "y": 32.0,
+      "xg": 0.05695575,
+      "outcome": "Saved",
+      "body_part": "Right Foot",
+      "technique": "Backheel",
+      "freeze_frame_count": 16
+    },
+    {
+      "team": "Brazil",
+      "player": "Philippe Coutinho Correia",
+      "x": 97.0,
+      "y": 27.0,
+      "xg": 0.032326028,
+      "outcome": "Blocked",
+      "body_part": "Right Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 13
+    },
+    {
+      "team": "Brazil",
+      "player": "José Paulo Bezzera Maciel Júnior",
+      "x": 117.0,
+      "y": 51.0,
+      "xg": 0.035845775,
+      "outcome": "Saved",
+      "body_part": "Right Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 7
+    },
+    {
+      "team": "Belgium",
+      "player": "Eden Hazard",
+      "x": 108.0,
+      "y": 27.0,
+      "xg": 0.110522054,
+      "outcome": "Off T",
+      "body_part": "Left Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 7
+    },
+    {
+      "team": "Brazil",
+      "player": "Douglas Costa de Souza",
+      "x": 112.0,
+      "y": 58.0,
+      "xg": 0.011885792,
+      "outcome": "Saved",
+      "body_part": "Right Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 12
+    },
+    {
+      "team": "Brazil",
+      "player": "Philippe Coutinho Correia",
+      "x": 98.0,
+      "y": 36.0,
+      "xg": 0.041887954,
+      "outcome": "Blocked",
+      "body_part": "Right Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 13
+    },
+    {
+      "team": "Brazil",
+      "player": "Douglas Costa de Souza",
+      "x": 91.0,
+      "y": 58.0,
+      "xg": 0.0066976612,
+      "outcome": "Blocked",
+      "body_part": "Left Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 12
+    },
+    {
+      "team": "Brazil",
+      "player": "Douglas Costa de Souza",
+      "x": 96.0,
+      "y": 56.0,
+      "xg": 0.02142523,
+      "outcome": "Saved",
+      "body_part": "Left Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 14
+    },
+    {
+      "team": "Brazil",
+      "player": "Douglas Costa de Souza",
+      "x": 110.0,
+      "y": 58.0,
+      "xg": 0.014297066,
+      "outcome": "Saved",
+      "body_part": "Right Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 11
+    },
+    {
+      "team": "Brazil",
+      "player": "Neymar da Silva Santos Junior",
+      "x": 109.0,
+      "y": 45.0,
+      "xg": 0.1545206,
+      "outcome": "Blocked",
+      "body_part": "Right Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 11
+    },
+    {
+      "team": "Brazil",
+      "player": "Renato Soares de Oliveira Augusto",
+      "x": 111.0,
+      "y": 42.0,
+      "xg": 0.22554597,
+      "outcome": "Goal",
+      "body_part": "Head",
+      "technique": "Normal",
+      "freeze_frame_count": 12
+    },
+    {
+      "team": "Brazil",
+      "player": "Roberto Firmino Barbosa de Oliveira",
+      "x": 111.0,
+      "y": 30.0,
+      "xg": 0.080149576,
+      "outcome": "Off T",
+      "body_part": "Left Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 11
+    },
+    {
+      "team": "Brazil",
+      "player": "Renato Soares de Oliveira Augusto",
+      "x": 102.0,
+      "y": 42.0,
+      "xg": 0.14648527,
+      "outcome": "Off T",
+      "body_part": "Right Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 10
+    },
+    {
+      "team": "Brazil",
+      "player": "Philippe Coutinho Correia",
+      "x": 107.0,
+      "y": 33.0,
+      "xg": 0.14369768,
+      "outcome": "Off T",
+      "body_part": "Right Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 11
+    },
+    {
+      "team": "Brazil",
+      "player": "Philippe Coutinho Correia",
+      "x": 96.0,
+      "y": 37.0,
+      "xg": 0.047560986,
+      "outcome": "Blocked",
+      "body_part": "Right Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 16
+    },
+    {
+      "team": "Brazil",
+      "player": "Neymar da Silva Santos Junior",
+      "x": 98.0,
+      "y": 39.0,
+      "xg": 0.047588326,
+      "outcome": "Saved",
+      "body_part": "Right Foot",
+      "technique": "Normal",
+      "freeze_frame_count": 16
+    },
+    {
+      "team": "Brazil",
+      "player": "Roberto Firmino Barbosa de Oliveira",
+      "x": 115.0,
+      "y": 42.0,
+      "xg": 0.2641403,
+      "outcome": "Off T",
+      "body_part": "Head",
+      "technique": "Normal",
+      "freeze_frame_count": 17
+    }
+  ]
+}
