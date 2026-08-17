@@ -125,6 +125,49 @@ def load_local_odds(path: str) -> list[MatchOdds]:
     return out
 
 
+_FDCOUK_BASE = "https://www.football-data.co.uk/mmz4281"
+
+
+def fetch_fdccouk(season: str = "2324", league: str = "T1",
+                  bookmaker: str = "B365") -> list[MatchOdds]:
+    """Fetch real closing 1X2 + O/U odds from football-data.co.uk (FREE, no key).
+
+    season: "2324" (2023-24), "2223", ...  league: "T1"=Turkey SL,
+    "E0"=EPL, "SP1"=La Liga, "D1"=Bundesliga, "I1"=Serie A, "F1"=Ligue1.
+    bookmaker: column prefix ("B365", "PS", "WH", "VCH", "Avg"...).
+    The site publishes end-of-day (closing) odds per match; we treat them as
+    both opening & closing (single snapshot). O/U columns are "<bm>>2.5"/"<bm><2.5".
+    """
+    url = f"{_FDCOUK_BASE}/{season}/{league}.csv"
+    import csv, io
+    with urllib.request.urlopen(url, timeout=30) as resp:
+        text = resp.read().decode("utf-8", "replace")
+    reader = csv.DictReader(io.StringIO(text))
+    h_col, d_col, a_col = f"{bookmaker}H", f"{bookmaker}D", f"{bookmaker}A"
+    ou_over, ou_under = f"{bookmaker}>2.5", f"{bookmaker}<2.5"
+    out = []
+    for row in reader:
+        try:
+            h = float(row.get(h_col) or row.get("AvgH"))
+            d = float(row.get(d_col) or row.get("AvgD"))
+            a = float(row.get(a_col) or row.get("AvgA"))
+        except (TypeError, ValueError):
+            continue
+        one_x_two = {"1": h, "X": d, "2": a}
+        ou = None
+        try:
+            ou = {"over": float(row[ou_over]), "under": float(row[ou_under])}
+        except (KeyError, TypeError, ValueError):
+            ou = None
+        out.append(MatchOdds(
+            source="football-data.co.uk", home_team=row.get("HomeTeam", ""),
+            away_team=row.get("AwayTeam", ""), bookmaker=bookmaker,
+            opening_1x2=one_x_two, closing_1x2=dict(one_x_two),
+            opening_ou=ou, closing_ou=ou, fetched_at=_now(),
+        ))
+    return out
+
+
 def market_vs_model(odds: list[MatchOdds], predictions: list[dict]) -> list[dict]:
     """Join real odds with model predictions and compute EV + closing-line delta."""
     pred_by_team = {}

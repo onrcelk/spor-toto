@@ -30,7 +30,7 @@ from .next_week import build_next_week_report
 from .predict_week import build_predictions
 from .audit import run_audit
 from .multi_source import fetch_api_sports, fetch_football_data as fetch_football_data_source, fetch_openfootball
-from .odds import fetch_api_sports_odds, load_local_odds, market_vs_model
+from .odds import fetch_api_sports_odds, load_local_odds, market_vs_model, fetch_fdccouk
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -65,6 +65,11 @@ def build_parser() -> argparse.ArgumentParser:
     odds_parser.add_argument("--date", default=date.today().isoformat())
     odds_parser.add_argument("--predictions", default="data/predictions/2026-08-21-predictions_HYBRID.json")
     odds_parser.add_argument("--local-odds", default=None, help="Optional local odds JSON (fixture/cache)")
+    odds_parser.add_argument("--source", default="fdccouk", choices=["fdccouk", "api-sports", "local"],
+                              help="Odds source: fdccouk=football-data.co.uk (FREE,no key), api-sports (paid), local")
+    odds_parser.add_argument("--season", default="2324", help="football-data.co.uk season (e.g. 2324)")
+    odds_parser.add_argument("--league", default="T1", help="football-data.co.uk league (T1=Turkey, E0=EPL, SP1, D1, I1, F1)")
+    odds_parser.add_argument("--bookmaker", default="B365", help="bookmaker column prefix (B365, PS, Avg...)")
     odds_parser.add_argument("--output", default="data/live/odds_latest.json")
     odds_parser.add_argument("--no-api", action="store_true", help="Skip API-Sports (use --local-odds)")
 
@@ -306,25 +311,31 @@ def main(argv: list[str] | None = None) -> int:
         preds = json.loads(Path(args.predictions).expanduser().read_text(encoding="utf-8"))
         preds = preds["predictions"] if isinstance(preds, dict) else preds
         odds = []
-        if args.local_odds:
+        if args.source == "local" or args.local_odds:
             odds = load_local_odds(args.local_odds)
             src_note = f"local:{args.local_odds}"
-        elif not args.no_api:
+        elif args.source == "fdccouk":
+            try:
+                odds = fetch_fdccouk(args.season, args.league, args.bookmaker)
+                src_note = f"fdccouk:{args.league}-{args.season}-{args.bookmaker}"
+            except Exception as exc:
+                print(f"football-data.co.uk erişilemedi: {exc}", file=sys.stderr)
+                return 1
+        elif args.source == "api-sports" and not args.no_api:
             try:
                 odds = fetch_api_sports_odds(args.date)
                 src_note = "api-sports"
             except Exception as exc:
                 print(f"API-Sports odds erişilemedi (muhtemelen Free plan): {exc}", file=sys.stderr)
-                print("Çözüm: --local-odds ile yerel oran JSON'ı verin veya ücretli API anahtarı kullanın.", file=sys.stderr)
                 return 1
         else:
-            print("--no-api verildi ama --local-odds yok; oran kaynağı belirtin.", file=sys.stderr)
+            print("Oran kaynağı belirtin: --source fdccouk|local|api-sports", file=sys.stderr)
             return 2
         joined = market_vs_model(odds, preds)
         out = Path(args.output).expanduser()
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(json.dumps({"source": src_note, "compared": joined}, ensure_ascii=False, indent=2), encoding="utf-8")
-        print(f"Oran karşılaştırması: {len(joined)} maç -> {out}")
+        print(f"Oran karşılaştırması: {len(joined)} maç -> {out} (kaynak: {src_note})")
         for r in joined:
             ev = r["ev"]
             print(f"  {r['home_team'][:16]:16} - {r['away_team'][:16]:16} pick={r['predicted_1x2']} "
