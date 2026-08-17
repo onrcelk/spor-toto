@@ -27,6 +27,7 @@ from .advanced_pipeline import poisson_backtest
 from .coupon import CouponRules, CouponResult, MatchPref, format_coupon, generate_coupon, apply_filter_by_surprise, apply_filter_by_draws, apply_filter_by_streak, filter_segment
 from .live_monitor import collect_live
 from .next_week import build_next_week_report
+from .predict_week import build_predictions
 from .multi_source import fetch_api_sports, fetch_football_data as fetch_football_data_source, fetch_openfootball
 
 
@@ -72,6 +73,13 @@ def build_parser() -> argparse.ArgumentParser:
     next_parser.add_argument("--history", default="data/sportoto_master_training.parquet")
     next_parser.add_argument("--output", default="data/next_week_analysis.json")
     next_parser.add_argument("--last-n", type=int, default=5)
+
+    week_parser = subparsers.add_parser("predict-week", help="Predict the current 15-match Spor Toto list from historical training data")
+    week_parser.add_argument("--list", default="data/current_sportoto_list_2026-08-21.json")
+    week_parser.add_argument("--history", default="data/sportoto_master_training.parquet")
+    week_parser.add_argument("--model", default="data/models/sportoto_master_model.joblib")
+    week_parser.add_argument("--output", default="data/predictions/2026-08-21-predictions.json")
+    week_parser.add_argument("--last-n", type=int, default=8)
 
     train_parser = subparsers.add_parser("train", help="Train prediction model")
     train_parser.add_argument("--model-path", default="~/.sportoto/models/match_model.joblib")
@@ -269,6 +277,14 @@ def main(argv: list[str] | None = None) -> int:
         result = build_next_week_report(args.matches, args.history, args.output, args.last_n)
         print(f"Next-week report: {args.output}")
         print(f"Matches: {result['match_count']}")
+        return 0
+    if args.command == "predict-week":
+        payload = build_predictions(args.list, args.history, args.model, args.output, args.last_n)
+        print(f"Predictions: {payload['match_count']} matches -> {args.output}")
+        for p in payload["predictions"]:
+            print(f"  M{p['match_index']:>2} {p['home_team'][:20]:20} - {p['away_team'][:20]:20} "
+                  f"=> {p['predicted_1x2']} (conf {p['confidence']}) | O/U {p['predicted_ou']} "
+                  f"(O {p['pred_over_2_5']})")
         return 0
     if args.command == "train":
         if args.real:

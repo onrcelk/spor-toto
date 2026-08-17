@@ -1,0 +1,46 @@
+{
+  "report_generated_at": "2026-08-17T08:00:00+00:00",
+  "week": "2026-08-21_to_2026-08-25",
+  "list_source": "data/current_sportoto_list_2026-08-21.json (user_image, 15 matches)",
+  "model": "data/models/sportoto_master_model.joblib",
+  "data_coverage": {
+    "training_rows": 4996,
+    "leagues": ["Sport Toto mixed (TR + European blended)"],
+    "date_range": "2019-01-09 .. 2026-11-01",
+    "teams_with_zero_history": ["Amed Sportif", "Atletico Madrid", "Kasimpasa A.S.", "Corum FK"],
+    "note": "4 of 30 teams have no historical matches in training frame; filled with league average."
+  },
+  "api_status": {
+    "api_sports": "BLOCKED: Free plan only allows dates 2026-08-16..2026-08-18. Week 2026-08-21..25 unavailable now.",
+    "football_data_org": "WORKING but returns only today's (2026-08-17) fixtures, not future week.",
+    "official_sportoto_scraper": "returned 0 matches (current list not published yet on official site).",
+    "conclusion": "Live odds/results for this week cannot be fetched yet; predictions use historical training data only."
+  },
+  "model_calibration_holdout": {
+    "method": "retrain on earliest 4196 rows, evaluate on last 800 rows",
+    "accuracy": 0.412,
+    "random_baseline_accuracy": 0.333,
+    "brier_score": 0.6685,
+    "log_loss": 1.1103,
+    "true_1x2_dist": {"1_home": 0.454, "X_draw": 0.26, "2_away": 0.286},
+    "predicted_1x2_dist": {"1_home": 0.631, "X_draw": 0.045, "2_away": 0.324},
+    "diagnosis": "Model is home-biased and severely under-predicts draws (true 26% vs predicted 4.5%). For Spor Toto (many draws), this is a material weakness. Confidence values are low (~0.42-0.46) across the board -> treat as low-confidence."
+  },
+  "this_week_predictions_summary": {
+    "pick_distribution": {"1": 14, "X": 0, "2": 1},
+    "over_under_distribution": {"over": 10, "under": 5},
+    "avg_confidence": 0.458,
+    "lowest_confidence_matches": [
+      {"match_index": 1, "home": "Erzurumspor FK", "away": "Galatasaray A.S.", "pick": "2", "confidence": 0.411},
+      {"match_index": 12, "home": "Newcastle United", "away": "Liverpool", "pick": "1", "confidence": 0.423},
+      {"match_index": 5, "home": "Eyupspor", "away": "Gaziantep F.K. A.S.", "pick": "1", "confidence": 0.424},
+      {"match_index": 9, "home": "Kocaelispor", "away": "Amed Sportif", "pick": "1", "confidence": 0.429}
+    ]
+  },
+  "caveats": [
+    "Predictions are LOW CONFIDENCE and model is draw-blind; do not treat as betting advice.",
+    "No live odds/results available for this week yet (API-Sports Free plan limitation).",
+    "4 teams have zero history; their features default to league average.",
+    "Re-run with API-Sports paid plan or after official list publishes to enrich with real odds/EV."
+  ]
+}

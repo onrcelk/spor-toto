@@ -1,0 +1,67 @@
+{
+  "fetched_at": "2026-08-17T07:42:13.114104+00:00",
+  "date": "2026-08-22",
+  "sources": {
+    "api-sports": {
+      "count": 0,
+      "matches": []
+    },
+    "football-data.org": {
+      "count": 4,
+      "matches": [
+        {
+          "source": "football-data.org",
+          "source_match_id": "561772",
+          "home_team": "Cardiff City FC",
+          "away_team": "Wrexham AFC",
+          "match_date": "2026-08-17",
+          "home_goals": null,
+          "away_goals": null,
+          "status": "SCHEDULED",
+          "over_under": null,
+          "fetched_at": "2026-08-17T07:42:14.963032+00:00",
+          "result": null
+        },
+        {
+          "source": "football-data.org",
+          "source_match_id": "564635",
+          "home_team": "RC Deportivo La Coruña",
+          "away_team": "Elche CF",
+          "match_date": "2026-08-17",
+          "home_goals": null,
+          "away_goals": null,
+          "status": "SCHEDULED",
+          "over_under": null,
+          "fetched_at": "2026-08-17T07:42:14.963105+00:00",
+          "result": null
+        },
+        {
+          "source": "football-data.org",
+          "source_match_id": "567267",
+          "home_team": "Casa Pia AC",
+          "away_team": "Sport Lisboa e Benfica",
+          "match_date": "2026-08-17",
+          "home_goals": null,
+          "away_goals": null,
+          "status": "SCHEDULED",
+          "over_under": null,
+          "fetched_at": "2026-08-17T07:42:14.963110+00:00",
+          "result": null
+        },
+        {
+          "source": "football-data.org",
+          "source_match_id": "554965",
+          "home_team": "SC Internacional",
+          "away_team": "Clube do Remo",
+          "match_date": "2026-08-17",
+          "home_goals": null,
+          "away_goals": null,
+          "status": "SCHEDULED",
+          "over_under": null,
+          "fetched_at": "2026-08-17T07:42:14.963113+00:00",
+          "result": null
+        }
+      ]
+    }
+  }
+}

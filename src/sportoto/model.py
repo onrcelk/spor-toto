@@ -52,7 +52,11 @@ class MatchModel:
     def fit(self, features: list[list[float]], labels_1x2: list[int], labels_ou: list[int]) -> None:
         x = np.asarray(features, dtype=float)
         y1 = np.asarray(labels_1x2, dtype=int)
-        self.pipeline.fit(x, y1)
+        counts = np.bincount(y1, minlength=3).astype(float)
+        counts[counts == 0] = 1.0
+        weight_per_class = (len(y1) / (3 * counts))
+        sample_weight = np.array([weight_per_class[yi] for yi in y1], dtype=float)
+        self.pipeline.fit(x, y1, clf__sample_weight=sample_weight)
         self.classes_ = self.pipeline.named_steps["clf"].classes_
         self.fitted = True
 
@@ -97,4 +101,8 @@ class MatchModel:
 
     def load(self, path: Path | str) -> None:
         self.pipeline = joblib.load(str(Path(path).expanduser()))
+        try:
+            self.classes_ = self.pipeline.named_steps["clf"].classes_
+        except Exception:
+            self.classes_ = None
         self.fitted = True
