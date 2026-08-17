@@ -1,0 +1,10 @@
+{
+  "checked_at":"2026-08-17",
+  "status":"postponement_request_pending_official_decision",
+  "matches":[
+    {"match_index":4,"match":"Fenerbahce-Konyaspor","current_schedule":"22.08.2026 21:30","request_status":"reported_request/planned","official_postponement":"not_confirmed","sources":["TFF fixture page","Fenerbahce official fixture page","Sabah report"]},
+    {"match_index":6,"match":"Trabzonspor-Basaksehir","current_schedule":"23.08.2026 19:00","request_status":"reported_request/planned","official_postponement":"not_confirmed","sources":["TFF fixture page","Trabzonspor official match center","Sabah report"]},
+    {"match_index":7,"match":"Alanyaspor-Besiktas","current_schedule":"23.08.2026 21:30","request_status":"reported_request/planned","official_postponement":"not_confirmed","sources":["TFF fixture page","Sabah report","Besiktas official page blocked by security verification"]}
+  ],
+  "decision_rule":"Keep scheduled until TFF publishes an official postponement; do not finalize predictions/coupon for affected fixtures before status is settled."
+}
