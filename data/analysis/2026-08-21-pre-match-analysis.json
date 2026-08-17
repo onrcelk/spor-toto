@@ -1,0 +1,32 @@
+{
+  "week_id":"2026-08-21_to_2026-08-24",
+  "status":"preliminary_pre_match_analysis",
+  "generated_at":"2026-08-17",
+  "sources":{
+    "user_fixture_image":"data/current_sportoto_list_2026-08-21.json",
+    "tff":"TFF 2026-2027 Super Lig table and fixture page",
+    "football_data":"football-data.org v4 date range 2026-08-21 to 2026-08-24",
+    "api_sports":"future dates blocked by Free plan; no future xG/lineup data used"
+  },
+  "matches":[
+    {"no":1,"match":"Erzurumspor FK-Galatasaray","primary":"2","cover":"X2","ou":"under","confidence":"low-medium","risk":"Friday/opening-week away-favorite risk; Erzurum lost 0-3, Galatasaray drew 2-2 in week 1"},
+    {"no":2,"match":"Rizespor-Samsunspor","primary":"X","cover":"1X","ou":"under","confidence":"low","risk":"Samsunspor first-week data/status incomplete; local derby/context uncertainty"},
+    {"no":3,"match":"Corum FK-Kasimpasa","primary":"X","cover":"1X","ou":"under","confidence":"low","risk":"Balanced matchup; Corum 2-2 and Kasimpasa 1-1 in prior round"},
+    {"no":4,"match":"Fenerbahce-Konyaspor","primary":"1","cover":"1X","ou":"over","confidence":"medium","risk":"Fenerbahce lost 1-2 in week 1; home bounce expected but banko not justified"},
+    {"no":5,"match":"Eyupspor-Gaziantep","primary":"X","cover":"1X","ou":"under","confidence":"low","risk":"Eyupspor lost 0-1; Gaziantep drew 1-1; low-separation game"},
+    {"no":6,"match":"Trabzonspor-Basaksehir","primary":"X","cover":"1X2","ou":"under","confidence":"low","risk":"Basaksehir won 2-0, Trabzon drew 1-1; three-way uncertainty"},
+    {"no":7,"match":"Alanyaspor-Besiktas","primary":"2","cover":"X2","ou":"under","confidence":"low-medium","risk":"Besiktas won 1-0; Alanya drew 1-1; away favorite protection required"},
+    {"no":8,"match":"Goztepe-Genclerbirligi","primary":"2","cover":"X2","ou":"under","confidence":"low","risk":"Goztepe schedule/data incomplete; Gencler won 2-1 against Fenerbahce"},
+    {"no":9,"match":"Kocaelispor-Amed Sportif","primary":"2","cover":"X2","ou":"over","confidence":"low-medium","risk":"Amed won 3-0, Kocaeli lost 0-2; away side has stronger opening signal"},
+    {"no":10,"match":"Borussia Dortmund-Bayern Munich","primary":"X","cover":"1X2","ou":"over","confidence":"low","risk":"Derby-quality matchup; no football-data.org record returned for this fixture"},
+    {"no":11,"match":"Marseille-Strasbourg","primary":"1","cover":"1X","ou":"over","confidence":"low-medium","risk":"football-data.org fixture confirmed; current xG/lineup unavailable"},
+    {"no":12,"match":"Newcastle-Liverpool","primary":"2","cover":"X2","ou":"over","confidence":"low-medium","risk":"football-data.org fixture confirmed; away-favorite and opening-week variance"},
+    {"no":13,"match":"Real Betis-Real Sociedad","primary":"1","cover":"1X","ou":"under","confidence":"low-medium","risk":"football-data.org fixture confirmed; close technical matchup"},
+    {"no":14,"match":"Atletico Madrid-Villarreal","primary":"1","cover":"1X","ou":"under","confidence":"medium-low","risk":"football-data.org fixture confirmed; Atletico home control vs Villarreal transition threat"},
+    {"no":15,"match":"Torino-AC Milan","primary":"2","cover":"X2","ou":"under","confidence":"low-medium","risk":"football-data.org fixture confirmed; Milan away-favorite protection required"}
+  ],
+  "working_coupon":"2-X-X-1-X-X-2-2-2-X-1-2-1-1-2",
+  "working_covers":"X2-1X-1X-1X-1X-1X2-X2-X2-X2-1X2-1X-X2-1X-1X-X2",
+  "working_ou":"U-U-U-O-U-U-U-U-O-O-O-O-U-U-U",
+  "caveat":"No final banko recommendation before xG, injuries, expected XI, odds and current source refresh are available. First-week/Friday and missing-data penalties remain active."
+}

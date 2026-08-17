@@ -1,0 +1,634 @@
+{
+  "generated_at": "2026-08-17T06:41:01.029204+00:00",
+  "status": "pre_match_read_only",
+  "last_n": 5,
+  "match_count": 15,
+  "matches": [
+    {
+      "match_index": 1,
+      "home_team": "Erzurumspor FK",
+      "away_team": "Galatasaray A.Ş.",
+      "kickoff": "2026-08-21T21:30:00+00:00",
+      "home_form": {
+        "team": "Erzurumspor FK",
+        "sample_size": 2,
+        "points": 3,
+        "points_per_match": 1.5,
+        "recent_matches": [
+          {
+            "kickoff_iso": "2022-03-12T19:00:00+00:00",
+            "opponent": "SAKARYASPOR A.Ş.",
+            "venue": "A",
+            "result": "1"
+          },
+          {
+            "kickoff_iso": "2022-11-12T16:00:00+00:00",
+            "opponent": "GENÇLERBİRLİĞİ",
+            "venue": "A",
+            "result": "2"
+          }
+        ]
+      },
+      "away_form": {
+        "team": "Galatasaray A.Ş.",
+        "sample_size": 5,
+        "points": 15,
+        "points_per_match": 3.0,
+        "recent_matches": [
+          {
+            "kickoff_iso": "2025-11-04T20:00:00+00:00",
+            "opponent": "SAMSUNSPOR",
+            "venue": "A",
+            "result": "2"
+          },
+          {
+            "kickoff_iso": "2025-12-01T19:00:00+00:00",
+            "opponent": "M.BAŞAKŞEHIR",
+            "venue": "A",
+            "result": "2"
+          },
+          {
+            "kickoff_iso": "2026-01-02T20:00:00+00:00",
+            "opponent": "KAYSERİSPOR",
+            "venue": "H",
+            "result": "1"
+          },
+          {
+            "kickoff_iso": "2026-07-03T20:00:00+00:00",
+            "opponent": "BEŞİKTAŞ A.Ş.",
+            "venue": "A",
+            "result": "2"
+          },
+          {
+            "kickoff_iso": "2026-08-02T17:00:00+00:00",
+            "opponent": "Ç.RİZESPOR A.Ş.",
+            "venue": "A",
+            "result": "2"
+          }
+        ]
+      }
+    },
+    {
+      "match_index": 2,
+      "home_team": "Çaykur Rizespor A.Ş.",
+      "away_team": "Samsunspor A.Ş.",
+      "kickoff": "2026-08-22T19:00:00+00:00",
+      "home_form": {
+        "team": "Çaykur Rizespor A.Ş.",
+        "sample_size": 0,
+        "points": 0,
+        "points_per_match": null,
+        "recent_matches": []
+      },
+      "away_form": {
+        "team": "Samsunspor A.Ş.",
+        "sample_size": 1,
+        "points": 0,
+        "points_per_match": 0.0,
+        "recent_matches": [
+          {
+            "kickoff_iso": "2026-08-03T20:00:00+00:00",
+            "opponent": "FENERBAHÇE A.Ş.",
+            "venue": "A",
+            "result": "1"
+          }
+        ]
+      }
+    },
+    {
+      "match_index": 3,
+      "home_team": "Çorum FK",
+      "away_team": "Kasımpaşa A.Ş.",
+      "kickoff": "2026-08-22T19:00:00+00:00",
+      "home_form": {
+        "team": "Çorum FK",
+        "sample_size": 0,
+        "points": 0,
+        "points_per_match": null,
+        "recent_matches": []
+      },
+      "away_form": {
+        "team": "Kasımpaşa A.Ş.",
+        "sample_size": 0,
+        "points": 0,
+        "points_per_match": null,
+        "recent_matches": []
+      }
+    },
+    {
+      "match_index": 4,
+      "home_team": "Fenerbahçe A.Ş.",
+      "away_team": "Konyaspor",
+      "kickoff": "2026-08-22T21:30:00+00:00",
+      "home_form": {
+        "team": "Fenerbahçe A.Ş.",
+        "sample_size": 5,
+        "points": 13,
+        "points_per_match": 2.6,
+        "recent_matches": [
+          {
+            "kickoff_iso": "2025-09-05T20:00:00+00:00",
+            "opponent": "M.BAŞAKŞEHIR",
+            "venue": "A",
+            "result": "2"
+          },
+          {
+            "kickoff_iso": "2025-09-11T20:00:00+00:00",
+            "opponent": "KAYSERİSPOR",
+            "venue": "H",
+            "result": "1"
+          },
+          {
+            "kickoff_iso": "2026-01-03T20:00:00+00:00",
+            "opponent": "ANTALYASPOR",
+            "venue": "A",
+            "result": "X"
+          },
+          {
+            "kickoff_iso": "2026-02-02T20:00:00+00:00",
+            "opponent": "Kocaelispor",
+            "venue": "A",
+            "result": "2"
+          },
+          {
+            "kickoff_iso": "2026-08-03T20:00:00+00:00",
+            "opponent": "SAMSUNSPOR A.Ş.",
+            "venue": "H",
+            "result": "1"
+          }
+        ]
+      },
+      "away_form": {
+        "team": "Konyaspor",
+        "sample_size": 5,
+        "points": 8,
+        "points_per_match": 1.6,
+        "recent_matches": [
+          {
+            "kickoff_iso": "2025-10-08T21:30:00+00:00",
+            "opponent": "EYÜPSPOR",
+            "venue": "A",
+            "result": "2"
+          },
+          {
+            "kickoff_iso": "2025-12-04T16:00:00+00:00",
+            "opponent": "GÖZTEPE A.Ş.",
+            "venue": "H",
+            "result": "1"
+          },
+          {
+            "kickoff_iso": "2026-01-05T17:00:00+00:00",
+            "opponent": "RİZESPOR",
+            "venue": "A",
+            "result": "1"
+          },
+          {
+            "kickoff_iso": "2026-08-02T17:00:00+00:00",
+            "opponent": "GÖZTEPE A.Ş.",
+            "venue": "H",
+            "result": "X"
+          },
+          {
+            "kickoff_iso": "2026-08-03T16:00:00+00:00",
+            "opponent": "KASIMPAŞA A.Ş.",
+            "venue": "H",
+            "result": "X"
+          }
+        ]
+      }
+    },
+    {
+      "match_index": 5,
+      "home_team": "Eyüpspor",
+      "away_team": "Gaziantep F.K. A.Ş.",
+      "kickoff": "2026-08-23T19:00:00+00:00",
+      "home_form": {
+        "team": "Eyüpspor",
+        "sample_size": 5,
+        "points": 1,
+        "points_per_match": 0.2,
+        "recent_matches": [
+          {
+            "kickoff_iso": "2025-10-02T20:00:00+00:00",
+            "opponent": "TRABZONSPOR A.Ş.",
+            "venue": "A",
+            "result": "1"
+          },
+          {
+            "kickoff_iso": "2025-10-05T16:00:00+00:00",
+            "opponent": "KASIMPAŞA A.Ş.",
+            "venue": "H",
+            "result": "2"
+          },
+          {
+            "kickoff_iso": "2025-10-08T21:30:00+00:00",
+            "opponent": "KONYASPOR",
+            "venue": "H",
+            "result": "2"
+          },
+          {
+            "kickoff_iso": "2026-03-05T20:00:00+00:00",
+            "opponent": "KAYSERİSPOR",
+            "venue": "A",
+            "result": "X"
+          },
+          {
+            "kickoff_iso": "2026-08-02T14:30:00+00:00",
+            "opponent": "M.BAŞAKŞEHIR",
+            "venue": "H",
+            "result": "2"
+          }
+        ]
+      },
+      "away_form": {
+        "team": "Gaziantep F.K. A.Ş.",
+        "sample_size": 0,
+        "points": 0,
+        "points_per_match": null,
+        "recent_matches": []
+      }
+    },
+    {
+      "match_index": 6,
+      "home_team": "Trabzonspor A.Ş.",
+      "away_team": "Başakşehir FK",
+      "kickoff": "2026-08-23T19:00:00+00:00",
+      "home_form": {
+        "team": "Trabzonspor A.Ş.",
+        "sample_size": 5,
+        "points": 12,
+        "points_per_match": 2.4,
+        "recent_matches": [
+          {
+            "kickoff_iso": "2025-10-02T20:00:00+00:00",
+            "opponent": "EYÜPSPOR",
+            "venue": "H",
+            "result": "1"
+          },
+          {
+            "kickoff_iso": "2025-10-05T19:00:00+00:00",
+            "opponent": "GALATASARAY A.Ş.",
+            "venue": "H",
+            "result": "2"
+          },
+          {
+            "kickoff_iso": "2025-11-08T21:30:00+00:00",
+            "opponent": "Kocaelispor",
+            "venue": "H",
+            "result": "1"
+          },
+          {
+            "kickoff_iso": "2025-12-01T16:00:00+00:00",
+            "opponent": "ANTALYASPOR",
+            "venue": "H",
+            "result": "1"
+          },
+          {
+            "kickoff_iso": "2026-07-02T20:00:00+00:00",
+            "opponent": "SAMSUNSPOR",
+            "venue": "A",
+            "result": "2"
+          }
+        ]
+      },
+      "away_form": {
+        "team": "Başakşehir FK",
+        "sample_size": 1,
+        "points": 3,
+        "points_per_match": 3.0,
+        "recent_matches": [
+          {
+            "kickoff_iso": "2026-07-03T16:00:00+00:00",
+            "opponent": "GÖZTEPE A.Ş.",
+            "venue": "H",
+            "result": "1"
+          }
+        ]
+      }
+    },
+    {
+      "match_index": 7,
+      "home_team": "Alanyaspor",
+      "away_team": "Beşiktaş A.Ş.",
+      "kickoff": "2026-08-23T21:30:00+00:00",
+      "home_form": {
+        "team": "Alanyaspor",
+        "sample_size": 5,
+        "points": 6,
+        "points_per_match": 1.2,
+        "recent_matches": [
+          {
+            "kickoff_iso": "2025-09-03T20:30:00+00:00",
+            "opponent": "GALATASARAY A.Ş.",
+            "venue": "H",
+            "result": "2"
+          },
+          {
+            "kickoff_iso": "2025-09-05T20:00:00+00:00",
+            "opponent": "GAZİANTEP FK A.Ş.",
+            "venue": "A",
+            "result": "2"
+          },
+          {
+            "kickoff_iso": "2025-12-01T13:30:00+00:00",
+            "opponent": "SİVASSPOR",
+            "venue": "A",
+            "result": "X"
+          },
+          {
+            "kickoff_iso": "2026-03-05T20:00:00+00:00",
+            "opponent": "ANTALYASPOR",
+            "venue": "A",
+            "result": "X"
+          },
+          {
+            "kickoff_iso": "2026-08-02T20:00:00+00:00",
+            "opponent": "BEŞİKTAŞ A.Ş.",
+            "venue": "A",
+            "result": "X"
+          }
+        ]
+      },
+      "away_form": {
+        "team": "Beşiktaş A.Ş.",
+        "sample_size": 0,
+        "points": 0,
+        "points_per_match": null,
+        "recent_matches": []
+      }
+    },
+    {
+      "match_index": 8,
+      "home_team": "Göztepe A.Ş.",
+      "away_team": "Gençlerbirliği",
+      "kickoff": "2026-08-23T21:30:00+00:00",
+      "home_form": {
+        "team": "Göztepe A.Ş.",
+        "sample_size": 5,
+        "points": 5,
+        "points_per_match": 1.0,
+        "recent_matches": [
+          {
+            "kickoff_iso": "2025-10-08T19:00:00+00:00",
+            "opponent": "Ç.RİZESPOR A.Ş.",
+            "venue": "A",
+            "result": "2"
+          },
+          {
+            "kickoff_iso": "2025-11-05T19:00:00+00:00",
+            "opponent": "HATAYSPOR",
+            "venue": "H",
+            "result": "X"
+          },
+          {
+            "kickoff_iso": "2025-12-04T16:00:00+00:00",
+            "opponent": "KONYASPOR",
+            "venue": "A",
+            "result": "1"
+          },
+          {
+            "kickoff_iso": "2026-07-03T16:00:00+00:00",
+            "opponent": "BAŞAKŞEHIR FK",
+            "venue": "A",
+            "result": "1"
+          },
+          {
+            "kickoff_iso": "2026-08-02T17:00:00+00:00",
+            "opponent": "KONYASPOR",
+            "venue": "A",
+            "result": "X"
+          }
+        ]
+      },
+      "away_form": {
+        "team": "Gençlerbirliği",
+        "sample_size": 0,
+        "points": 0,
+        "points_per_match": null,
+        "recent_matches": []
+      }
+    },
+    {
+      "match_index": 9,
+      "home_team": "Kocaelispor",
+      "away_team": "Amed Sportif",
+      "kickoff": "2026-08-24T21:30:00+00:00",
+      "home_form": {
+        "team": "Kocaelispor",
+        "sample_size": 5,
+        "points": 7,
+        "points_per_match": 1.4,
+        "recent_matches": [
+          {
+            "kickoff_iso": "2025-04-10T17:00:00+00:00",
+            "opponent": "EYÜPSPOR",
+            "venue": "H",
+            "result": "1"
+          },
+          {
+            "kickoff_iso": "2025-07-12T17:00:00+00:00",
+            "opponent": "KASIMPAŞA A.Ş.",
+            "venue": "H",
+            "result": "X"
+          },
+          {
+            "kickoff_iso": "2025-09-11T17:00:00+00:00",
+            "opponent": "GALATASARAY A.Ş.",
+            "venue": "H",
+            "result": "1"
+          },
+          {
+            "kickoff_iso": "2025-11-08T21:30:00+00:00",
+            "opponent": "TRABZONSPOR A.Ş.",
+            "venue": "A",
+            "result": "1"
+          },
+          {
+            "kickoff_iso": "2026-02-02T20:00:00+00:00",
+            "opponent": "FENERBAHÇE A.Ş.",
+            "venue": "H",
+            "result": "2"
+          }
+        ]
+      },
+      "away_form": {
+        "team": "Amed Sportif",
+        "sample_size": 0,
+        "points": 0,
+        "points_per_match": null,
+        "recent_matches": []
+      }
+    },
+    {
+      "match_index": 10,
+      "home_team": "B. Dortmund",
+      "away_team": "Bayern Münih",
+      "kickoff": "2026-08-22T21:30:00+00:00",
+      "home_form": {
+        "team": "B. Dortmund",
+        "sample_size": 5,
+        "points": 9,
+        "points_per_match": 1.8,
+        "recent_matches": [
+          {
+            "kickoff_iso": "2023-07-10T16:30:00+00:00",
+            "opponent": "UNİON BERLİN",
+            "venue": "H",
+            "result": "1"
+          },
+          {
+            "kickoff_iso": "2023-08-04T16:30:00+00:00",
+            "opponent": "UNİON BERLİN",
+            "venue": "H",
+            "result": "1"
+          },
+          {
+            "kickoff_iso": "2023-09-12T20:30:00+00:00",
+            "opponent": "LEİPZİG",
+            "venue": "H",
+            "result": "2"
+          },
+          {
+            "kickoff_iso": "2023-11-11T17:30:00+00:00",
+            "opponent": "STUTTGART",
+            "venue": "A",
+            "result": "1"
+          },
+          {
+            "kickoff_iso": "2024-09-03T20:30:00+00:00",
+            "opponent": "WERDER BREMEN",
+            "venue": "A",
+            "result": "2"
+          }
+        ]
+      },
+      "away_form": {
+        "team": "Bayern Münih",
+        "sample_size": 0,
+        "points": 0,
+        "points_per_match": null,
+        "recent_matches": []
+      }
+    },
+    {
+      "match_index": 11,
+      "home_team": "Marsilya",
+      "away_team": "Strasbourg",
+      "kickoff": "2026-08-21T21:45:00+00:00",
+      "home_form": {
+        "team": "Marsilya",
+        "sample_size": 0,
+        "points": 0,
+        "points_per_match": null,
+        "recent_matches": []
+      },
+      "away_form": {
+        "team": "Strasbourg",
+        "sample_size": 1,
+        "points": 0,
+        "points_per_match": 0.0,
+        "recent_matches": [
+          {
+            "kickoff_iso": "2021-08-08T16:00:00+00:00",
+            "opponent": "ANGERS",
+            "venue": "H",
+            "result": "2"
+          }
+        ]
+      }
+    },
+    {
+      "match_index": 12,
+      "home_team": "Newcastle United",
+      "away_team": "Liverpool",
+      "kickoff": "2026-08-23T18:30:00+00:00",
+      "home_form": {
+        "team": "Newcastle United",
+        "sample_size": 2,
+        "points": 4,
+        "points_per_match": 2.0,
+        "recent_matches": [
+          {
+            "kickoff_iso": "2019-06-10T18:30:00+00:00",
+            "opponent": "MANCHESTER UNITED",
+            "venue": "H",
+            "result": "1"
+          },
+          {
+            "kickoff_iso": "2020-11-01T18:00:00+00:00",
+            "opponent": "WOLVERHAMPTON",
+            "venue": "A",
+            "result": "X"
+          }
+        ]
+      },
+      "away_form": {
+        "team": "Liverpool",
+        "sample_size": 0,
+        "points": 0,
+        "points_per_match": null,
+        "recent_matches": []
+      }
+    },
+    {
+      "match_index": 13,
+      "home_team": "Real Betis",
+      "away_team": "Real Sociedad",
+      "kickoff": "2026-08-21T22:00:00+00:00",
+      "home_form": {
+        "team": "Real Betis",
+        "sample_size": 0,
+        "points": 0,
+        "points_per_match": null,
+        "recent_matches": []
+      },
+      "away_form": {
+        "team": "Real Sociedad",
+        "sample_size": 0,
+        "points": 0,
+        "points_per_match": null,
+        "recent_matches": []
+      }
+    },
+    {
+      "match_index": 14,
+      "home_team": "Atlético Madrid",
+      "away_team": "Villarreal",
+      "kickoff": "2026-08-23T18:00:00+00:00",
+      "home_form": {
+        "team": "Atlético Madrid",
+        "sample_size": 0,
+        "points": 0,
+        "points_per_match": null,
+        "recent_matches": []
+      },
+      "away_form": {
+        "team": "Villarreal",
+        "sample_size": 0,
+        "points": 0,
+        "points_per_match": null,
+        "recent_matches": []
+      }
+    },
+    {
+      "match_index": 15,
+      "home_team": "Torino",
+      "away_team": "AC Milan",
+      "kickoff": "2026-08-23T21:45:00+00:00",
+      "home_form": {
+        "team": "Torino",
+        "sample_size": 0,
+        "points": 0,
+        "points_per_match": null,
+        "recent_matches": []
+      },
+      "away_form": {
+        "team": "AC Milan",
+        "sample_size": 0,
+        "points": 0,
+        "points_per_match": null,
+        "recent_matches": []
+      }
+    }
+  ]
+}
