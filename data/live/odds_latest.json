@@ -1,0 +1,37 @@
+{
+  "source": "local:data/live/sample_odds.json",
+  "compared": [
+    {
+      "home_team": "Erzurumspor FK",
+      "away_team": "Galatasaray A.Ş.",
+      "predicted_1x2": "X",
+      "model_prob": 0.434,
+      "market_implied_prob": 0.2400309717382888,
+      "odds": 3.9,
+      "ev": 0.6926,
+      "closing_line_delta": {
+        "1": -0.013907202076093306,
+        "X": -0.0059164849414205245,
+        "2": 0.01982368701751369
+      },
+      "bookmaker": "test",
+      "source": "local"
+    },
+    {
+      "home_team": "B. Dortmund",
+      "away_team": "Bayern Münih",
+      "predicted_1x2": "1",
+      "model_prob": 0.48,
+      "market_implied_prob": 0.4058177379983727,
+      "odds": 2.3,
+      "ev": 0.104,
+      "closing_line_delta": {
+        "1": 0.0145133901722857,
+        "X": 0.005810662610110706,
+        "2": -0.020324052782396407
+      },
+      "bookmaker": "test",
+      "source": "local"
+    }
+  ]
+}

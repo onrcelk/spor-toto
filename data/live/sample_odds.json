@@ -1,0 +1,8 @@
+{"odds": [
+  {"home_team": "Erzurumspor FK", "away_team": "Galatasaray A.Ş.", "bookmaker": "test", "source": "local",
+   "opening_1x2": {"1": 5.50, "X": 3.80, "2": 1.60}, "closing_1x2": {"1": 6.00, "X": 3.90, "2": 1.55},
+   "opening_ou": {"over": 2.10, "under": 1.75}, "closing_ou": {"over": 2.05, "under": 1.78}},
+  {"home_team": "B. Dortmund", "away_team": "Bayern Münih", "bookmaker": "test", "source": "local",
+   "opening_1x2": {"1": 2.40, "X": 3.60, "2": 2.70}, "closing_1x2": {"1": 2.30, "X": 3.50, "2": 2.85},
+   "opening_ou": {"over": 1.70, "under": 2.10}, "closing_ou": {"over": 1.65, "under": 2.15}}
+]}

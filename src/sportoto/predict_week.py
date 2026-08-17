@@ -49,6 +49,7 @@ def _team_aggregates(frame: pd.DataFrame, team: str, before: pd.Timestamp, last_
             "home_conceded_avg": 0.0, "away_conceded_avg": 0.0,
             "home_xg_avg": 0.0, "away_xg_avg": 0.0,
             "home_form_points": 0.0, "away_form_points": 0.0,
+            "elo_diff": 0.0,
             "sample_size": 0,
         }
     home = rows[rows["home_team"].astype(str).str.casefold() == team.casefold()]
@@ -61,6 +62,7 @@ def _team_aggregates(frame: pd.DataFrame, team: str, before: pd.Timestamp, last_
     conceded_away = away["away_conceded_avg"].mean() if not away.empty else np.nan
     xg_away = away["away_xg_avg"].mean() if not away.empty else np.nan
     form_away = away["away_form_points"].mean() if not away.empty else np.nan
+    elo_diff = rows["elo_diff"].iloc[-1] if "elo_diff" in rows.columns else 0.0
     return {
         "home_goals_avg": float(np.nanmean([goals_for_home])),
         "away_goals_avg": float(np.nanmean([goals_for_away])),
@@ -70,6 +72,7 @@ def _team_aggregates(frame: pd.DataFrame, team: str, before: pd.Timestamp, last_
         "away_xg_avg": float(np.nanmean([xg_away])),
         "home_form_points": float(np.nanmean([form_home])),
         "away_form_points": float(np.nanmean([form_away])),
+        "elo_diff": float(elo_diff),
         "sample_size": int(len(rows)),
     }
 
@@ -140,6 +143,7 @@ def build_predictions(
         "away_xg_avg": float(frame["away_xg_avg"].mean()),
         "home_form_points": float(frame["home_form_points"].mean()),
         "away_form_points": float(frame["away_form_points"].mean()),
+        "elo_diff": 0.0,
     }
 
     predictions = []
@@ -176,6 +180,7 @@ def build_predictions(
             home_xg_avg=ha["home_xg_avg"], away_xg_avg=aa["away_xg_avg"],
             is_derby=False,
             rest_days_home=7, rest_days_away=7,
+            elo_diff=ha["elo_diff"] - aa["elo_diff"],
         )
         pred = model.predict(mf)
         predictions.append({

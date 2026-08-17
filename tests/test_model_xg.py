@@ -6,7 +6,7 @@ from sportoto.model import MatchModel
 
 def test_model_ou_uses_xg_score_posterior():
     model = MatchModel()
-    features = [[1.0] * 14] * 21
+    features = [[1.0] * 15] * 21
     model.fit(features, [0, 1, 2] * 7, [1] * 15 + [0] * 6)
     match = MatchFeatures("M1", "A", "B", "L1", "2026-08-17", home_xg_avg=2.2, away_xg_avg=1.8)
     prediction = model.predict(match)

@@ -30,6 +30,7 @@ from .next_week import build_next_week_report
 from .predict_week import build_predictions
 from .audit import run_audit
 from .multi_source import fetch_api_sports, fetch_football_data as fetch_football_data_source, fetch_openfootball
+from .odds import fetch_api_sports_odds, load_local_odds, market_vs_model
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -59,6 +60,13 @@ def build_parser() -> argparse.ArgumentParser:
     sources_parser.add_argument("--openfootball-url", default=None)
     sources_parser.add_argument("--no-api-sports", action="store_true")
     sources_parser.add_argument("--no-football-data", action="store_true")
+
+    odds_parser = subparsers.add_parser("fetch-odds", help="Fetch/compare live+closing odds vs model (EV)")
+    odds_parser.add_argument("--date", default=date.today().isoformat())
+    odds_parser.add_argument("--predictions", default="data/predictions/2026-08-21-predictions_HYBRID.json")
+    odds_parser.add_argument("--local-odds", default=None, help="Optional local odds JSON (fixture/cache)")
+    odds_parser.add_argument("--output", default="data/live/odds_latest.json")
+    odds_parser.add_argument("--no-api", action="store_true", help="Skip API-Sports (use --local-odds)")
 
     advanced_parser = subparsers.add_parser("advanced-statsbomb", help="Parse StatsBomb Open Data event JSON")
     advanced_parser.add_argument("--url", required=True)
@@ -292,6 +300,35 @@ def main(argv: list[str] | None = None) -> int:
             print(f"  M{p['match_index']:>2} {p['home_team'][:20]:20} - {p['away_team'][:20]:20} "
                   f"=> {p['predicted_1x2']} (conf {p['confidence']}) | O/U {p['predicted_ou']} "
                   f"(O {p['pred_over_2_5']})")
+        return 0
+    if args.command == "fetch-odds":
+        _load_dotenv()
+        preds = json.loads(Path(args.predictions).expanduser().read_text(encoding="utf-8"))
+        preds = preds["predictions"] if isinstance(preds, dict) else preds
+        odds = []
+        if args.local_odds:
+            odds = load_local_odds(args.local_odds)
+            src_note = f"local:{args.local_odds}"
+        elif not args.no_api:
+            try:
+                odds = fetch_api_sports_odds(args.date)
+                src_note = "api-sports"
+            except Exception as exc:
+                print(f"API-Sports odds erişilemedi (muhtemelen Free plan): {exc}", file=sys.stderr)
+                print("Çözüm: --local-odds ile yerel oran JSON'ı verin veya ücretli API anahtarı kullanın.", file=sys.stderr)
+                return 1
+        else:
+            print("--no-api verildi ama --local-odds yok; oran kaynağı belirtin.", file=sys.stderr)
+            return 2
+        joined = market_vs_model(odds, preds)
+        out = Path(args.output).expanduser()
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(json.dumps({"source": src_note, "compared": joined}, ensure_ascii=False, indent=2), encoding="utf-8")
+        print(f"Oran karşılaştırması: {len(joined)} maç -> {out}")
+        for r in joined:
+            ev = r["ev"]
+            print(f"  {r['home_team'][:16]:16} - {r['away_team'][:16]:16} pick={r['predicted_1x2']} "
+                  f"model={r['model_prob']} odds={r['odds']} EV={ev}")
         return 0
     if args.command == "audit-results":
         summary = run_audit(args.predictions, args.output_dir, api_date=args.date, use_api_sports=not args.no_api)

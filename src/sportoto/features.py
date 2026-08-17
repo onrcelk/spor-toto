@@ -25,6 +25,7 @@ class MatchFeatures:
     is_derby: bool = False
     rest_days_home: int = 7
     rest_days_away: int = 7
+    elo_diff: float = 0.0
 
     def to_vector(self) -> list[float]:
         return [
@@ -42,6 +43,7 @@ class MatchFeatures:
             float(self.is_derby),
             float(self.rest_days_home),
             float(self.rest_days_away),
+            float(self.elo_diff),
         ]
 
     @staticmethod
@@ -61,6 +63,7 @@ class MatchFeatures:
             "is_derby",
             "rest_days_home",
             "rest_days_away",
+            "elo_diff",
         ]
 
 
