@@ -4,6 +4,7 @@ from __future__ import annotations
 from typing import Any
 
 from ..calibration import Calibrator, IdentityCalibrator, validate_probabilities
+from ..ensemble import ensemble_probabilities
 from ..prediction import load_prediction_artifact
 from ..research_orchestration import decide_research
 from ..tool_boundary import ResearchToolRegistry
@@ -67,9 +68,31 @@ def calibration_stage(state: WorkflowState, calibrator: Calibrator | None = None
     return state.advance("calibration", calibrated_predictions=tuple(calibrated), calibration_metadata=active.metadata)
 
 
+def ensemble_stage(state: WorkflowState, *, model_weight: float = .55, market_weight: float = .30, dixon_weight: float = .15) -> WorkflowState:
+    if not state.calibrated_predictions:
+        raise ValueError("ensemble requires calibrated_predictions")
+    results = []
+    for calibrated in state.calibrated_predictions:
+        if "calibrated" not in calibrated:
+            raise ValueError(f"missing calibrated signal for {calibrated.get('match_id')}")
+        source = next((row for row in state.model_predictions if row["match_id"] == calibrated["match_id"]), None)
+        if source is None:
+            raise ValueError(f"prediction match missing for {calibrated['match_id']}")
+        features = source.get("features", {})
+        home_xg = features.get("home_xg_avg")
+        away_xg = features.get("away_xg_avg")
+        if home_xg is None or away_xg is None:
+            raise ValueError(f"missing xg features for {calibrated['match_id']}")
+        market = source.get("market")
+        output = ensemble_probabilities(calibrated["calibrated"], float(home_xg), float(away_xg), market, model_weight, market_weight, dixon_weight)
+        results.append({"match_id": calibrated["match_id"], "inputs": {"calibrated_model": calibrated["calibrated"], "market": market, "home_xg": home_xg, "away_xg": away_xg}, "output": output})
+    metadata = {"method": "existing_ensemble", "weights": {"model": model_weight, "market": market_weight, "dixon": dixon_weight}, "input": "calibrated_predictions", "output": "ensemble"}
+    return state.advance("ensemble", ensemble=tuple(results), ensemble_metadata=metadata)
+
+
 def mark_stage(state: WorkflowState, stage: str) -> WorkflowState:
     """Explicit placeholder for later deterministic model stages; does not invent output."""
     return state.advance(stage)
 
 
-__all__ = ["calibration_stage", "collect_research", "decide_research_stage", "mark_stage", "prediction_stage", "validate_fixtures"]
+__all__ = ["calibration_stage", "collect_research", "decide_research_stage", "ensemble_stage", "mark_stage", "prediction_stage", "validate_fixtures"]
