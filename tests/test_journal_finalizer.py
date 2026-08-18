@@ -26,6 +26,8 @@ def test_project_state_creates_15_complete_audit_records():
     assert records[0]["prediction"]["raw"] == records[0]["prediction"]["calibrated"]
     assert records[0]["post_match"]["actual"] is None
     assert "decision" in records[0] and "stages_completed" in records[0]["research"]
+    assert records[0]["research"]["evidence_coverage"]["coverage"] == "none"
+    assert records[0]["research"]["evidence_coverage"]["research_status"] == "not_required"
 
 
 def test_projection_fails_if_one_stage_lacks_a_match():

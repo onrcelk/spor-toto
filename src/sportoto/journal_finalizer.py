@@ -6,6 +6,7 @@ from pathlib import Path
 from typing import Any
 
 from .orchestration.state import WorkflowState
+from .paper_testing import classify_evidence_coverage
 
 REQUIRED = ("prediction", "calibration", "ensemble", "risk", "decision")
 
@@ -17,16 +18,24 @@ def project_state(state: WorkflowState) -> list[dict[str, Any]]:
     maps = [{row["match_id"]: row for row in rows} for rows in (state.model_predictions, state.calibrated_predictions, state.ensemble, state.risk, state.decisions)]
     if any(set(mapping) != set(ids) for mapping in maps):
         raise ValueError("journal projection requires exact fixture coverage at every stage")
-    evidence_by_match: dict[str, list[str]] = {match_id: [] for match_id in ids}
+    evidence_by_match: dict[str, list[dict[str, Any]]] = {match_id: [] for match_id in ids}
     for item in state.evidence:
         if item["match_id"] in evidence_by_match:
-            evidence_by_match[item["match_id"]].append(item["evidence_id"])
+            evidence_by_match[item["match_id"]].append(item)
+    research_by_match = {row["match_id"]: row for row in state.research_decisions}
     records = []
     for match_id in ids:
         raw = maps[0][match_id]["model"]
         calibrated = maps[1][match_id]["calibrated"]
         risk = maps[3][match_id]
         decision = maps[4][match_id]
+        research_decision = research_by_match.get(match_id, {})
+        coverage = classify_evidence_coverage(
+            bool(research_decision.get("research_required", False)),
+            research_decision.get("categories", ()),
+            {category: [item for item in evidence_by_match[match_id] if item.get("category") == category]
+             for category in research_decision.get("categories", ())},
+        )
         records.append({
             "record_id": f"{state.run_id}:{match_id}:v1", "schema_version": "2.0", "run_id": state.run_id,
             "match_id": match_id, "fixture": next(f for f in state.fixtures if f["match_id"] == match_id),
@@ -34,7 +43,11 @@ def project_state(state: WorkflowState) -> list[dict[str, Any]]:
             "ensemble": maps[2][match_id]["output"], "ensemble_metadata": state.ensemble_metadata,
             "risk": {"level": risk["risk_level"], "confidence": risk["confidence"], "score": risk["risk_score"], "flags": risk["flags"], "banko_allowed": risk["banko_allowed"]},
             "decision": {key: decision[key] for key in ("selection", "primary", "secondary", "confidence", "banko", "reasons")},
-            "research": {"evidence_ids": sorted(evidence_by_match[match_id]), "stages_completed": list(state.stage_history)},
+            "research": {
+                "evidence_ids": sorted(item["evidence_id"] for item in evidence_by_match[match_id]),
+                "evidence_coverage": coverage,
+                "stages_completed": list(state.stage_history),
+            },
             "post_match": {"actual": None, "hit": None, "error_type": None, "audit_at": None},
         })
     return records
