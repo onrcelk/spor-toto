@@ -7,6 +7,7 @@ from ..calibration import Calibrator, IdentityCalibrator, validate_probabilities
 from ..ensemble import ensemble_probabilities
 from ..prediction import load_prediction_artifact
 from ..research_orchestration import decide_research
+from ..risk import assess_risk, model_disagreement
 from ..tool_boundary import ResearchToolRegistry
 from .state import WorkflowState
 
@@ -90,9 +91,33 @@ def ensemble_stage(state: WorkflowState, *, model_weight: float = .55, market_we
     return state.advance("ensemble", ensemble=tuple(results), ensemble_metadata=metadata)
 
 
+def risk_stage(state: WorkflowState) -> WorkflowState:
+    if not state.ensemble:
+        raise ValueError("risk requires ensemble")
+    risks = []
+    for ensemble in state.ensemble:
+        match_id = ensemble["match_id"]
+        fixture = next((item for item in state.fixtures if item["match_id"] == match_id), {})
+        quality = fixture.get("data_quality", {})
+        retrieval = [item for item in state.retrievals if item["match_id"] == match_id]
+        flags = set(quality.get("risk_flags", []))
+        source_conflict = "source_conflict" in flags or any(item.get("error") == "source_conflict" for item in retrieval)
+        squad_uncertainty = "squad_uncertainty" in flags or any(item["category"] == "squad" and item["status"] != "success" for item in retrieval)
+        exhausted = any(item.get("error") == "research_exhausted" for item in retrieval)
+        sets = [ensemble["inputs"]["calibrated_model"]]
+        if ensemble["inputs"].get("market"):
+            sets.append(ensemble["inputs"]["market"])
+        result = assess_risk(data_quality=float(quality.get("score", 0.0)), source_conflict=source_conflict,
+                             squad_uncertainty=squad_uncertainty, market_available=ensemble["inputs"].get("market") is not None,
+                             cold_start=bool(quality.get("cold_start", False)), research_exhausted=exhausted,
+                             model_disagreement=model_disagreement(sets))
+        risks.append({"match_id": match_id, **result})
+    return state.advance("risk", risk=tuple(risks))
+
+
 def mark_stage(state: WorkflowState, stage: str) -> WorkflowState:
     """Explicit placeholder for later deterministic model stages; does not invent output."""
     return state.advance(stage)
 
 
-__all__ = ["calibration_stage", "collect_research", "decide_research_stage", "ensemble_stage", "mark_stage", "prediction_stage", "validate_fixtures"]
+__all__ = ["calibration_stage", "collect_research", "decide_research_stage", "ensemble_stage", "mark_stage", "prediction_stage", "risk_stage", "validate_fixtures"]
