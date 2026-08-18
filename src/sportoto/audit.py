@@ -78,7 +78,7 @@ def run_audit(
 ) -> dict:
     preds = json.loads(Path(predictions_path).expanduser().read_text(encoding="utf-8"))
     _load_dotenv_local()
-    matches = preds["predictions"] if isinstance(preds, dict) else preds
+    matches = preds.get("predictions", preds.get("matches", [])) if isinstance(preds, dict) else preds
 
     # gerçek sonuçları topla
     real_rows: list[dict] = []
