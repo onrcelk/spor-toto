@@ -1,6 +1,8 @@
 import pytest
 
-from sportoto.odds_adapter import StaticOddsAdapter, normalize_odds
+from sportoto.adapter_contracts import AdapterRegistry
+from sportoto.odds_adapter import OddsAdapter, normalize_odds
+from sportoto.odds_providers import TelegramStaticOddsProvider
 
 
 def test_normalize_odds_keeps_raw_and_vig_removed_probabilities():
@@ -12,7 +14,7 @@ def test_normalize_odds_keeps_raw_and_vig_removed_probabilities():
 
 
 def test_incomplete_odds_are_evidence_but_not_verified_market():
-    adapter = StaticOddsAdapter([{"match_id": "M04", "odds": {"1": 1.72, "X": None, "2": 5.2}, "freshness": "fresh"}])
+    adapter = OddsAdapter(TelegramStaticOddsProvider([{"match_id": "M04", "odds": {"1": 1.72, "X": None, "2": 5.2}, "freshness": "fresh"}]))
     result = adapter.retrieve("M04", {})
     assert result.status == "success"
     assert result.evidence[0].verified is False
@@ -20,7 +22,7 @@ def test_incomplete_odds_are_evidence_but_not_verified_market():
 
 
 def test_timeout_is_retrieval_failure_without_evidence():
-    adapter = StaticOddsAdapter([])
+    adapter = OddsAdapter(TelegramStaticOddsProvider([]))
     result = adapter.retrieve("M04", {})
     assert result.status == "unavailable"
     assert result.evidence == ()

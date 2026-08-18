@@ -1,0 +1,21 @@
+import json
+from pathlib import Path
+
+from sportoto.research_runner import run
+
+
+def test_research_runner_processes_15_matches_and_eight_odds(tmp_path):
+    journal = tmp_path / "journal.jsonl"
+    rows = []
+    for i in range(1, 16):
+        rows.append(json.dumps({"match_id": f"M{i:02d}", "risk": {"flags": [], "banko_allowed": True}, "source_reliability": {}}))
+    journal.write_text("\n".join(rows) + "\n")
+    odds = tmp_path / "odds.json"
+    odds.write_text(json.dumps({"matches": [{"match_index": i, "odds": {"1": 2, "X": 3, "2": 4}} for i in range(1, 9)]}))
+    result = run(str(journal), str(odds), str(tmp_path / "out.jsonl"))
+    assert result["matches"] == 15
+    assert result["odds_found"] == 8
+    assert result["market_available"] == 8
+    assert result["verified"] == 0
+    assert result["research_required"] == 7
+    assert len((tmp_path / "out.jsonl").read_text().splitlines()) == 15
