@@ -3,6 +3,7 @@ from __future__ import annotations
 
 from typing import Any
 
+from ..calibration import Calibrator, IdentityCalibrator, validate_probabilities
 from ..prediction import load_prediction_artifact
 from ..research_orchestration import decide_research
 from ..tool_boundary import ResearchToolRegistry
@@ -55,9 +56,20 @@ def prediction_stage(state: WorkflowState, artifact_path: str) -> WorkflowState:
     return state.advance("prediction", model_predictions=predictions)
 
 
+def calibration_stage(state: WorkflowState, calibrator: Calibrator | None = None) -> WorkflowState:
+    if not state.model_predictions:
+        raise ValueError("calibration requires model_predictions")
+    active = calibrator or IdentityCalibrator()
+    calibrated = []
+    for prediction in state.model_predictions:
+        raw = validate_probabilities(prediction["model"])
+        calibrated.append({"match_id": prediction["match_id"], "raw": raw, "calibrated": active.transform(raw)})
+    return state.advance("calibration", calibrated_predictions=tuple(calibrated), calibration_metadata=active.metadata)
+
+
 def mark_stage(state: WorkflowState, stage: str) -> WorkflowState:
     """Explicit placeholder for later deterministic model stages; does not invent output."""
     return state.advance(stage)
 
 
-__all__ = ["collect_research", "decide_research_stage", "mark_stage", "prediction_stage", "validate_fixtures"]
+__all__ = ["calibration_stage", "collect_research", "decide_research_stage", "mark_stage", "prediction_stage", "validate_fixtures"]

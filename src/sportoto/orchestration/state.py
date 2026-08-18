@@ -16,6 +16,7 @@ class WorkflowState:
     data_quality: tuple[dict[str, Any], ...] = ()
     model_predictions: tuple[dict[str, Any], ...] = ()
     calibrated_predictions: tuple[dict[str, Any], ...] = ()
+    calibration_metadata: Mapping[str, Any] = field(default_factory=dict)
     ensemble: tuple[dict[str, Any], ...] = ()
     risk: tuple[dict[str, Any], ...] = ()
     decisions: tuple[dict[str, Any], ...] = ()
