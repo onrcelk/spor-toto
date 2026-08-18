@@ -34,6 +34,7 @@ class SportTotoService:
 
     def run(self, *, run_id: str, fixtures: list[dict[str, Any]], prediction_artifact: str,
             journal_path: str, actual: dict[str, str] | None = None) -> WorkflowResult:
+        fixtures = normalize_fixtures(fixtures)
         workflow = SportTotoWorkflow(run_id, fixtures, self.tools)
         state = workflow.initial_state
         artifacts = {"journal": journal_path}
@@ -68,9 +69,18 @@ class SportTotoService:
             return WorkflowResult(run_id, "failed", len(fixtures), (*state.stage_history,), {}, artifacts, current_stage, str(exc))
 
 
+def normalize_fixtures(fixtures: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    normalized = []
+    for row in fixtures:
+        normalized.append({"match_id": str(row.get("match_id") or f"M{int(row['match_index']):02d}"),
+                           "home": row.get("home") or row.get("home_team"), "away": row.get("away") or row.get("away_team"),
+                           "data_quality": row.get("data_quality", {"score": .95})})
+    return normalized
+
+
 def load_fixture_file(path: str) -> list[dict[str, Any]]:
     payload = json.loads(Path(path).read_text(encoding="utf-8"))
-    return [{"match_id": f"M{int(row['match_index']):02d}", "home": row["home_team"], "away": row["away_team"], "data_quality": {"score": .95}} for row in payload["matches"]]
+    return normalize_fixtures(payload["matches"])
 
 
-__all__ = ["SportTotoService", "WorkflowResult", "load_fixture_file"]
+__all__ = ["SportTotoService", "WorkflowResult", "load_fixture_file", "normalize_fixtures"]
