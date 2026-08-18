@@ -135,7 +135,7 @@ def coupon_stage(state: WorkflowState, filters=(), actual: dict[str, str] | None
     if not state.decisions:
         raise ValueError("coupon requires decisions")
     coupon = build_coupon_state(state.decisions, filters, actual)
-    return state.advance("coupon", coupon=coupon)
+    return state.advance("h15", coupon=coupon)
 
 
 def mark_stage(state: WorkflowState, stage: str) -> WorkflowState:
