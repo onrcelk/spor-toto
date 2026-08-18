@@ -4,7 +4,7 @@ from __future__ import annotations
 from typing import Any
 
 from ..tool_boundary import ResearchToolRegistry
-from .stages import calibration_stage, collect_research, decide_research_stage, ensemble_stage, mark_stage, prediction_stage, risk_stage, validate_fixtures
+from .stages import calibration_stage, collect_research, decide_research_stage, decision_stage, ensemble_stage, mark_stage, prediction_stage, risk_stage, validate_fixtures
 from .state import WorkflowState
 
 
@@ -32,6 +32,9 @@ class SportTotoWorkflow:
 
     def run_risk(self, state: WorkflowState) -> WorkflowState:
         return risk_stage(state)
+
+    def run_decision(self, state: WorkflowState) -> WorkflowState:
+        return decision_stage(state)
 
     @staticmethod
     def continue_stage(state: WorkflowState, stage: str) -> WorkflowState:

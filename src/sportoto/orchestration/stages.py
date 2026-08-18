@@ -4,6 +4,7 @@ from __future__ import annotations
 from typing import Any
 
 from ..calibration import Calibrator, IdentityCalibrator, validate_probabilities
+from ..decision import decide
 from ..ensemble import ensemble_probabilities
 from ..prediction import load_prediction_artifact
 from ..research_orchestration import decide_research
@@ -115,9 +116,23 @@ def risk_stage(state: WorkflowState) -> WorkflowState:
     return state.advance("risk", risk=tuple(risks))
 
 
+def decision_stage(state: WorkflowState) -> WorkflowState:
+    if not state.ensemble or not state.risk:
+        raise ValueError("decision requires ensemble and risk")
+    risks = {row["match_id"]: row for row in state.risk}
+    decisions = []
+    for row in state.ensemble:
+        risk = risks.get(row["match_id"])
+        if risk is None:
+            raise ValueError(f"risk match missing for {row['match_id']}")
+        result = decide(row["output"], bool(risk["banko_allowed"]))
+        decisions.append({"match_id": row["match_id"], **result})
+    return state.advance("decision", decisions=tuple(decisions))
+
+
 def mark_stage(state: WorkflowState, stage: str) -> WorkflowState:
     """Explicit placeholder for later deterministic model stages; does not invent output."""
     return state.advance(stage)
 
 
-__all__ = ["calibration_stage", "collect_research", "decide_research_stage", "ensemble_stage", "mark_stage", "prediction_stage", "risk_stage", "validate_fixtures"]
+__all__ = ["calibration_stage", "collect_research", "decide_research_stage", "decision_stage", "ensemble_stage", "mark_stage", "prediction_stage", "risk_stage", "validate_fixtures"]
