@@ -22,17 +22,18 @@ class Evidence:
     retrieved_at: str
     freshness: str
     verified: bool
+    details: dict[str, Any] | None = None
 
     @classmethod
     def create(cls, match_id: str, claim: str, category: str, source: str,
                *, source_url: str | None = None, source_reliability: float = 0.5,
                published_at: str | None = None, freshness: str = "unknown",
-               verified: bool = False) -> "Evidence":
+               verified: bool = False, details: dict[str, Any] | None = None) -> "Evidence":
         raw = "|".join([match_id, category, claim, source, source_url or ""])
         evidence_id = "EVIDENCE_" + hashlib.sha256(raw.encode()).hexdigest()[:12]
         return cls(evidence_id, match_id, claim, category, source, source_url,
                    round(float(source_reliability), 4), published_at,
-                   datetime.now(timezone.utc).isoformat(), freshness, verified)
+                   datetime.now(timezone.utc).isoformat(), freshness, verified, details)
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
