@@ -5,7 +5,7 @@ from typing import Any
 
 from ..journal_finalizer import project_state, write_idempotent
 from ..tool_boundary import ResearchToolRegistry
-from .stages import calibration_stage, collect_research, decide_research_stage, decision_stage, ensemble_stage, mark_stage, prediction_stage, risk_stage, validate_fixtures
+from .stages import calibration_stage, collect_research, coupon_stage, decide_research_stage, decision_stage, ensemble_stage, mark_stage, prediction_stage, risk_stage, validate_fixtures
 from .state import WorkflowState
 
 
@@ -36,6 +36,9 @@ class SportTotoWorkflow:
 
     def run_decision(self, state: WorkflowState) -> WorkflowState:
         return decision_stage(state)
+
+    def run_coupon(self, state: WorkflowState, filters=(), actual=None) -> WorkflowState:
+        return coupon_stage(state, filters, actual)
 
     def finalize_journal(self, state: WorkflowState, path: str) -> list[dict[str, Any]]:
         records = project_state(state)

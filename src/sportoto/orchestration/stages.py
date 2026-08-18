@@ -4,6 +4,7 @@ from __future__ import annotations
 from typing import Any
 
 from ..calibration import Calibrator, IdentityCalibrator, validate_probabilities
+from ..h15 import build_coupon_state
 from ..decision import decide
 from ..ensemble import ensemble_probabilities
 from ..prediction import load_prediction_artifact
@@ -130,9 +131,16 @@ def decision_stage(state: WorkflowState) -> WorkflowState:
     return state.advance("decision", decisions=tuple(decisions))
 
 
+def coupon_stage(state: WorkflowState, filters=(), actual: dict[str, str] | None = None) -> WorkflowState:
+    if not state.decisions:
+        raise ValueError("coupon requires decisions")
+    coupon = build_coupon_state(state.decisions, filters, actual)
+    return state.advance("coupon", coupon=coupon)
+
+
 def mark_stage(state: WorkflowState, stage: str) -> WorkflowState:
     """Explicit placeholder for later deterministic model stages; does not invent output."""
     return state.advance(stage)
 
 
-__all__ = ["calibration_stage", "collect_research", "decide_research_stage", "decision_stage", "ensemble_stage", "mark_stage", "prediction_stage", "risk_stage", "validate_fixtures"]
+__all__ = ["calibration_stage", "collect_research", "coupon_stage", "decide_research_stage", "decision_stage", "ensemble_stage", "mark_stage", "prediction_stage", "risk_stage", "validate_fixtures"]
