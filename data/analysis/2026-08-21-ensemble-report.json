@@ -1,0 +1,310 @@
+{
+  "source_predictions": "data/predictions/2026-08-21-predictions_HYBRID_TRANSFER_COUNTS.json",
+  "source_odds": "data/live/odds_2026-08-21_telegram_visible_tr.json",
+  "rows": [
+    {
+      "match_index": 1,
+      "home_team": "Erzurumspor FK",
+      "away_team": "Galatasaray A.Ş.",
+      "model": {
+        "1": 0.64,
+        "X": 0.192,
+        "2": 0.168
+      },
+      "market": {
+        "1": 0.11647254575707155,
+        "X": 0.2096505823627288,
+        "2": 0.6738768718801996
+      },
+      "ensemble": {
+        "1": 0.4365,
+        "X": 0.2082,
+        "2": 0.3553
+      },
+      "ensemble_pick": "1",
+      "market_available": true
+    },
+    {
+      "match_index": 2,
+      "home_team": "Çaykur Rizespor A.Ş.",
+      "away_team": "Samsunspor A.Ş.",
+      "model": {
+        "1": 0.482,
+        "X": 0.354,
+        "2": 0.164
+      },
+      "market": {
+        "1": 0.4247167386987501,
+        "X": 0.28034108164934,
+        "2": 0.2949421796519098
+      },
+      "ensemble": {
+        "1": 0.4429,
+        "X": 0.3188,
+        "2": 0.2383
+      },
+      "ensemble_pick": "1",
+      "market_available": true
+    },
+    {
+      "match_index": 3,
+      "home_team": "Çorum FK",
+      "away_team": "Kasımpaşa A.Ş.",
+      "model": {
+        "1": 0.576,
+        "X": 0.257,
+        "2": 0.167
+      },
+      "market": {
+        "1": 0.40666630710317675,
+        "X": 0.2664365460331158,
+        "2": 0.3268971468637074
+      },
+      "ensemble": {
+        "1": 0.492,
+        "X": 0.2623,
+        "2": 0.2458
+      },
+      "ensemble_pick": "1",
+      "market_available": true
+    },
+    {
+      "match_index": 4,
+      "home_team": "Fenerbahçe A.Ş.",
+      "away_team": "Konyaspor",
+      "model": {
+        "1": 0.799,
+        "X": 0.164,
+        "2": 0.038
+      },
+      "market": {
+        "1": 0.7476052377186045,
+        "X": 0.1569557957641269,
+        "2": 0.09543896651726866
+      },
+      "ensemble": {
+        "1": 0.7357,
+        "X": 0.1763,
+        "2": 0.0886
+      },
+      "ensemble_pick": "1",
+      "market_available": true
+    },
+    {
+      "match_index": 5,
+      "home_team": "Eyüpspor",
+      "away_team": "Gaziantep F.K. A.Ş.",
+      "model": {
+        "1": 0.896,
+        "X": 0.056,
+        "2": 0.048
+      },
+      "market": {
+        "1": 0.3313432835820896,
+        "X": 0.2865671641791045,
+        "2": 0.382089552238806
+      },
+      "ensemble": {
+        "1": 0.6309,
+        "X": 0.1597,
+        "2": 0.2094
+      },
+      "ensemble_pick": "1",
+      "market_available": true
+    },
+    {
+      "match_index": 6,
+      "home_team": "Trabzonspor A.Ş.",
+      "away_team": "Başakşehir FK",
+      "model": {
+        "1": 0.314,
+        "X": 0.306,
+        "2": 0.38
+      },
+      "market": {
+        "1": 0.4519515578718458,
+        "X": 0.25904540512166774,
+        "2": 0.28900303700648644
+      },
+      "ensemble": {
+        "1": 0.3562,
+        "X": 0.2868,
+        "2": 0.357
+      },
+      "ensemble_pick": "2",
+      "market_available": true
+    },
+    {
+      "match_index": 7,
+      "home_team": "Alanyaspor",
+      "away_team": "Beşiktaş A.Ş.",
+      "model": {
+        "1": 0.369,
+        "X": 0.383,
+        "2": 0.248
+      },
+      "market": {
+        "1": 0.24599906975141694,
+        "X": 0.25332047063687574,
+        "2": 0.5006804596117074
+      },
+      "ensemble": {
+        "1": 0.336,
+        "X": 0.3285,
+        "2": 0.3356
+      },
+      "ensemble_pick": "1",
+      "market_available": true
+    },
+    {
+      "match_index": 8,
+      "home_team": "Göztepe A.Ş.",
+      "away_team": "Gençlerbirliği",
+      "model": {
+        "1": 0.171,
+        "X": 0.461,
+        "2": 0.367
+      },
+      "market": {
+        "1": 0.5745412114140235,
+        "X": 0.2402036703086878,
+        "2": 0.18525511827728863
+      },
+      "ensemble": {
+        "1": 0.3327,
+        "X": 0.3725,
+        "2": 0.2943
+      },
+      "ensemble_pick": "X",
+      "market_available": true
+    },
+    {
+      "match_index": 9,
+      "home_team": "Kocaelispor",
+      "away_team": "Amed Sportif",
+      "model": {
+        "1": 0.437,
+        "X": 0.289,
+        "2": 0.274
+      },
+      "market": null,
+      "ensemble": {
+        "1": 0.3998,
+        "X": 0.2896,
+        "2": 0.3106
+      },
+      "ensemble_pick": "1",
+      "market_available": false
+    },
+    {
+      "match_index": 10,
+      "home_team": "B. Dortmund",
+      "away_team": "Bayern Münih",
+      "model": {
+        "1": 0.506,
+        "X": 0.214,
+        "2": 0.28
+      },
+      "market": null,
+      "ensemble": {
+        "1": 0.4543,
+        "X": 0.2102,
+        "2": 0.3355
+      },
+      "ensemble_pick": "1",
+      "market_available": false
+    },
+    {
+      "match_index": 11,
+      "home_team": "Marsilya",
+      "away_team": "Strasbourg",
+      "model": {
+        "1": 0.442,
+        "X": 0.293,
+        "2": 0.265
+      },
+      "market": null,
+      "ensemble": {
+        "1": 0.4331,
+        "X": 0.292,
+        "2": 0.2749
+      },
+      "ensemble_pick": "1",
+      "market_available": false
+    },
+    {
+      "match_index": 12,
+      "home_team": "Newcastle United",
+      "away_team": "Liverpool",
+      "model": {
+        "1": 0.543,
+        "X": 0.215,
+        "2": 0.242
+      },
+      "market": null,
+      "ensemble": {
+        "1": 0.4779,
+        "X": 0.2252,
+        "2": 0.2968
+      },
+      "ensemble_pick": "1",
+      "market_available": false
+    },
+    {
+      "match_index": 13,
+      "home_team": "Real Betis",
+      "away_team": "Real Sociedad",
+      "model": {
+        "1": 0.368,
+        "X": 0.288,
+        "2": 0.344
+      },
+      "market": null,
+      "ensemble": {
+        "1": 0.3913,
+        "X": 0.2991,
+        "2": 0.3096
+      },
+      "ensemble_pick": "1",
+      "market_available": false
+    },
+    {
+      "match_index": 14,
+      "home_team": "Atlético Madrid",
+      "away_team": "Villarreal",
+      "model": {
+        "1": 0.467,
+        "X": 0.232,
+        "2": 0.3
+      },
+      "market": null,
+      "ensemble": {
+        "1": 0.4267,
+        "X": 0.2417,
+        "2": 0.3308
+      },
+      "ensemble_pick": "1",
+      "market_available": false
+    },
+    {
+      "match_index": 15,
+      "home_team": "Torino",
+      "away_team": "AC Milan",
+      "model": {
+        "1": 0.359,
+        "X": 0.274,
+        "2": 0.367
+      },
+      "market": null,
+      "ensemble": {
+        "1": 0.3309,
+        "X": 0.2775,
+        "2": 0.3917
+      },
+      "ensemble_pick": "2",
+      "market_available": false
+    }
+  ],
+  "market_rows": 8,
+  "total_rows": 15
+}

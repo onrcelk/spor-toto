@@ -73,6 +73,17 @@ build_predictions(
 Only transfers before each kickoff and within the previous 365 days are used. Transfer features are contextual signals, not guaranteed squad-strength measurements.
 
 
+Model/market/Dixon-Coles comparison for the current week:
+
+```bash
+uv run python scripts/build_ensemble_report.py \
+  --predictions data/predictions/2026-08-21-predictions_HYBRID_TRANSFER_COUNTS.json \
+  --odds data/live/odds_2026-08-21_telegram_visible_tr.json \
+  --output data/analysis/2026-08-21-ensemble-report.json
+```
+
+The ensemble never fills missing odds from memory: rows without market data are marked `market_available=false` and use model + Dixon-Coles only.
+
 ## Model güvenilirliği ve audit katmanları
 
 - `sportoto.market`: implied probability, vig removal, EV ve closing-line delta.
