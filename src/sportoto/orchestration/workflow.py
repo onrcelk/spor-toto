@@ -3,6 +3,7 @@ from __future__ import annotations
 
 from typing import Any
 
+from ..journal_finalizer import project_state, write_idempotent
 from ..tool_boundary import ResearchToolRegistry
 from .stages import calibration_stage, collect_research, decide_research_stage, decision_stage, ensemble_stage, mark_stage, prediction_stage, risk_stage, validate_fixtures
 from .state import WorkflowState
@@ -36,12 +37,18 @@ class SportTotoWorkflow:
     def run_decision(self, state: WorkflowState) -> WorkflowState:
         return decision_stage(state)
 
+    def finalize_journal(self, state: WorkflowState, path: str) -> list[dict[str, Any]]:
+        records = project_state(state)
+        write_idempotent(path, records)
+        return records
+
     @staticmethod
     def continue_stage(state: WorkflowState, stage: str) -> WorkflowState:
         allowed = {"prediction", "calibration", "ensemble", "risk", "decision_journal", "coupon"}
         if stage not in allowed:
             raise ValueError(f"unknown workflow stage: {stage}")
         return mark_stage(state, stage)
+
 
 
 __all__ = ["SportTotoWorkflow"]
