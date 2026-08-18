@@ -37,7 +37,17 @@ research_decision
 research_collection
 ```
 
-Prediction, calibration, ensemble, risk, journal ve coupon aşamaları için henüz sonuç uydurulmaz; kontrollü stage placeholder'ları bulunur.
+Prediction stage mevcut prediction artifact'ını state'e taşır; yeni model eğitmez:
+
+```python
+state = workflow.run_prediction(
+    state,
+    "data/predictions/2026-08-21-predictions_HYBRID_TRANSFER_COUNTS.json",
+)
+```
+
+15 maçlık mevcut artifact gerçek testte yüklendi. State'te `model_predictions` ayrı tutulur; calibrated/ensemble alanları prediction stage tarafından doldurulmaz.
+
 
 ## Sınır
 

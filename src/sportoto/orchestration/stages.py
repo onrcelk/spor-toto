@@ -3,6 +3,7 @@ from __future__ import annotations
 
 from typing import Any
 
+from ..prediction import load_prediction_artifact
 from ..research_orchestration import decide_research
 from ..tool_boundary import ResearchToolRegistry
 from .state import WorkflowState
@@ -45,9 +46,18 @@ def collect_research(state: WorkflowState, tools: ResearchToolRegistry, attempts
     return state.advance("research_collection", retrievals=tuple(retrievals), evidence=tuple(evidence))
 
 
+def prediction_stage(state: WorkflowState, artifact_path: str) -> WorkflowState:
+    artifact = load_prediction_artifact(artifact_path)
+    missing = [fixture["match_id"] for fixture in state.fixtures if fixture["match_id"] not in artifact]
+    if missing:
+        raise ValueError(f"prediction artifact missing matches: {missing}")
+    predictions = tuple({"match_id": match_id, **artifact[match_id]} for match_id in (fixture["match_id"] for fixture in state.fixtures))
+    return state.advance("prediction", model_predictions=predictions)
+
+
 def mark_stage(state: WorkflowState, stage: str) -> WorkflowState:
     """Explicit placeholder for later deterministic model stages; does not invent output."""
     return state.advance(stage)
 
 
-__all__ = ["collect_research", "decide_research_stage", "mark_stage", "validate_fixtures"]
+__all__ = ["collect_research", "decide_research_stage", "mark_stage", "prediction_stage", "validate_fixtures"]
