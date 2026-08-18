@@ -13,5 +13,6 @@ if __name__ == "__main__":
     ap.add_argument("--odds", required=True)
     ap.add_argument("--output", required=True)
     ap.add_argument("--squad")
+    ap.add_argument("--news")
     args = ap.parse_args()
-    print(json.dumps(run(args.journal, args.odds, args.output, args.squad), ensure_ascii=False))
+    print(json.dumps(run(args.journal, args.odds, args.output, args.squad, args.news), ensure_ascii=False))

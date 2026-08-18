@@ -33,3 +33,16 @@ def test_research_runner_adds_squad_evidence_without_changing_odds_counts(tmp_pa
     assert result["odds_found"] == 8
     assert result["squad_found"] == 1
     assert result["squad_evidence"] == 1
+
+
+def test_research_runner_generic_news_category(tmp_path):
+    journal = tmp_path / "journal.jsonl"
+    journal.write_text(json.dumps({"match_id": "M04", "risk": {"flags": [], "banko_allowed": True}, "source_reliability": {}}) + "\n")
+    odds = tmp_path / "odds.json"
+    odds.write_text(json.dumps({"matches": []}))
+    news = tmp_path / "news.json"
+    news.write_text(json.dumps({"source": "official_news", "matches": [{"match_id": "M04", "claims": [{"type": "rotation", "value": "rotation_possible", "freshness": "fresh", "verified": True}]}]}))
+    result = run(str(journal), str(odds), str(tmp_path / "out.jsonl"), news_path=str(news))
+    assert result["categories"] == ["odds", "news"]
+    assert result["news_found"] == 1
+    assert result["news_evidence"] == 1

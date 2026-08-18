@@ -54,6 +54,11 @@ class AdapterRegistry:
         context = context or {}
         results = []
         for category in categories:
+            attempts = int(context.get("attempts", {}).get(category, 0))
+            max_attempts = int(context.get("max_attempts", {}).get(category, 1))
+            if attempts >= max_attempts:
+                results.append(RetrievalResult(category, match_id, "unavailable", error="research_exhausted"))
+                continue
             adapter = self._adapters.get(category)
             if adapter is None:
                 results.append(RetrievalResult(category, match_id, "unavailable", error="adapter_not_registered"))
