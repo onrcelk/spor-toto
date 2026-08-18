@@ -45,6 +45,34 @@ uv run python -m sportoto.cli advanced-backtest \
 
 Girdi satırları tarih, takım, gol, xG, xA ve şut alanlarını içerir. Özellikler her maçtan önceki maçlarla hesaplanır; hedef maçın kendi xG/golü feature üretimine girmez. Sonuç raporu 1/X/2 ve Alt/Üst 2.5 doğruluğunu ayrı verir.
 
+Leakage-safe transfer features (Transfermarkt dataset) can be evaluated separately from the base model:
+
+```bash
+uv run python scripts/backtest_transfer_rolling.py \
+  --parquet data/real_training.parquet \
+  --transfer-csv data/raw/transfermarkt/transfers.csv.gz \
+  --output data/models/transfer_counts_rolling_report.json \
+  --model-out data/models/real_superlig_transfer_counts_rolling.joblib \
+  --transfer-mode counts
+```
+
+The same feature vector can be used at prediction time with the transfer-enhanced model:
+
+```python
+from sportoto.predict_week import build_predictions
+build_predictions(
+    list_path="data/current_sportoto_list_2026-08-21.json",
+    history_path="data/superlig_training_2022_2026.parquet",
+    model_path="data/models/real_superlig_transfer_counts_rolling.joblib",
+    output="data/predictions/2026-08-21-superlig-transfer-predictions.json",
+    transfer_csv="data/raw/transfermarkt/transfers.csv.gz",
+    transfer_mode="counts",
+)
+```
+
+Only transfers before each kickoff and within the previous 365 days are used. Transfer features are contextual signals, not guaranteed squad-strength measurements.
+
+
 ## Model güvenilirliği ve audit katmanları
 
 - `sportoto.market`: implied probability, vig removal, EV ve closing-line delta.

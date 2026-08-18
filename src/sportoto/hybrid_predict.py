@@ -15,16 +15,16 @@ from .predict_week import build_predictions
 
 SUPERLIG_TEAMS = {
     "erzurumspor", "galatasaray", "caykurrizespor", "samsunspor", "corum",
-    "kasimpasa", "fenerbahce", "konyaspor", "eyupspor", "gaziantep",
+    "kasmpasa", "fenerbahce", "konyaspor", "eyupspor", "gaziantep",
     "trabzonspor", "basaksehir", "alanyaspor", "besiktas", "goztepe",
-    "genclerbirligi", "kocaelispor", "amed",
+    "genclerbirligi", "kocaelispor", "amedsportif",
 }
 
 
 def _is_superlig(home: str, away: str) -> bool:
-    from .identity import normalize_team_name
-    h = normalize_team_name(home)
-    a = normalize_team_name(away)
+    from .identity import normalize_team_name, resolve_team
+    h = normalize_team_name(resolve_team(home))
+    a = normalize_team_name(resolve_team(away))
     return h in SUPERLIG_TEAMS and a in SUPERLIG_TEAMS
 
 
@@ -35,6 +35,8 @@ def build_hybrid(
     model_sl: str = "data/models/superlig_model_2026.joblib",
     model_general: str = "data/models/sportoto_master_model.joblib",
     output: str = "data/predictions/2026-08-21-predictions_HYBRID.json",
+    transfer_csv: str | None = None,
+    transfer_mode: str = "counts",
 ) -> dict:
     lst = json.loads(Path(list_path).expanduser().read_text(encoding="utf-8"))
     matches = lst["matches"] if isinstance(lst, dict) else lst
@@ -45,7 +47,9 @@ def build_hybrid(
     sl_preds = {}
     if sl_idx:
         p = build_predictions(list_path, history_sl, model_sl,
-                              "data/predictions/_sl_tmp.json")
+                              "data/predictions/_sl_tmp.json",
+                              transfer_csv=transfer_csv,
+                              transfer_mode=transfer_mode)
         sl_preds = {x["match_index"]: x for x in p["predictions"]}
     gen_preds = {}
     if gen_idx:
@@ -72,6 +76,8 @@ def build_hybrid(
     payload = {
         "generated_at": json.loads(Path("data/predictions/2026-08-21-predictions.json").read_text(encoding="utf-8"))["generated_at"] if Path("data/predictions/2026-08-21-predictions.json").exists() else "",
         "strategy": "hybrid: TR matches->SuperLig model, others->general model",
+        "transfer_csv": transfer_csv,
+        "transfer_mode": transfer_mode,
         "superlig_match_count": len(sl_idx),
         "general_match_count": len(gen_idx),
         "match_count": len(merged),

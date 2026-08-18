@@ -18,6 +18,7 @@ import pandas as pd
 from .features import MatchFeatures
 from .identity import normalize_team_name
 from .model import MatchModel
+from .transfer_features import COUNT_FEATURE_COLUMNS, FEATURE_COLUMNS as TRANSFER_FEATURE_COLS, build_transfer_features
 
 DEFAULT_LIST = "data/current_sportoto_list_2026-08-21.json"
 DEFAULT_HISTORY = "data/sportoto_master_training.parquet"
@@ -110,6 +111,8 @@ def build_predictions(
     model_path: str = DEFAULT_MODEL,
     output: str = DEFAULT_OUTPUT,
     last_n: int = LAST_N,
+    transfer_csv: str | None = None,
+    transfer_mode: str = "counts",
 ) -> dict:
     frame = pd.read_parquet(Path(history_path).expanduser())
     frame["kickoff_iso"] = pd.to_datetime(frame["kickoff_iso"], utc=True, errors="coerce")
@@ -168,7 +171,16 @@ def build_predictions(
             rest_days_home=7, rest_days_away=7,
             elo_diff=ha["elo_diff"] - aa["elo_diff"],
         )
-        pred = model.predict(mf)
+        if transfer_csv:
+            transfer_row = pd.DataFrame([{
+                "kickoff_iso": ko.isoformat(), "home_team": home, "away_team": away,
+            }])
+            transfer_values = build_transfer_features(transfer_csv, transfer_row).iloc[0]
+            transfer_cols = COUNT_FEATURE_COLUMNS if transfer_mode == "counts" else TRANSFER_FEATURE_COLS
+            extra_features = [float(transfer_values[col]) for col in transfer_cols]
+            pred = model.predict_with_extra_features(mf, extra_features)
+        else:
+            pred = model.predict(mf)
         predictions.append({
             "match_id": mf.match_id,
             "match_index": item.get("match_index"),
@@ -190,6 +202,8 @@ def build_predictions(
                 "h2h_sample": h2h["h2h_sample"],
                 "home_sample_size": ha["sample_size"],
                 "away_sample_size": aa["sample_size"],
+                "transfer_features": bool(transfer_csv),
+                "transfer_mode": transfer_mode if transfer_csv else None,
             },
         })
 
@@ -197,6 +211,8 @@ def build_predictions(
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "list_source": list_path,
         "model": model_path,
+        "transfer_csv": transfer_csv,
+        "transfer_mode": transfer_mode,
         "match_count": len(predictions),
         "predictions": predictions,
     }

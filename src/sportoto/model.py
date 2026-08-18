@@ -61,9 +61,16 @@ class MatchModel:
         self.fitted = True
 
     def predict(self, match: MatchFeatures) -> MatchPrediction:
+        return self._predict_vector(match, match.to_vector())
+
+    def predict_with_extra_features(self, match: MatchFeatures, extra_features: list[float]) -> MatchPrediction:
+        """Predict with features appended after the canonical MatchFeatures vector."""
+        return self._predict_vector(match, match.to_vector() + list(extra_features))
+
+    def _predict_vector(self, match: MatchFeatures, vector: list[float]) -> MatchPrediction:
         if not self.fitted:
             raise RuntimeError("model is not fitted")
-        x = np.asarray([match.to_vector()], dtype=float)
+        x = np.asarray([vector], dtype=float)
         probs = self.pipeline.predict_proba(x)[0]
         if self.classes_ is None or len(self.classes_) < 3:
             raise RuntimeError("model is missing 1X2 classes")

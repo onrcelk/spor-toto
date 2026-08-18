@@ -1,0 +1,192 @@
+{
+  "week": "2026-08-14/17",
+  "played_coupon": "data/live/played_coupon_ours_58.json",
+  "result_source": "data/live/audit/audit_final_20260818.json",
+  "coverage_hits": 11,
+  "coverage_total": 15,
+  "banko_hits": 7,
+  "banko_total": 15,
+  "coverage_failures": [
+    3,
+    5,
+    10,
+    11
+  ],
+  "banko_misses": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    9,
+    11,
+    13
+  ],
+  "rows": [
+    {
+      "no": 1,
+      "match": "Galatasaray-Çorum FK",
+      "option_set": "1X",
+      "banko": "1",
+      "actual": "X",
+      "coverage_hit": true,
+      "banko_hit": false,
+      "error_type": "banko_miss"
+    },
+    {
+      "no": 2,
+      "match": "Kasımpaşa-Trabzonspor",
+      "option_set": "X2",
+      "banko": "2",
+      "actual": "X",
+      "coverage_hit": true,
+      "banko_hit": false,
+      "error_type": "banko_miss"
+    },
+    {
+      "no": 3,
+      "match": "Konyaspor-Çaykur Rizespor",
+      "option_set": "1X",
+      "banko": "1",
+      "actual": "2",
+      "coverage_hit": false,
+      "banko_hit": false,
+      "error_type": "coverage_failure"
+    },
+    {
+      "no": 4,
+      "match": "Gaziantep FK-Alanyaspor",
+      "option_set": "X2",
+      "banko": "1",
+      "actual": "X",
+      "coverage_hit": true,
+      "banko_hit": false,
+      "error_type": "banko_miss"
+    },
+    {
+      "no": 5,
+      "match": "Gençlerbirliği-Fenerbahçe",
+      "option_set": "2",
+      "banko": "2",
+      "actual": "1",
+      "coverage_hit": false,
+      "banko_hit": false,
+      "error_type": "coverage_failure"
+    },
+    {
+      "no": 6,
+      "match": "Başakşehir-Kocaelispor",
+      "option_set": "1X2",
+      "banko": "1",
+      "actual": "1",
+      "coverage_hit": true,
+      "banko_hit": true,
+      "error_type": "hit"
+    },
+    {
+      "no": 7,
+      "match": "Amed Sportif-Erzurumspor",
+      "option_set": "1X2",
+      "banko": "1",
+      "actual": "1",
+      "coverage_hit": true,
+      "banko_hit": true,
+      "error_type": "hit"
+    },
+    {
+      "no": 8,
+      "match": "Beşiktaş-Eyüpspor",
+      "option_set": "1",
+      "banko": "1",
+      "actual": "1",
+      "coverage_hit": true,
+      "banko_hit": true,
+      "error_type": "hit"
+    },
+    {
+      "no": 9,
+      "match": "Samsunspor-Göztepe",
+      "option_set": "1X",
+      "banko": "1",
+      "actual": "X",
+      "coverage_hit": true,
+      "banko_hit": false,
+      "error_type": "banko_miss"
+    },
+    {
+      "no": 10,
+      "match": "Arsenal-Manchester City",
+      "option_set": "X2",
+      "banko": "1",
+      "actual": "1",
+      "coverage_hit": false,
+      "banko_hit": true,
+      "error_type": "coverage_failure"
+    },
+    {
+      "no": 11,
+      "match": "Lens-Paris Saint-Germain",
+      "option_set": "X2",
+      "banko": "2",
+      "actual": "1",
+      "coverage_hit": false,
+      "banko_hit": false,
+      "error_type": "coverage_failure"
+    },
+    {
+      "no": 12,
+      "match": "Sevilla-Rayo Vallecano",
+      "option_set": "1X",
+      "banko": "1",
+      "actual": "1",
+      "coverage_hit": true,
+      "banko_hit": true,
+      "error_type": "hit"
+    },
+    {
+      "no": 13,
+      "match": "Racing Santander-Villarreal",
+      "option_set": "X2",
+      "banko": "2",
+      "actual": "X",
+      "coverage_hit": true,
+      "banko_hit": false,
+      "error_type": "banko_miss"
+    },
+    {
+      "no": 14,
+      "match": "Espanyol-Levante",
+      "option_set": "1X2",
+      "banko": "1",
+      "actual": "1",
+      "coverage_hit": true,
+      "banko_hit": true,
+      "error_type": "hit"
+    },
+    {
+      "no": 15,
+      "match": "Celta Vigo-Osasuna",
+      "option_set": "1X",
+      "banko": "1",
+      "actual": "1",
+      "coverage_hit": true,
+      "banko_hit": true,
+      "error_type": "hit"
+    }
+  ],
+  "filter_actual": {
+    "ters_surpriz": 3,
+    "surpriz": 8,
+    "beraberlik": 5,
+    "bir": 9,
+    "iki": 1,
+    "maxX": 2,
+    "max2": 1,
+    "tr_beraberlik": 4,
+    "tr_ters": 2,
+    "tr_surpriz": 6,
+    "eu_beraberlik": 1,
+    "eu_ters": 1,
+    "eu_surpriz": 2
+  }
+}

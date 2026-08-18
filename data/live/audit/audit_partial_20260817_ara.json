@@ -1,0 +1,29 @@
+{
+  "week": "2026-08-14/17 Spor Toto",
+  "status": "partial_pending_match9",
+  "generated_at": "2026-08-17T15:00:00+03:00",
+  "option_sets": ["1X","X2","1X","X2","2","1X2","1X2","1","1X","X2","X2","1X","X2","1X2","1X"],
+  "banko": [1,2,1,1,2,1,1,1,1,1,2,1,2,1,1],
+  "results_known": {
+    "1": "X", "2": "X", "3": "2", "4": "X", "5": "1", "6": "1", "7": "1", "8": "1",
+    "9": "PENDING_2026-08-17_21:30_TRT",
+    "10": "1", "11": "1", "12": "1", "13": "X", "14": "1", "15": "1"
+  },
+  "column_survival": "ELIMINATED_AT_MATCH_3 (Konyaspor-Rizespor 2, option-set 1X does not contain 2) -> all 58 columns dead",
+  "filter_compliance_14known": {
+    "ters_surpriz": {"range":[2,4],"actual":3,"pass":true},
+    "surpriz": {"range":[6,10],"actual":7,"pass":true},
+    "beraberlik": {"range":[2,6],"actual":4,"pass":true},
+    "bir": {"range":[4,9],"actual":9,"pass":true},
+    "iki": {"range":[3,8],"actual":1,"pass":false},
+    "maxX": {"range":[0,3],"actual":2,"pass":true},
+    "max2": {"range":[0,2],"actual":1,"pass":true},
+    "tr_beraberlik": {"range":[1,4],"actual":3,"pass":true},
+    "tr_ters": {"range":[1,3],"actual":2,"pass":true},
+    "tr_surpriz": {"range":[1,4],"actual":5,"pass":false},
+    "eu_beraberlik": {"range":[1,4],"actual":1,"pass":true},
+    "eu_ters": {"range":[1,2],"actual":1,"pass":true},
+    "eu_surpriz": {"range":[2,5],"actual":2,"pass":true}
+  },
+  "note": "Match 9 (Samsunspor-Göztepe) finalizes 21:30 TRT 2026-08-17. Re-run audit next morning to close."
+}

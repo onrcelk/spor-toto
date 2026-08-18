@@ -1,0 +1,18 @@
+{
+  "week": "2026-08-21_to_2026-08-24",
+  "source": "user_telegram_screenshot",
+  "source_image": "/root/.hermes/cache/images/img_7704579028e0.jpg",
+  "data_type": "decimal_1x2_odds",
+  "scope": "visible_turkish_super_lig_rows_only",
+  "note": "This screenshot contains 8 Turkish matches. Preference percentages and the remaining 7 matches are not visible.",
+  "matches": [
+    {"match_index":1,"home":"Erzurumspor FK","away":"Galatasaray","odds":{"1":7.29,"X":4.05,"2":1.26}},
+    {"match_index":3,"home":"Çorum FK","away":"Kasımpaşa","odds":{"1":2.09,"X":3.19,"2":2.60}},
+    {"match_index":2,"home":"Rizespor","away":"Samsunspor","odds":{"1":2.00,"X":3.03,"2":2.88}},
+    {"match_index":4,"home":"Fenerbahçe","away":"Konyaspor","odds":{"1":1.14,"X":5.43,"2":8.93}},
+    {"match_index":6,"home":"Trabzonspor","away":"Başakşehir","odds":{"1":1.88,"X":3.28,"2":2.94}},
+    {"match_index":5,"home":"Eyüpspor","away":"Gaziantep FK","odds":{"1":2.56,"X":2.96,"2":2.22}},
+    {"match_index":8,"home":"Göztepe","away":"Gençlerbirliği","odds":{"1":1.48,"X":3.54,"2":4.59}},
+    {"match_index":7,"home":"Alanyaspor","away":"Beşiktaş","odds":{"1":3.46,"X":3.36,"2":1.70}}
+  ]
+}

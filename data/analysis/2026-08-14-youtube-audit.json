@@ -1,0 +1,306 @@
+{
+  "week": "2026-08-14/17",
+  "source_count": 4,
+  "channel_names_available": false,
+  "actual_results": [
+    "X",
+    "X",
+    "2",
+    "X",
+    "1",
+    "1",
+    "1",
+    "1",
+    "X",
+    "1",
+    "1",
+    "1",
+    "X",
+    "1",
+    "1"
+  ],
+  "metrics": {
+    "consensus": {
+      "available": 13,
+      "hits": 6,
+      "misses": 7,
+      "hit_rate": 0.4615,
+      "rows": [
+        {
+          "no": 1,
+          "prediction": "1",
+          "actual": "X",
+          "hit": false
+        },
+        {
+          "no": 2,
+          "prediction": "X2",
+          "actual": "X",
+          "hit": true
+        },
+        {
+          "no": 3,
+          "prediction": "1X",
+          "actual": "2",
+          "hit": false
+        },
+        {
+          "no": 4,
+          "prediction": "X2",
+          "actual": "X",
+          "hit": true
+        },
+        {
+          "no": 5,
+          "prediction": "2",
+          "actual": "1",
+          "hit": false
+        },
+        {
+          "no": 7,
+          "prediction": "X",
+          "actual": "1",
+          "hit": false
+        },
+        {
+          "no": 8,
+          "prediction": "1",
+          "actual": "1",
+          "hit": true
+        },
+        {
+          "no": 9,
+          "prediction": "X/1X",
+          "actual": "X",
+          "hit": true
+        },
+        {
+          "no": 10,
+          "prediction": "X/1X",
+          "actual": "1",
+          "hit": true
+        },
+        {
+          "no": 11,
+          "prediction": "2/X2",
+          "actual": "1",
+          "hit": false
+        },
+        {
+          "no": 12,
+          "prediction": "X2",
+          "actual": "1",
+          "hit": false
+        },
+        {
+          "no": 13,
+          "prediction": "2",
+          "actual": "X",
+          "hit": false
+        },
+        {
+          "no": 15,
+          "prediction": "1",
+          "actual": "1",
+          "hit": true
+        }
+      ]
+    },
+    "value": {
+      "available": 15,
+      "hits": 4,
+      "misses": 11,
+      "hit_rate": 0.2667,
+      "rows": [
+        {
+          "no": 1,
+          "prediction": "X",
+          "actual": "X",
+          "hit": true
+        },
+        {
+          "no": 2,
+          "prediction": "X",
+          "actual": "X",
+          "hit": true
+        },
+        {
+          "no": 3,
+          "prediction": "X",
+          "actual": "2",
+          "hit": false
+        },
+        {
+          "no": 4,
+          "prediction": "X",
+          "actual": "X",
+          "hit": true
+        },
+        {
+          "no": 5,
+          "prediction": "X",
+          "actual": "1",
+          "hit": false
+        },
+        {
+          "no": 6,
+          "prediction": "2",
+          "actual": "1",
+          "hit": false
+        },
+        {
+          "no": 7,
+          "prediction": "2",
+          "actual": "1",
+          "hit": false
+        },
+        {
+          "no": 8,
+          "prediction": "X",
+          "actual": "1",
+          "hit": false
+        },
+        {
+          "no": 9,
+          "prediction": "X",
+          "actual": "X",
+          "hit": true
+        },
+        {
+          "no": 10,
+          "prediction": "X",
+          "actual": "1",
+          "hit": false
+        },
+        {
+          "no": 11,
+          "prediction": "X",
+          "actual": "1",
+          "hit": false
+        },
+        {
+          "no": 12,
+          "prediction": "X",
+          "actual": "1",
+          "hit": false
+        },
+        {
+          "no": 13,
+          "prediction": "1",
+          "actual": "X",
+          "hit": false
+        },
+        {
+          "no": 14,
+          "prediction": "X/2",
+          "actual": "1",
+          "hit": false
+        },
+        {
+          "no": 15,
+          "prediction": "X",
+          "actual": "1",
+          "hit": false
+        }
+      ]
+    },
+    "updated": {
+      "available": 15,
+      "hits": 11,
+      "misses": 4,
+      "hit_rate": 0.7333,
+      "rows": [
+        {
+          "no": 1,
+          "prediction": "1X",
+          "actual": "X",
+          "hit": true
+        },
+        {
+          "no": 2,
+          "prediction": "X2",
+          "actual": "X",
+          "hit": true
+        },
+        {
+          "no": 3,
+          "prediction": "1X",
+          "actual": "2",
+          "hit": false
+        },
+        {
+          "no": 4,
+          "prediction": "X2",
+          "actual": "X",
+          "hit": true
+        },
+        {
+          "no": 5,
+          "prediction": "2",
+          "actual": "1",
+          "hit": false
+        },
+        {
+          "no": 6,
+          "prediction": "1X2",
+          "actual": "1",
+          "hit": true
+        },
+        {
+          "no": 7,
+          "prediction": "1X2",
+          "actual": "1",
+          "hit": true
+        },
+        {
+          "no": 8,
+          "prediction": "1X",
+          "actual": "1",
+          "hit": true
+        },
+        {
+          "no": 9,
+          "prediction": "1X",
+          "actual": "X",
+          "hit": true
+        },
+        {
+          "no": 10,
+          "prediction": "1X",
+          "actual": "1",
+          "hit": true
+        },
+        {
+          "no": 11,
+          "prediction": "X2",
+          "actual": "1",
+          "hit": false
+        },
+        {
+          "no": 12,
+          "prediction": "X2",
+          "actual": "1",
+          "hit": false
+        },
+        {
+          "no": 13,
+          "prediction": "X2",
+          "actual": "X",
+          "hit": true
+        },
+        {
+          "no": 14,
+          "prediction": "1X2",
+          "actual": "1",
+          "hit": true
+        },
+        {
+          "no": 15,
+          "prediction": "1X",
+          "actual": "1",
+          "hit": true
+        }
+      ]
+    }
+  }
+}

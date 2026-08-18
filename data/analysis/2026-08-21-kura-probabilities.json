@@ -1,0 +1,30 @@
+{
+  "week": "2026-08-21_to_2026-08-24",
+  "source": "user_provided_image_text",
+  "status": "preliminary_lottery_distribution",
+  "normalization": "0=X (beraberlik)",
+  "note": "These are lottery-ball distributions, not final match predictions. Friday confirmation is pending.",
+  "matches": [
+    {
+      "match_index": 4,
+      "home": "Fenerbahçe",
+      "away": "Konyaspor",
+      "balls": {"1": 6, "X": 1, "2": 3},
+      "percentages": {"1": 0.60, "X": 0.10, "2": 0.30}
+    },
+    {
+      "match_index": 6,
+      "home": "Trabzonspor",
+      "away": "Başakşehir",
+      "balls": {"1": 2, "X": 2, "2": 6},
+      "percentages": {"1": 0.20, "X": 0.20, "2": 0.60}
+    },
+    {
+      "match_index": 7,
+      "home": "Alanyaspor",
+      "away": "Beşiktaş",
+      "balls": {"1": 2, "X": 4, "2": 4},
+      "percentages": {"1": 0.20, "X": 0.40, "2": 0.40}
+    }
+  ]
+}

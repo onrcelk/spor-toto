@@ -103,6 +103,14 @@ def build_parser() -> argparse.ArgumentParser:
     week_parser.add_argument("--output", default="data/predictions/2026-08-21-predictions.json")
     week_parser.add_argument("--last-n", type=int, default=8)
 
+    hybrid_parser = subparsers.add_parser("predict-hybrid", help="Hybrid: TR->SL model, others->general model")
+    hybrid_parser.add_argument("--list", default="data/current_sportoto_list.json")
+    hybrid_parser.add_argument("--history-sl", default="data/superlig_training_2022_2026.parquet")
+    hybrid_parser.add_argument("--model-sl", default="data/models/superlig_model_2026.joblib")
+    hybrid_parser.add_argument("--history-general", default="data/sportoto_master_training_2026.parquet")
+    hybrid_parser.add_argument("--model-general", default="data/models/sportoto_master_model.joblib")
+    hybrid_parser.add_argument("--output", default="data/predictions/2026-08-14-predictions_HYBRID.json")
+
     audit_parser = subparsers.add_parser("audit-results", help="Match saved predictions against real results (hit/miss + O/U)")
     audit_parser.add_argument("--predictions", default="data/predictions/2026-08-21-predictions.json")
     audit_parser.add_argument("--date", default=None, help="API-Sports date filter YYYY-MM-DD")
@@ -310,7 +318,14 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Next-week report: {args.output}")
         print(f"Matches: {result['match_count']}")
         return 0
-    if args.command == "predict-week":
+    if args.command == "predict-hybrid":
+        from .hybrid_predict import build_hybrid
+        p = build_hybrid(args.list, args.history_sl, args.model_sl,
+                        args.history_general, args.model_general, args.output)
+        print(f"Hybrid predictions: {p['match_count']} (SL={p['superlig_match_count']}, GEN={p['general_match_count']}) -> {args.output}")
+        for m in p["predictions"]:
+            print(f"  M{m['match_index']:>2} {m['home_team'][:18]:18} - {m['away_team'][:18]:18} => {m['predicted_1x2']} ({m['model_used']})")
+        return 0
         payload = build_predictions(args.list, args.history, args.model, args.output, args.last_n)
         print(f"Predictions: {payload['match_count']} matches -> {args.output}")
         for p in payload["predictions"]:

@@ -31,6 +31,8 @@ def test_is_superlig_detects_tr_pairs():
     assert _is_superlig("Galatasaray A.Ş.", "Fenerbahçe A.Ş.") is True
     assert _is_superlig("B. Dortmund", "Bayern Münih") is False
     assert _is_superlig("Erzurumspor FK", "Galatasaray A.Ş.") is True
+    assert _is_superlig("Arca Çorum FK", "Kasımpaşa") is True
+    assert _is_superlig("Kocaelispor", "Amed Sportif Faaliyetler") is True
 
 
 def test_superlig_teams_normalized_in_set():

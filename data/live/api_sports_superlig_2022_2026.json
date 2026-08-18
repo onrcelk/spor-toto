@@ -5061,36 +5061,6 @@
   "away_goals": 1
  },
  {
-  "match_id": "fdccouk-2425-T1-1",
-  "home_team": "Kasimpasa",
-  "away_team": "Konyaspor",
-  "kickoff_iso": "2024-08-10T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 3,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-2",
-  "home_team": "Antalyaspor",
-  "away_team": "Goztep",
-  "kickoff_iso": "2024-08-10T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-3",
-  "home_team": "Fenerbahce",
-  "away_team": "Ad. Demirspor",
-  "kickoff_iso": "2024-08-10T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Kasımpaşa",
   "away_team": "Konyaspor",
   "kickoff_iso": "2024-08-10T16:15:00+00:00",
@@ -5110,26 +5080,6 @@
   "kickoff_iso": "2024-08-10T18:45:00+00:00",
   "home_goals": 0,
   "away_goals": 0
- },
- {
-  "match_id": "fdccouk-2425-T1-5",
-  "home_team": "Alanyaspor",
-  "away_team": "Eyupspor",
-  "kickoff_iso": "2024-08-11T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-6",
-  "home_team": "Samsunspor",
-  "away_team": "Besiktas",
-  "kickoff_iso": "2024-08-11T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Sivasspor",
@@ -5153,26 +5103,6 @@
   "away_goals": 2
  },
  {
-  "match_id": "fdccouk-2425-T1-7",
-  "home_team": "Bodrumspor",
-  "away_team": "Gaziantep",
-  "kickoff_iso": "2024-08-12T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-8",
-  "home_team": "Rizespor",
-  "away_team": "Buyuksehyr",
-  "kickoff_iso": "2024-08-12T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Rizespor",
   "away_team": "Başakşehir",
   "kickoff_iso": "2024-08-12T18:00:00+00:00",
@@ -5192,26 +5122,6 @@
   "kickoff_iso": "2024-08-16T18:00:00+00:00",
   "home_goals": 1,
   "away_goals": 2
- },
- {
-  "match_id": "fdccouk-2425-T1-11",
-  "home_team": "Ad. Demirspor",
-  "away_team": "Rizespor",
-  "kickoff_iso": "2024-08-17T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-12",
-  "home_team": "Goztep",
-  "away_team": "Fenerbahce",
-  "kickoff_iso": "2024-08-17T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Kayserispor",
@@ -5235,36 +5145,6 @@
   "away_goals": 2
  },
  {
-  "match_id": "fdccouk-2425-T1-13",
-  "home_team": "Buyuksehyr",
-  "away_team": "Alanyaspor",
-  "kickoff_iso": "2024-08-18T00:00:00+00:00",
-  "home_goals": 4,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-14",
-  "home_team": "Besiktas",
-  "away_team": "Antalyaspor",
-  "kickoff_iso": "2024-08-18T00:00:00+00:00",
-  "home_goals": 4,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-15",
-  "home_team": "Gaziantep",
-  "away_team": "Samsunspor",
-  "kickoff_iso": "2024-08-18T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Başakşehir",
   "away_team": "Alanyaspor",
   "kickoff_iso": "2024-08-18T16:15:00+00:00",
@@ -5286,26 +5166,6 @@
   "away_goals": 1
  },
  {
-  "match_id": "fdccouk-2425-T1-16",
-  "home_team": "Eyupspor",
-  "away_team": "Bodrumspor",
-  "kickoff_iso": "2024-08-19T00:00:00+00:00",
-  "home_goals": 4,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-17",
-  "home_team": "Hatayspor",
-  "away_team": "Kasimpasa",
-  "kickoff_iso": "2024-08-19T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Hatayspor",
   "away_team": "Kasımpaşa",
   "kickoff_iso": "2024-08-19T18:00:00+00:00",
@@ -5320,41 +5180,11 @@
   "away_goals": 1
  },
  {
-  "match_id": "fdccouk-2425-T1-18",
-  "home_team": "Alanyaspor",
-  "away_team": "Goztep",
-  "kickoff_iso": "2024-08-23T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Alanyaspor",
   "away_team": "Göztepe",
   "kickoff_iso": "2024-08-23T18:00:00+00:00",
   "home_goals": 1,
   "away_goals": 1
- },
- {
-  "match_id": "fdccouk-2425-T1-19",
-  "home_team": "Sivasspor",
-  "away_team": "Eyupspor",
-  "kickoff_iso": "2024-08-24T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-20",
-  "home_team": "Bodrumspor",
-  "away_team": "Konyaspor",
-  "kickoff_iso": "2024-08-24T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Sivasspor",
@@ -5369,26 +5199,6 @@
   "kickoff_iso": "2024-08-24T18:45:00+00:00",
   "home_goals": 3,
   "away_goals": 1
- },
- {
-  "match_id": "fdccouk-2425-T1-21",
-  "home_team": "Kasimpasa",
-  "away_team": "Ad. Demirspor",
-  "kickoff_iso": "2024-08-25T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-23",
-  "home_team": "Rizespor",
-  "away_team": "Fenerbahce",
-  "kickoff_iso": "2024-08-25T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 5,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Kasımpaşa",
@@ -5412,51 +5222,11 @@
   "away_goals": 5
  },
  {
-  "match_id": "fdccouk-2425-T1-24",
-  "home_team": "Fenerbahce",
-  "away_team": "Alanyaspor",
-  "kickoff_iso": "2024-08-30T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Fenerbahçe",
   "away_team": "Alanyaspor",
   "kickoff_iso": "2024-08-30T18:00:00+00:00",
   "home_goals": 3,
   "away_goals": 0
- },
- {
-  "match_id": "fdccouk-2425-T1-26",
-  "home_team": "Rizespor",
-  "away_team": "Kasimpasa",
-  "kickoff_iso": "2024-08-31T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-27",
-  "home_team": "Ad. Demirspor",
-  "away_team": "Galatasaray",
-  "kickoff_iso": "2024-08-31T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 5,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-28",
-  "home_team": "Goztep",
-  "away_team": "Bodrumspor",
-  "kickoff_iso": "2024-08-31T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Konyaspor",
@@ -5487,36 +5257,6 @@
   "away_goals": 5
  },
  {
-  "match_id": "fdccouk-2425-T1-29",
-  "home_team": "Buyuksehyr",
-  "away_team": "Antalyaspor",
-  "kickoff_iso": "2024-09-01T00:00:00+00:00",
-  "home_goals": 5,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-30",
-  "home_team": "Eyupspor",
-  "away_team": "Trabzonspor",
-  "kickoff_iso": "2024-09-01T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-31",
-  "home_team": "Besiktas",
-  "away_team": "Sivasspor",
-  "kickoff_iso": "2024-09-01T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Başakşehir",
   "away_team": "Antalyaspor",
   "kickoff_iso": "2024-09-01T16:15:00+00:00",
@@ -5545,26 +5285,6 @@
   "away_goals": 3
  },
  {
-  "match_id": "fdccouk-2425-T1-34",
-  "home_team": "Sivasspor",
-  "away_team": "Gaziantep",
-  "kickoff_iso": "2024-09-14T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-35",
-  "home_team": "Bodrumspor",
-  "away_team": "Buyuksehyr",
-  "kickoff_iso": "2024-09-14T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Sivasspor",
   "away_team": "Gaziantep FK",
   "kickoff_iso": "2024-09-14T14:00:00+00:00",
@@ -5591,36 +5311,6 @@
   "kickoff_iso": "2024-09-14T17:00:00+00:00",
   "home_goals": 0,
   "away_goals": 1
- },
- {
-  "match_id": "fdccouk-2425-T1-37",
-  "home_team": "Kasimpasa",
-  "away_team": "Fenerbahce",
-  "kickoff_iso": "2024-09-15T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-38",
-  "home_team": "Kayserispor",
-  "away_team": "Eyupspor",
-  "kickoff_iso": "2024-09-15T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-40",
-  "home_team": "Trabzonspor",
-  "away_team": "Besiktas",
-  "kickoff_iso": "2024-09-15T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Kayserispor",
@@ -5651,16 +5341,6 @@
   "away_goals": 1
  },
  {
-  "match_id": "fdccouk-2425-T1-41",
-  "home_team": "Antalyaspor",
-  "away_team": "Ad. Demirspor",
-  "kickoff_iso": "2024-09-16T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Antalyaspor",
   "away_team": "Adana Demirspor",
   "kickoff_iso": "2024-09-16T17:00:00+00:00",
@@ -5668,31 +5348,11 @@
   "away_goals": 1
  },
  {
-  "match_id": "fdccouk-2425-T1-42",
-  "home_team": "Galatasaray",
-  "away_team": "Gaziantep",
-  "kickoff_iso": "2024-09-17T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Galatasaray",
   "away_team": "Gaziantep FK",
   "kickoff_iso": "2024-09-17T17:00:00+00:00",
   "home_goals": 3,
   "away_goals": 1
- },
- {
-  "match_id": "fdccouk-2425-T1-43",
-  "home_team": "Samsunspor",
-  "away_team": "Buyuksehyr",
-  "kickoff_iso": "2024-09-18T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Samsunspor",
@@ -5709,31 +5369,11 @@
   "away_goals": 2
  },
  {
-  "match_id": "fdccouk-2425-T1-45",
-  "home_team": "Hatayspor",
-  "away_team": "Bodrumspor",
-  "kickoff_iso": "2024-09-20T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Hatayspor",
   "away_team": "Bodrum FK",
   "kickoff_iso": "2024-09-20T17:00:00+00:00",
   "home_goals": 0,
   "away_goals": 1
- },
- {
-  "match_id": "fdccouk-2425-T1-47",
-  "home_team": "Fenerbahce",
-  "away_team": "Galatasaray",
-  "kickoff_iso": "2024-09-21T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 3,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Konyaspor",
@@ -5748,36 +5388,6 @@
   "kickoff_iso": "2024-09-21T17:00:00+00:00",
   "home_goals": 1,
   "away_goals": 3
- },
- {
-  "match_id": "fdccouk-2425-T1-48",
-  "home_team": "Kasimpasa",
-  "away_team": "Antalyaspor",
-  "kickoff_iso": "2024-09-22T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-50",
-  "home_team": "Ad. Demirspor",
-  "away_team": "Alanyaspor",
-  "kickoff_iso": "2024-09-22T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-51",
-  "home_team": "Besiktas",
-  "away_team": "Eyupspor",
-  "kickoff_iso": "2024-09-22T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Kasımpaşa",
@@ -5808,26 +5418,6 @@
   "away_goals": 2
  },
  {
-  "match_id": "fdccouk-2425-T1-52",
-  "home_team": "Gaziantep",
-  "away_team": "Trabzonspor",
-  "kickoff_iso": "2024-09-23T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-53",
-  "home_team": "Goztep",
-  "away_team": "Kayserispor",
-  "kickoff_iso": "2024-09-23T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Göztepe",
   "away_team": "Kayserispor",
   "kickoff_iso": "2024-09-23T17:00:00+00:00",
@@ -5842,41 +5432,11 @@
   "away_goals": 0
  },
  {
-  "match_id": "fdccouk-2425-T1-54",
-  "home_team": "Sivasspor",
-  "away_team": "Buyuksehyr",
-  "kickoff_iso": "2024-09-27T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Sivasspor",
   "away_team": "Başakşehir",
   "kickoff_iso": "2024-09-27T17:00:00+00:00",
   "home_goals": 1,
   "away_goals": 2
- },
- {
-  "match_id": "fdccouk-2425-T1-55",
-  "home_team": "Samsunspor",
-  "away_team": "Goztep",
-  "kickoff_iso": "2024-09-28T00:00:00+00:00",
-  "home_goals": 4,
-  "away_goals": 3,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-57",
-  "home_team": "Galatasaray",
-  "away_team": "Kasimpasa",
-  "kickoff_iso": "2024-09-28T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 3,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Samsunspor",
@@ -5898,36 +5458,6 @@
   "kickoff_iso": "2024-09-28T16:00:00+00:00",
   "home_goals": 1,
   "away_goals": 0
- },
- {
-  "match_id": "fdccouk-2425-T1-58",
-  "home_team": "Eyupspor",
-  "away_team": "Gaziantep",
-  "kickoff_iso": "2024-09-29T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-60",
-  "home_team": "Antalyaspor",
-  "away_team": "Fenerbahce",
-  "kickoff_iso": "2024-09-29T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-61",
-  "home_team": "Bodrumspor",
-  "away_team": "Ad. Demirspor",
-  "kickoff_iso": "2024-09-29T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Trabzonspor",
@@ -5958,16 +5488,6 @@
   "away_goals": 1
  },
  {
-  "match_id": "fdccouk-2425-T1-62",
-  "home_team": "Kayserispor",
-  "away_team": "Besiktas",
-  "kickoff_iso": "2024-09-30T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 3,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Kayserispor",
   "away_team": "Beşiktaş",
   "kickoff_iso": "2024-09-30T17:00:00+00:00",
@@ -5980,36 +5500,6 @@
   "kickoff_iso": "2024-10-04T17:00:00+00:00",
   "home_goals": 2,
   "away_goals": 1
- },
- {
-  "match_id": "fdccouk-2425-T1-64",
-  "home_team": "Kasimpasa",
-  "away_team": "Bodrumspor",
-  "kickoff_iso": "2024-10-05T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-65",
-  "home_team": "Goztep",
-  "away_team": "Sivasspor",
-  "kickoff_iso": "2024-10-05T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-66",
-  "home_team": "Buyuksehyr",
-  "away_team": "Kayserispor",
-  "kickoff_iso": "2024-10-05T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Kasımpaşa",
@@ -6040,36 +5530,6 @@
   "away_goals": 1
  },
  {
-  "match_id": "fdccouk-2425-T1-68",
-  "home_team": "Konyaspor",
-  "away_team": "Eyupspor",
-  "kickoff_iso": "2024-10-06T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-69",
-  "home_team": "Ad. Demirspor",
-  "away_team": "Samsunspor",
-  "kickoff_iso": "2024-10-06T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 3,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-71",
-  "home_team": "Gaziantep",
-  "away_team": "Besiktas",
-  "kickoff_iso": "2024-10-06T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Konyaspor",
   "away_team": "Eyüpspor",
   "kickoff_iso": "2024-10-06T10:30:00+00:00",
@@ -6096,36 +5556,6 @@
   "kickoff_iso": "2024-10-06T16:00:00+00:00",
   "home_goals": 1,
   "away_goals": 1
- },
- {
-  "match_id": "fdccouk-2425-T1-72",
-  "home_team": "Kayserispor",
-  "away_team": "Gaziantep",
-  "kickoff_iso": "2024-10-19T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-73",
-  "home_team": "Trabzonspor",
-  "away_team": "Buyuksehyr",
-  "kickoff_iso": "2024-10-19T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-75",
-  "home_team": "Eyupspor",
-  "away_team": "Goztep",
-  "kickoff_iso": "2024-10-19T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Kayserispor",
@@ -6156,36 +5586,6 @@
   "away_goals": 0
  },
  {
-  "match_id": "fdccouk-2425-T1-77",
-  "home_team": "Besiktas",
-  "away_team": "Konyaspor",
-  "kickoff_iso": "2024-10-20T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-78",
-  "home_team": "Alanyaspor",
-  "away_team": "Kasimpasa",
-  "kickoff_iso": "2024-10-20T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-79",
-  "home_team": "Samsunspor",
-  "away_team": "Fenerbahce",
-  "kickoff_iso": "2024-10-20T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Sivasspor",
   "away_team": "Hatayspor",
   "kickoff_iso": "2024-10-20T10:30:00+00:00",
@@ -6214,16 +5614,6 @@
   "away_goals": 2
  },
  {
-  "match_id": "fdccouk-2425-T1-80",
-  "home_team": "Bodrumspor",
-  "away_team": "Rizespor",
-  "kickoff_iso": "2024-10-21T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Bodrum FK",
   "away_team": "Rizespor",
   "kickoff_iso": "2024-10-21T17:00:00+00:00",
@@ -6231,41 +5621,11 @@
   "away_goals": 1
  },
  {
-  "match_id": "fdccouk-2425-T1-81",
-  "home_team": "Ad. Demirspor",
-  "away_team": "Sivasspor",
-  "kickoff_iso": "2024-10-25T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 4,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Adana Demirspor",
   "away_team": "Sivasspor",
   "kickoff_iso": "2024-10-25T17:00:00+00:00",
   "home_goals": 2,
   "away_goals": 4
- },
- {
-  "match_id": "fdccouk-2425-T1-83",
-  "home_team": "Kasimpasa",
-  "away_team": "Samsunspor",
-  "kickoff_iso": "2024-10-26T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 4,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-84",
-  "home_team": "Goztep",
-  "away_team": "Trabzonspor",
-  "kickoff_iso": "2024-10-26T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Hatayspor",
@@ -6289,26 +5649,6 @@
   "away_goals": 1
  },
  {
-  "match_id": "fdccouk-2425-T1-85",
-  "home_team": "Gaziantep",
-  "away_team": "Konyaspor",
-  "kickoff_iso": "2024-10-27T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-87",
-  "home_team": "Fenerbahce",
-  "away_team": "Bodrumspor",
-  "kickoff_iso": "2024-10-27T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Gaziantep FK",
   "away_team": "Konyaspor",
   "kickoff_iso": "2024-10-27T09:30:00+00:00",
@@ -6330,26 +5670,6 @@
   "away_goals": 0
  },
  {
-  "match_id": "fdccouk-2425-T1-88",
-  "home_team": "Buyuksehyr",
-  "away_team": "Eyupspor",
-  "kickoff_iso": "2024-10-28T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-89",
-  "home_team": "Galatasaray",
-  "away_team": "Besiktas",
-  "kickoff_iso": "2024-10-28T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Başakşehir",
   "away_team": "Eyüpspor",
   "kickoff_iso": "2024-10-28T14:00:00+00:00",
@@ -6364,41 +5684,11 @@
   "away_goals": 1
  },
  {
-  "match_id": "fdccouk-2425-T1-90",
-  "home_team": "Gaziantep",
-  "away_team": "Goztep",
-  "kickoff_iso": "2024-11-01T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Gaziantep FK",
   "away_team": "Göztepe",
   "kickoff_iso": "2024-11-01T17:00:00+00:00",
   "home_goals": 2,
   "away_goals": 1
- },
- {
-  "match_id": "fdccouk-2425-T1-92",
-  "home_team": "Kayserispor",
-  "away_team": "Ad. Demirspor",
-  "kickoff_iso": "2024-11-02T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-93",
-  "home_team": "Besiktas",
-  "away_team": "Kasimpasa",
-  "kickoff_iso": "2024-11-02T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 3,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Sivasspor",
@@ -6420,46 +5710,6 @@
   "kickoff_iso": "2024-11-02T16:00:00+00:00",
   "home_goals": 1,
   "away_goals": 3
- },
- {
-  "match_id": "fdccouk-2425-T1-94",
-  "home_team": "Konyaspor",
-  "away_team": "Buyuksehyr",
-  "kickoff_iso": "2024-11-03T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-95",
-  "home_team": "Bodrumspor",
-  "away_team": "Alanyaspor",
-  "kickoff_iso": "2024-11-03T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-96",
-  "home_team": "Eyupspor",
-  "away_team": "Hatayspor",
-  "kickoff_iso": "2024-11-03T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-97",
-  "home_team": "Trabzonspor",
-  "away_team": "Fenerbahce",
-  "kickoff_iso": "2024-11-03T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 3,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Konyaspor",
@@ -6497,51 +5747,11 @@
   "away_goals": 0
  },
  {
-  "match_id": "fdccouk-2425-T1-99",
-  "home_team": "Kasimpasa",
-  "away_team": "Kayserispor",
-  "kickoff_iso": "2024-11-08T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Kasımpaşa",
   "away_team": "Kayserispor",
   "kickoff_iso": "2024-11-08T17:00:00+00:00",
   "home_goals": 1,
   "away_goals": 2
- },
- {
-  "match_id": "fdccouk-2425-T1-100",
-  "home_team": "Antalyaspor",
-  "away_team": "Bodrumspor",
-  "kickoff_iso": "2024-11-09T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-101",
-  "home_team": "Hatayspor",
-  "away_team": "Gaziantep",
-  "kickoff_iso": "2024-11-09T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-102",
-  "home_team": "Ad. Demirspor",
-  "away_team": "Eyupspor",
-  "kickoff_iso": "2024-11-09T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Antalyaspor",
@@ -6572,36 +5782,6 @@
   "away_goals": 1
  },
  {
-  "match_id": "fdccouk-2425-T1-104",
-  "home_team": "Goztep",
-  "away_team": "Konyaspor",
-  "kickoff_iso": "2024-11-10T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-106",
-  "home_team": "Buyuksehyr",
-  "away_team": "Besiktas",
-  "kickoff_iso": "2024-11-10T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-107",
-  "home_team": "Fenerbahce",
-  "away_team": "Sivasspor",
-  "kickoff_iso": "2024-11-10T00:00:00+00:00",
-  "home_goals": 4,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Göztepe",
   "away_team": "Konyaspor",
   "kickoff_iso": "2024-11-10T10:30:00+00:00",
@@ -6628,46 +5808,6 @@
   "kickoff_iso": "2024-11-10T16:00:00+00:00",
   "home_goals": 4,
   "away_goals": 0
- },
- {
-  "match_id": "fdccouk-2425-T1-108",
-  "home_team": "Eyupspor",
-  "away_team": "Rizespor",
-  "kickoff_iso": "2024-11-23T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-109",
-  "home_team": "Gaziantep",
-  "away_team": "Buyuksehyr",
-  "kickoff_iso": "2024-11-23T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-110",
-  "home_team": "Kayserispor",
-  "away_team": "Fenerbahce",
-  "kickoff_iso": "2024-11-23T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 6,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-111",
-  "home_team": "Bodrumspor",
-  "away_team": "Galatasaray",
-  "kickoff_iso": "2024-11-23T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Eyüpspor",
@@ -6698,26 +5838,6 @@
   "away_goals": 1
  },
  {
-  "match_id": "fdccouk-2425-T1-112",
-  "home_team": "Sivasspor",
-  "away_team": "Kasimpasa",
-  "kickoff_iso": "2024-11-24T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-115",
-  "home_team": "Besiktas",
-  "away_team": "Goztep",
-  "kickoff_iso": "2024-11-24T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 4,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Sivasspor",
   "away_team": "Kasımpaşa",
   "kickoff_iso": "2024-11-24T10:30:00+00:00",
@@ -6746,16 +5866,6 @@
   "away_goals": 4
  },
  {
-  "match_id": "fdccouk-2425-T1-116",
-  "home_team": "Trabzonspor",
-  "away_team": "Ad. Demirspor",
-  "kickoff_iso": "2024-11-25T00:00:00+00:00",
-  "home_goals": 5,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Trabzonspor",
   "away_team": "Adana Demirspor",
   "kickoff_iso": "2024-11-25T17:00:00+00:00",
@@ -6768,36 +5878,6 @@
   "kickoff_iso": "2024-11-29T17:00:00+00:00",
   "home_goals": 2,
   "away_goals": 1
- },
- {
-  "match_id": "fdccouk-2425-T1-118",
-  "home_team": "Samsunspor",
-  "away_team": "Bodrumspor",
-  "kickoff_iso": "2024-11-30T00:00:00+00:00",
-  "home_goals": 4,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-119",
-  "home_team": "Ad. Demirspor",
-  "away_team": "Konyaspor",
-  "kickoff_iso": "2024-11-30T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-121",
-  "home_team": "Buyuksehyr",
-  "away_team": "Goztep",
-  "kickoff_iso": "2024-11-30T00:00:00+00:00",
-  "home_goals": 4,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Samsunspor",
@@ -6828,16 +5908,6 @@
   "away_goals": 1
  },
  {
-  "match_id": "fdccouk-2425-T1-123",
-  "home_team": "Galatasaray",
-  "away_team": "Eyupspor",
-  "kickoff_iso": "2024-12-01T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Rizespor",
   "away_team": "Kayserispor",
   "kickoff_iso": "2024-12-01T13:00:00+00:00",
@@ -6850,26 +5920,6 @@
   "kickoff_iso": "2024-12-01T16:00:00+00:00",
   "home_goals": 2,
   "away_goals": 2
- },
- {
-  "match_id": "fdccouk-2425-T1-124",
-  "home_team": "Fenerbahce",
-  "away_team": "Gaziantep",
-  "kickoff_iso": "2024-12-02T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-125",
-  "home_team": "Hatayspor",
-  "away_team": "Besiktas",
-  "kickoff_iso": "2024-12-02T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Fenerbahçe",
@@ -6886,41 +5936,11 @@
   "away_goals": 1
  },
  {
-  "match_id": "fdccouk-2425-T1-126",
-  "home_team": "Trabzonspor",
-  "away_team": "Kasimpasa",
-  "kickoff_iso": "2024-12-06T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Trabzonspor",
   "away_team": "Kasımpaşa",
   "kickoff_iso": "2024-12-06T17:00:00+00:00",
   "home_goals": 2,
   "away_goals": 2
- },
- {
-  "match_id": "fdccouk-2425-T1-128",
-  "home_team": "Goztep",
-  "away_team": "Ad. Demirspor",
-  "kickoff_iso": "2024-12-07T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-129",
-  "home_team": "Besiktas",
-  "away_team": "Fenerbahce",
-  "kickoff_iso": "2024-12-07T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Konyaspor",
@@ -6942,26 +5962,6 @@
   "kickoff_iso": "2024-12-07T16:00:00+00:00",
   "home_goals": 1,
   "away_goals": 0
- },
- {
-  "match_id": "fdccouk-2425-T1-130",
-  "home_team": "Eyupspor",
-  "away_team": "Samsunspor",
-  "kickoff_iso": "2024-12-08T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-133",
-  "home_team": "Buyuksehyr",
-  "away_team": "Hatayspor",
-  "kickoff_iso": "2024-12-08T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Eyüpspor",
@@ -6992,41 +5992,11 @@
   "away_goals": 0
  },
  {
-  "match_id": "fdccouk-2425-T1-134",
-  "home_team": "Gaziantep",
-  "away_team": "Rizespor",
-  "kickoff_iso": "2024-12-09T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Gaziantep FK",
   "away_team": "Rizespor",
   "kickoff_iso": "2024-12-09T17:00:00+00:00",
   "home_goals": 1,
   "away_goals": 0
- },
- {
-  "match_id": "fdccouk-2425-T1-135",
-  "home_team": "Bodrumspor",
-  "away_team": "Sivasspor",
-  "kickoff_iso": "2024-12-13T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-136",
-  "home_team": "Kasimpasa",
-  "away_team": "Eyupspor",
-  "kickoff_iso": "2024-12-13T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Kasımpaşa",
@@ -7043,16 +6013,6 @@
   "away_goals": 0
  },
  {
-  "match_id": "fdccouk-2425-T1-138",
-  "home_team": "Alanyaspor",
-  "away_team": "Gaziantep",
-  "kickoff_iso": "2024-12-14T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Rizespor",
   "away_team": "Konyaspor",
   "kickoff_iso": "2024-12-14T13:00:00+00:00",
@@ -7065,26 +6025,6 @@
   "kickoff_iso": "2024-12-14T16:00:00+00:00",
   "home_goals": 3,
   "away_goals": 0
- },
- {
-  "match_id": "fdccouk-2425-T1-139",
-  "home_team": "Hatayspor",
-  "away_team": "Goztep",
-  "kickoff_iso": "2024-12-15T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-141",
-  "home_team": "Fenerbahce",
-  "away_team": "Buyuksehyr",
-  "kickoff_iso": "2024-12-15T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Hatayspor",
@@ -7108,16 +6048,6 @@
   "away_goals": 1
  },
  {
-  "match_id": "fdccouk-2425-T1-142",
-  "home_team": "Ad. Demirspor",
-  "away_team": "Besiktas",
-  "kickoff_iso": "2024-12-16T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Adana Demirspor",
   "away_team": "Beşiktaş",
   "kickoff_iso": "2024-12-16T16:00:00+00:00",
@@ -7132,31 +6062,11 @@
   "away_goals": 3
  },
  {
-  "match_id": "fdccouk-2425-T1-144",
-  "home_team": "Eyupspor",
-  "away_team": "Fenerbahce",
-  "kickoff_iso": "2024-12-20T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Eyüpspor",
   "away_team": "Fenerbahçe",
   "kickoff_iso": "2024-12-20T17:00:00+00:00",
   "home_goals": 1,
   "away_goals": 1
- },
- {
-  "match_id": "fdccouk-2425-T1-146",
-  "home_team": "Besiktas",
-  "away_team": "Alanyaspor",
-  "kickoff_iso": "2024-12-21T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Sivasspor",
@@ -7171,36 +6081,6 @@
   "kickoff_iso": "2024-12-21T16:00:00+00:00",
   "home_goals": 1,
   "away_goals": 1
- },
- {
-  "match_id": "fdccouk-2425-T1-147",
-  "home_team": "Gaziantep",
-  "away_team": "Antalyaspor",
-  "kickoff_iso": "2024-12-22T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-148",
-  "home_team": "Goztep",
-  "away_team": "Rizespor",
-  "kickoff_iso": "2024-12-22T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-150",
-  "home_team": "Trabzonspor",
-  "away_team": "Bodrumspor",
-  "kickoff_iso": "2024-12-22T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Gaziantep FK",
@@ -7231,26 +6111,6 @@
   "away_goals": 0
  },
  {
-  "match_id": "fdccouk-2425-T1-151",
-  "home_team": "Buyuksehyr",
-  "away_team": "Kasimpasa",
-  "kickoff_iso": "2024-12-23T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-152",
-  "home_team": "Hatayspor",
-  "away_team": "Ad. Demirspor",
-  "kickoff_iso": "2024-12-23T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 3,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Başakşehir",
   "away_team": "Kasımpaşa",
   "kickoff_iso": "2024-12-23T17:00:00+00:00",
@@ -7265,16 +6125,6 @@
   "away_goals": 3
  },
  {
-  "match_id": "fdccouk-2425-T1-154",
-  "home_team": "Rizespor",
-  "away_team": "Besiktas",
-  "kickoff_iso": "2025-01-03T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Alanyaspor",
   "away_team": "Konyaspor",
   "kickoff_iso": "2025-01-03T17:00:00+00:00",
@@ -7287,36 +6137,6 @@
   "kickoff_iso": "2025-01-03T17:00:00+00:00",
   "home_goals": 1,
   "away_goals": 1
- },
- {
-  "match_id": "fdccouk-2425-T1-155",
-  "home_team": "Ad. Demirspor",
-  "away_team": "Buyuksehyr",
-  "kickoff_iso": "2025-01-04T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-156",
-  "home_team": "Antalyaspor",
-  "away_team": "Eyupspor",
-  "kickoff_iso": "2025-01-04T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 4,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-157",
-  "home_team": "Galatasaray",
-  "away_team": "Goztep",
-  "kickoff_iso": "2025-01-04T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Adana Demirspor",
@@ -7347,36 +6167,6 @@
   "away_goals": 1
  },
  {
-  "match_id": "fdccouk-2425-T1-159",
-  "home_team": "Kasimpasa",
-  "away_team": "Gaziantep",
-  "kickoff_iso": "2025-01-05T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-160",
-  "home_team": "Bodrumspor",
-  "away_team": "Kayserispor",
-  "kickoff_iso": "2025-01-05T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-161",
-  "home_team": "Fenerbahce",
-  "away_team": "Hatayspor",
-  "kickoff_iso": "2025-01-05T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Kasımpaşa",
   "away_team": "Gaziantep FK",
   "kickoff_iso": "2025-01-05T10:30:00+00:00",
@@ -7398,16 +6188,6 @@
   "away_goals": 1
  },
  {
-  "match_id": "fdccouk-2425-T1-164",
-  "home_team": "Besiktas",
-  "away_team": "Bodrumspor",
-  "kickoff_iso": "2025-01-11T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Kayserispor",
   "away_team": "Samsunspor",
   "kickoff_iso": "2025-01-11T10:30:00+00:00",
@@ -7427,26 +6207,6 @@
   "kickoff_iso": "2025-01-11T16:00:00+00:00",
   "home_goals": 2,
   "away_goals": 1
- },
- {
-  "match_id": "fdccouk-2425-T1-167",
-  "home_team": "Buyuksehyr",
-  "away_team": "Galatasaray",
-  "kickoff_iso": "2025-01-12T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-168",
-  "home_team": "Gaziantep",
-  "away_team": "Ad. Demirspor",
-  "kickoff_iso": "2025-01-12T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Sivasspor",
@@ -7477,26 +6237,6 @@
   "away_goals": 0
  },
  {
-  "match_id": "fdccouk-2425-T1-169",
-  "home_team": "Goztep",
-  "away_team": "Kasimpasa",
-  "kickoff_iso": "2025-01-13T00:00:00+00:00",
-  "home_goals": 5,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-170",
-  "home_team": "Konyaspor",
-  "away_team": "Fenerbahce",
-  "kickoff_iso": "2025-01-13T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 3,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Konyaspor",
   "away_team": "Fenerbahçe",
   "kickoff_iso": "2025-01-13T17:00:00+00:00",
@@ -7518,36 +6258,6 @@
   "away_goals": 1
  },
  {
-  "match_id": "fdccouk-2425-T1-172",
-  "home_team": "Buyuksehyr",
-  "away_team": "Rizespor",
-  "kickoff_iso": "2025-01-18T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-173",
-  "home_team": "Gaziantep",
-  "away_team": "Bodrumspor",
-  "kickoff_iso": "2025-01-18T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-174",
-  "home_team": "Besiktas",
-  "away_team": "Samsunspor",
-  "kickoff_iso": "2025-01-18T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Başakşehir",
   "away_team": "Rizespor",
   "kickoff_iso": "2025-01-18T10:30:00+00:00",
@@ -7567,46 +6277,6 @@
   "kickoff_iso": "2025-01-18T16:00:00+00:00",
   "home_goals": 0,
   "away_goals": 0
- },
- {
-  "match_id": "fdccouk-2425-T1-175",
-  "home_team": "Goztep",
-  "away_team": "Antalyaspor",
-  "kickoff_iso": "2025-01-19T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-176",
-  "home_team": "Konyaspor",
-  "away_team": "Kasimpasa",
-  "kickoff_iso": "2025-01-19T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 3,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-177",
-  "home_team": "Ad. Demirspor",
-  "away_team": "Fenerbahce",
-  "kickoff_iso": "2025-01-19T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 4,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-178",
-  "home_team": "Eyupspor",
-  "away_team": "Alanyaspor",
-  "kickoff_iso": "2025-01-19T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Göztepe",
@@ -7644,31 +6314,11 @@
   "away_goals": 0
  },
  {
-  "match_id": "fdccouk-2425-T1-180",
-  "home_team": "Samsunspor",
-  "away_team": "Gaziantep",
-  "kickoff_iso": "2025-01-24T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Samsunspor",
   "away_team": "Gaziantep FK",
   "kickoff_iso": "2025-01-24T17:00:00+00:00",
   "home_goals": 2,
   "away_goals": 1
- },
- {
-  "match_id": "fdccouk-2425-T1-182",
-  "home_team": "Alanyaspor",
-  "away_team": "Buyuksehyr",
-  "kickoff_iso": "2025-01-25T00:00:00+00:00",
-  "home_goals": 5,
-  "away_goals": 4,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Sivasspor",
@@ -7690,46 +6340,6 @@
   "kickoff_iso": "2025-01-25T16:00:00+00:00",
   "home_goals": 1,
   "away_goals": 0
- },
- {
-  "match_id": "fdccouk-2425-T1-184",
-  "home_team": "Rizespor",
-  "away_team": "Ad. Demirspor",
-  "kickoff_iso": "2025-01-26T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-185",
-  "home_team": "Antalyaspor",
-  "away_team": "Besiktas",
-  "kickoff_iso": "2025-01-26T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-186",
-  "home_team": "Bodrumspor",
-  "away_team": "Eyupspor",
-  "kickoff_iso": "2025-01-26T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-187",
-  "home_team": "Fenerbahce",
-  "away_team": "Goztep",
-  "kickoff_iso": "2025-01-26T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Rizespor",
@@ -7760,41 +6370,11 @@
   "away_goals": 2
  },
  {
-  "match_id": "fdccouk-2425-T1-188",
-  "home_team": "Kasimpasa",
-  "away_team": "Hatayspor",
-  "kickoff_iso": "2025-01-27T00:00:00+00:00",
-  "home_goals": 5,
-  "away_goals": 4,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Kasımpaşa",
   "away_team": "Hatayspor",
   "kickoff_iso": "2025-01-27T17:00:00+00:00",
   "home_goals": 5,
   "away_goals": 4
- },
- {
-  "match_id": "fdccouk-2425-T1-189",
-  "home_team": "Eyupspor",
-  "away_team": "Sivasspor",
-  "kickoff_iso": "2025-01-31T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-190",
-  "home_team": "Konyaspor",
-  "away_team": "Bodrumspor",
-  "kickoff_iso": "2025-01-31T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Konyaspor",
@@ -7809,16 +6389,6 @@
   "kickoff_iso": "2025-01-31T17:00:00+00:00",
   "home_goals": 1,
   "away_goals": 0
- },
- {
-  "match_id": "fdccouk-2425-T1-193",
-  "home_team": "Buyuksehyr",
-  "away_team": "Samsunspor",
-  "kickoff_iso": "2025-02-01T00:00:00+00:00",
-  "home_goals": 4,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Hatayspor",
@@ -7842,36 +6412,6 @@
   "away_goals": 0
  },
  {
-  "match_id": "fdccouk-2425-T1-194",
-  "home_team": "Ad. Demirspor",
-  "away_team": "Kasimpasa",
-  "kickoff_iso": "2025-02-02T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 5,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-195",
-  "home_team": "Goztep",
-  "away_team": "Alanyaspor",
-  "kickoff_iso": "2025-02-02T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-196",
-  "home_team": "Fenerbahce",
-  "away_team": "Rizespor",
-  "kickoff_iso": "2025-02-02T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Adana Demirspor",
   "away_team": "Kasımpaşa",
   "kickoff_iso": "2025-02-02T10:30:00+00:00",
@@ -7893,16 +6433,6 @@
   "away_goals": 2
  },
  {
-  "match_id": "fdccouk-2425-T1-197",
-  "home_team": "Gaziantep",
-  "away_team": "Galatasaray",
-  "kickoff_iso": "2025-02-03T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Gaziantep FK",
   "away_team": "Galatasaray",
   "kickoff_iso": "2025-02-03T17:00:00+00:00",
@@ -7917,16 +6447,6 @@
   "away_goals": 0
  },
  {
-  "match_id": "fdccouk-2425-T1-200",
-  "home_team": "Sivasspor",
-  "away_team": "Besiktas",
-  "kickoff_iso": "2025-02-08T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Kayserispor",
   "away_team": "Konyaspor",
   "kickoff_iso": "2025-02-08T13:00:00+00:00",
@@ -7939,46 +6459,6 @@
   "kickoff_iso": "2025-02-08T16:00:00+00:00",
   "home_goals": 0,
   "away_goals": 2
- },
- {
-  "match_id": "fdccouk-2425-T1-201",
-  "home_team": "Kasimpasa",
-  "away_team": "Rizespor",
-  "kickoff_iso": "2025-02-09T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-202",
-  "home_team": "Alanyaspor",
-  "away_team": "Fenerbahce",
-  "kickoff_iso": "2025-02-09T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-203",
-  "home_team": "Antalyaspor",
-  "away_team": "Buyuksehyr",
-  "kickoff_iso": "2025-02-09T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-204",
-  "home_team": "Galatasaray",
-  "away_team": "Ad. Demirspor",
-  "kickoff_iso": "2025-02-09T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Kasımpaşa",
@@ -8009,26 +6489,6 @@
   "away_goals": 0
  },
  {
-  "match_id": "fdccouk-2425-T1-205",
-  "home_team": "Bodrumspor",
-  "away_team": "Goztep",
-  "kickoff_iso": "2025-02-10T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-206",
-  "home_team": "Trabzonspor",
-  "away_team": "Eyupspor",
-  "kickoff_iso": "2025-02-10T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Trabzonspor",
   "away_team": "Eyüpspor",
   "kickoff_iso": "2025-02-10T17:00:00+00:00",
@@ -8043,51 +6503,11 @@
   "away_goals": 0
  },
  {
-  "match_id": "fdccouk-2425-T1-207",
-  "home_team": "Ad. Demirspor",
-  "away_team": "Antalyaspor",
-  "kickoff_iso": "2025-02-14T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Adana Demirspor",
   "away_team": "Antalyaspor",
   "kickoff_iso": "2025-02-14T17:00:00+00:00",
   "home_goals": 1,
   "away_goals": 1
- },
- {
-  "match_id": "fdccouk-2425-T1-208",
-  "home_team": "Gaziantep",
-  "away_team": "Sivasspor",
-  "kickoff_iso": "2025-02-15T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-209",
-  "home_team": "Buyuksehyr",
-  "away_team": "Bodrumspor",
-  "kickoff_iso": "2025-02-15T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-210",
-  "home_team": "Besiktas",
-  "away_team": "Trabzonspor",
-  "kickoff_iso": "2025-02-15T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Gaziantep FK",
@@ -8109,26 +6529,6 @@
   "kickoff_iso": "2025-02-15T16:00:00+00:00",
   "home_goals": 2,
   "away_goals": 1
- },
- {
-  "match_id": "fdccouk-2425-T1-212",
-  "home_team": "Eyupspor",
-  "away_team": "Kayserispor",
-  "kickoff_iso": "2025-02-16T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-214",
-  "home_team": "Fenerbahce",
-  "away_team": "Kasimpasa",
-  "kickoff_iso": "2025-02-16T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Hatayspor",
@@ -8166,26 +6566,6 @@
   "away_goals": 2
  },
  {
-  "match_id": "fdccouk-2425-T1-216",
-  "home_team": "Bodrumspor",
-  "away_team": "Hatayspor",
-  "kickoff_iso": "2025-02-21T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-217",
-  "home_team": "Eyupspor",
-  "away_team": "Besiktas",
-  "kickoff_iso": "2025-02-21T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 3,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Bodrum FK",
   "away_team": "Hatayspor",
   "kickoff_iso": "2025-02-21T17:00:00+00:00",
@@ -8198,16 +6578,6 @@
   "kickoff_iso": "2025-02-21T17:00:00+00:00",
   "home_goals": 1,
   "away_goals": 3
- },
- {
-  "match_id": "fdccouk-2425-T1-219",
-  "home_team": "Antalyaspor",
-  "away_team": "Kasimpasa",
-  "kickoff_iso": "2025-02-22T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Sivasspor",
@@ -8231,36 +6601,6 @@
   "away_goals": 3
  },
  {
-  "match_id": "fdccouk-2425-T1-221",
-  "home_team": "Kayserispor",
-  "away_team": "Goztep",
-  "kickoff_iso": "2025-02-23T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-222",
-  "home_team": "Alanyaspor",
-  "away_team": "Ad. Demirspor",
-  "kickoff_iso": "2025-02-23T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-223",
-  "home_team": "Trabzonspor",
-  "away_team": "Gaziantep",
-  "kickoff_iso": "2025-02-23T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Kayserispor",
   "away_team": "Göztepe",
   "kickoff_iso": "2025-02-23T10:30:00+00:00",
@@ -8282,41 +6622,11 @@
   "away_goals": 2
  },
  {
-  "match_id": "fdccouk-2425-T1-224",
-  "home_team": "Galatasaray",
-  "away_team": "Fenerbahce",
-  "kickoff_iso": "2025-02-24T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Galatasaray",
   "away_team": "Fenerbahçe",
   "kickoff_iso": "2025-02-24T17:00:00+00:00",
   "home_goals": 0,
   "away_goals": 0
- },
- {
-  "match_id": "fdccouk-2425-T1-225",
-  "home_team": "Ad. Demirspor",
-  "away_team": "Bodrumspor",
-  "kickoff_iso": "2025-03-01T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-226",
-  "home_team": "Besiktas",
-  "away_team": "Kayserispor",
-  "kickoff_iso": "2025-03-01T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Adana Demirspor",
@@ -8331,26 +6641,6 @@
   "kickoff_iso": "2025-03-01T17:30:00+00:00",
   "home_goals": 2,
   "away_goals": 0
- },
- {
-  "match_id": "fdccouk-2425-T1-228",
-  "home_team": "Kasimpasa",
-  "away_team": "Galatasaray",
-  "kickoff_iso": "2025-03-02T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 3,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-229",
-  "home_team": "Fenerbahce",
-  "away_team": "Antalyaspor",
-  "kickoff_iso": "2025-03-02T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Rizespor",
@@ -8372,36 +6662,6 @@
   "kickoff_iso": "2025-03-02T17:30:00+00:00",
   "home_goals": 3,
   "away_goals": 0
- },
- {
-  "match_id": "fdccouk-2425-T1-230",
-  "home_team": "Gaziantep",
-  "away_team": "Eyupspor",
-  "kickoff_iso": "2025-03-03T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-232",
-  "home_team": "Buyuksehyr",
-  "away_team": "Sivasspor",
-  "kickoff_iso": "2025-03-03T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-233",
-  "home_team": "Goztep",
-  "away_team": "Samsunspor",
-  "kickoff_iso": "2025-03-03T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Konyaspor",
@@ -8432,31 +6692,11 @@
   "away_goals": 2
  },
  {
-  "match_id": "fdccouk-2425-T1-234",
-  "home_team": "Bodrumspor",
-  "away_team": "Kasimpasa",
-  "kickoff_iso": "2025-03-07T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Bodrum FK",
   "away_team": "Kasımpaşa",
   "kickoff_iso": "2025-03-07T17:30:00+00:00",
   "home_goals": 1,
   "away_goals": 0
- },
- {
-  "match_id": "fdccouk-2425-T1-235",
-  "home_team": "Kayserispor",
-  "away_team": "Buyuksehyr",
-  "kickoff_iso": "2025-03-08T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Kayserispor",
@@ -8478,36 +6718,6 @@
   "kickoff_iso": "2025-03-08T17:30:00+00:00",
   "home_goals": 1,
   "away_goals": 2
- },
- {
-  "match_id": "fdccouk-2425-T1-238",
-  "home_team": "Sivasspor",
-  "away_team": "Goztep",
-  "kickoff_iso": "2025-03-09T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-239",
-  "home_team": "Eyupspor",
-  "away_team": "Konyaspor",
-  "kickoff_iso": "2025-03-09T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-240",
-  "home_team": "Samsunspor",
-  "away_team": "Ad. Demirspor",
-  "kickoff_iso": "2025-03-09T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Sivasspor",
@@ -8538,16 +6748,6 @@
   "away_goals": 2
  },
  {
-  "match_id": "fdccouk-2425-T1-242",
-  "home_team": "Besiktas",
-  "away_team": "Gaziantep",
-  "kickoff_iso": "2025-03-10T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Beşiktaş",
   "away_team": "Gaziantep FK",
   "kickoff_iso": "2025-03-10T17:30:00+00:00",
@@ -8560,46 +6760,6 @@
   "kickoff_iso": "2025-03-14T17:30:00+00:00",
   "home_goals": 4,
   "away_goals": 0
- },
- {
-  "match_id": "fdccouk-2425-T1-244",
-  "home_team": "Gaziantep",
-  "away_team": "Kayserispor",
-  "kickoff_iso": "2025-03-15T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-245",
-  "home_team": "Kasimpasa",
-  "away_team": "Alanyaspor",
-  "kickoff_iso": "2025-03-15T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-246",
-  "home_team": "Buyuksehyr",
-  "away_team": "Trabzonspor",
-  "kickoff_iso": "2025-03-15T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 3,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-247",
-  "home_team": "Konyaspor",
-  "away_team": "Besiktas",
-  "kickoff_iso": "2025-03-15T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Gaziantep FK",
@@ -8630,36 +6790,6 @@
   "away_goals": 0
  },
  {
-  "match_id": "fdccouk-2425-T1-248",
-  "home_team": "Rizespor",
-  "away_team": "Bodrumspor",
-  "kickoff_iso": "2025-03-16T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-249",
-  "home_team": "Goztep",
-  "away_team": "Eyupspor",
-  "kickoff_iso": "2025-03-16T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-251",
-  "home_team": "Fenerbahce",
-  "away_team": "Samsunspor",
-  "kickoff_iso": "2025-03-16T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Rizespor",
   "away_team": "Bodrum FK",
   "kickoff_iso": "2025-03-16T10:30:00+00:00",
@@ -8688,26 +6818,6 @@
   "away_goals": 0
  },
  {
-  "match_id": "fdccouk-2425-T1-254",
-  "home_team": "Bodrumspor",
-  "away_team": "Fenerbahce",
-  "kickoff_iso": "2025-03-28T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 4,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-255",
-  "home_team": "Konyaspor",
-  "away_team": "Gaziantep",
-  "kickoff_iso": "2025-03-28T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Kayserispor",
   "away_team": "Hatayspor",
   "kickoff_iso": "2025-03-28T13:00:00+00:00",
@@ -8734,46 +6844,6 @@
   "kickoff_iso": "2025-03-28T17:30:00+00:00",
   "home_goals": 2,
   "away_goals": 4
- },
- {
-  "match_id": "fdccouk-2425-T1-256",
-  "home_team": "Sivasspor",
-  "away_team": "Ad. Demirspor",
-  "kickoff_iso": "2025-03-29T00:00:00+00:00",
-  "home_goals": 5,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-257",
-  "home_team": "Samsunspor",
-  "away_team": "Kasimpasa",
-  "kickoff_iso": "2025-03-29T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-258",
-  "home_team": "Trabzonspor",
-  "away_team": "Goztep",
-  "kickoff_iso": "2025-03-29T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-259",
-  "home_team": "Besiktas",
-  "away_team": "Galatasaray",
-  "kickoff_iso": "2025-03-29T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Sivasspor",
@@ -8804,16 +6874,6 @@
   "away_goals": 1
  },
  {
-  "match_id": "fdccouk-2425-T1-260",
-  "home_team": "Eyupspor",
-  "away_team": "Buyuksehyr",
-  "kickoff_iso": "2025-03-31T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 3,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Eyüpspor",
   "away_team": "Başakşehir",
   "kickoff_iso": "2025-03-31T17:00:00+00:00",
@@ -8821,31 +6881,11 @@
   "away_goals": 3
  },
  {
-  "match_id": "fdccouk-2425-T1-261",
-  "home_team": "Ad. Demirspor",
-  "away_team": "Kayserispor",
-  "kickoff_iso": "2025-04-04T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Adana Demirspor",
   "away_team": "Kayserispor",
   "kickoff_iso": "2025-04-04T17:00:00+00:00",
   "home_goals": 0,
   "away_goals": 2
- },
- {
-  "match_id": "fdccouk-2425-T1-263",
-  "home_team": "Buyuksehyr",
-  "away_team": "Konyaspor",
-  "kickoff_iso": "2025-04-05T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Rizespor",
@@ -8869,36 +6909,6 @@
   "away_goals": 1
  },
  {
-  "match_id": "fdccouk-2425-T1-265",
-  "home_team": "Alanyaspor",
-  "away_team": "Bodrumspor",
-  "kickoff_iso": "2025-04-06T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-266",
-  "home_team": "Hatayspor",
-  "away_team": "Eyupspor",
-  "kickoff_iso": "2025-04-06T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-267",
-  "home_team": "Fenerbahce",
-  "away_team": "Trabzonspor",
-  "kickoff_iso": "2025-04-06T00:00:00+00:00",
-  "home_goals": 4,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Alanyaspor",
   "away_team": "Bodrum FK",
   "kickoff_iso": "2025-04-06T10:30:00+00:00",
@@ -8918,26 +6928,6 @@
   "kickoff_iso": "2025-04-06T16:00:00+00:00",
   "home_goals": 4,
   "away_goals": 1
- },
- {
-  "match_id": "fdccouk-2425-T1-268",
-  "home_team": "Goztep",
-  "away_team": "Gaziantep",
-  "kickoff_iso": "2025-04-07T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-269",
-  "home_team": "Kasimpasa",
-  "away_team": "Besiktas",
-  "kickoff_iso": "2025-04-07T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Göztepe",
@@ -8961,36 +6951,6 @@
   "away_goals": 2
  },
  {
-  "match_id": "fdccouk-2425-T1-271",
-  "home_team": "Konyaspor",
-  "away_team": "Goztep",
-  "kickoff_iso": "2025-04-12T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-272",
-  "home_team": "Besiktas",
-  "away_team": "Buyuksehyr",
-  "kickoff_iso": "2025-04-12T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-273",
-  "home_team": "Bodrumspor",
-  "away_team": "Antalyaspor",
-  "kickoff_iso": "2025-04-12T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Konyaspor",
   "away_team": "Göztepe",
   "kickoff_iso": "2025-04-12T13:00:00+00:00",
@@ -9010,36 +6970,6 @@
   "kickoff_iso": "2025-04-12T16:00:00+00:00",
   "home_goals": 0,
   "away_goals": 0
- },
- {
-  "match_id": "fdccouk-2425-T1-274",
-  "home_team": "Gaziantep",
-  "away_team": "Hatayspor",
-  "kickoff_iso": "2025-04-13T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-275",
-  "home_team": "Kayserispor",
-  "away_team": "Kasimpasa",
-  "kickoff_iso": "2025-04-13T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-276",
-  "home_team": "Sivasspor",
-  "away_team": "Fenerbahce",
-  "kickoff_iso": "2025-04-13T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 3,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Kayserispor",
@@ -9070,31 +7000,11 @@
   "away_goals": 3
  },
  {
-  "match_id": "fdccouk-2425-T1-278",
-  "home_team": "Eyupspor",
-  "away_team": "Ad. Demirspor",
-  "kickoff_iso": "2025-04-14T00:00:00+00:00",
-  "home_goals": 6,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Eyüpspor",
   "away_team": "Adana Demirspor",
   "kickoff_iso": "2025-04-14T17:00:00+00:00",
   "home_goals": 6,
   "away_goals": 0
- },
- {
-  "match_id": "fdccouk-2425-T1-279",
-  "home_team": "Galatasaray",
-  "away_team": "Bodrumspor",
-  "kickoff_iso": "2025-04-18T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Galatasaray",
@@ -9109,36 +7019,6 @@
   "kickoff_iso": "2025-04-18T17:00:00+00:00",
   "home_goals": 2,
   "away_goals": 3
- },
- {
-  "match_id": "fdccouk-2425-T1-281",
-  "home_team": "Kasimpasa",
-  "away_team": "Sivasspor",
-  "kickoff_iso": "2025-04-19T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-282",
-  "home_team": "Ad. Demirspor",
-  "away_team": "Trabzonspor",
-  "kickoff_iso": "2025-04-19T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-283",
-  "home_team": "Goztep",
-  "away_team": "Besiktas",
-  "kickoff_iso": "2025-04-19T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Kasımpaşa",
@@ -9160,36 +7040,6 @@
   "kickoff_iso": "2025-04-19T16:00:00+00:00",
   "home_goals": 1,
   "away_goals": 1
- },
- {
-  "match_id": "fdccouk-2425-T1-284",
-  "home_team": "Buyuksehyr",
-  "away_team": "Gaziantep",
-  "kickoff_iso": "2025-04-20T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-285",
-  "home_team": "Rizespor",
-  "away_team": "Eyupspor",
-  "kickoff_iso": "2025-04-20T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-286",
-  "home_team": "Fenerbahce",
-  "away_team": "Kayserispor",
-  "kickoff_iso": "2025-04-20T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 3,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Başakşehir",
@@ -9220,41 +7070,11 @@
   "away_goals": 0
  },
  {
-  "match_id": "fdccouk-2425-T1-288",
-  "home_team": "Besiktas",
-  "away_team": "Hatayspor",
-  "kickoff_iso": "2025-04-25T00:00:00+00:00",
-  "home_goals": 5,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Beşiktaş",
   "away_team": "Hatayspor",
   "kickoff_iso": "2025-04-25T17:00:00+00:00",
   "home_goals": 5,
   "away_goals": 1
- },
- {
-  "match_id": "fdccouk-2425-T1-290",
-  "home_team": "Bodrumspor",
-  "away_team": "Samsunspor",
-  "kickoff_iso": "2025-04-26T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-291",
-  "home_team": "Gaziantep",
-  "away_team": "Fenerbahce",
-  "kickoff_iso": "2025-04-26T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 3,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Sivasspor",
@@ -9276,26 +7096,6 @@
   "kickoff_iso": "2025-04-26T16:00:00+00:00",
   "home_goals": 1,
   "away_goals": 2
- },
- {
-  "match_id": "fdccouk-2425-T1-292",
-  "home_team": "Konyaspor",
-  "away_team": "Ad. Demirspor",
-  "kickoff_iso": "2025-04-27T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-294",
-  "home_team": "Eyupspor",
-  "away_team": "Galatasaray",
-  "kickoff_iso": "2025-04-27T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 5,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Konyaspor",
@@ -9326,16 +7126,6 @@
   "away_goals": 5
  },
  {
-  "match_id": "fdccouk-2425-T1-296",
-  "home_team": "Goztep",
-  "away_team": "Buyuksehyr",
-  "kickoff_iso": "2025-04-28T00:00:00+00:00",
-  "home_goals": 4,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Göztepe",
   "away_team": "Başakşehir",
   "kickoff_iso": "2025-04-28T17:00:00+00:00",
@@ -9348,26 +7138,6 @@
   "kickoff_iso": "2025-05-02T17:00:00+00:00",
   "home_goals": 1,
   "away_goals": 0
- },
- {
-  "match_id": "fdccouk-2425-T1-299",
-  "home_team": "Rizespor",
-  "away_team": "Gaziantep",
-  "kickoff_iso": "2025-05-03T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-301",
-  "home_team": "Hatayspor",
-  "away_team": "Buyuksehyr",
-  "kickoff_iso": "2025-05-03T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 4,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Alanyaspor",
@@ -9398,36 +7168,6 @@
   "away_goals": 4
  },
  {
-  "match_id": "fdccouk-2425-T1-302",
-  "home_team": "Samsunspor",
-  "away_team": "Eyupspor",
-  "kickoff_iso": "2025-05-04T00:00:00+00:00",
-  "home_goals": 3,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-303",
-  "home_team": "Ad. Demirspor",
-  "away_team": "Goztep",
-  "kickoff_iso": "2025-05-04T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-304",
-  "home_team": "Fenerbahce",
-  "away_team": "Besiktas",
-  "kickoff_iso": "2025-05-04T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Samsunspor",
   "away_team": "Eyüpspor",
   "kickoff_iso": "2025-05-04T13:00:00+00:00",
@@ -9449,41 +7189,11 @@
   "away_goals": 2
  },
  {
-  "match_id": "fdccouk-2425-T1-305",
-  "home_team": "Kasimpasa",
-  "away_team": "Trabzonspor",
-  "kickoff_iso": "2025-05-05T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Kasımpaşa",
   "away_team": "Trabzonspor",
   "kickoff_iso": "2025-05-05T17:00:00+00:00",
   "home_goals": 1,
   "away_goals": 1
- },
- {
-  "match_id": "fdccouk-2425-T1-306",
-  "home_team": "Buyuksehyr",
-  "away_team": "Fenerbahce",
-  "kickoff_iso": "2025-05-09T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 4,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-307",
-  "home_team": "Gaziantep",
-  "away_team": "Alanyaspor",
-  "kickoff_iso": "2025-05-09T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Başakşehir",
@@ -9498,16 +7208,6 @@
   "kickoff_iso": "2025-05-09T17:00:00+00:00",
   "home_goals": 0,
   "away_goals": 1
- },
- {
-  "match_id": "fdccouk-2425-T1-308",
-  "home_team": "Eyupspor",
-  "away_team": "Kasimpasa",
-  "kickoff_iso": "2025-05-10T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 3,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Konyaspor",
@@ -9529,36 +7229,6 @@
   "kickoff_iso": "2025-05-10T16:00:00+00:00",
   "home_goals": 0,
   "away_goals": 2
- },
- {
-  "match_id": "fdccouk-2425-T1-311",
-  "home_team": "Sivasspor",
-  "away_team": "Bodrumspor",
-  "kickoff_iso": "2025-05-11T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-312",
-  "home_team": "Besiktas",
-  "away_team": "Ad. Demirspor",
-  "kickoff_iso": "2025-05-11T00:00:00+00:00",
-  "home_goals": 4,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-313",
-  "home_team": "Goztep",
-  "away_team": "Hatayspor",
-  "kickoff_iso": "2025-05-11T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Sivasspor",
@@ -9589,81 +7259,11 @@
   "away_goals": 1
  },
  {
-  "match_id": "fdccouk-2425-T1-315",
-  "home_team": "Ad. Demirspor",
-  "away_team": "Hatayspor",
-  "kickoff_iso": "2025-05-17T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 5,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Adana Demirspor",
   "away_team": "Hatayspor",
   "kickoff_iso": "2025-05-17T16:00:00+00:00",
   "home_goals": 0,
   "away_goals": 5
- },
- {
-  "match_id": "fdccouk-2425-T1-316",
-  "home_team": "Alanyaspor",
-  "away_team": "Besiktas",
-  "kickoff_iso": "2025-05-18T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-317",
-  "home_team": "Antalyaspor",
-  "away_team": "Gaziantep",
-  "kickoff_iso": "2025-05-18T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-318",
-  "home_team": "Bodrumspor",
-  "away_team": "Trabzonspor",
-  "kickoff_iso": "2025-05-18T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-319",
-  "home_team": "Fenerbahce",
-  "away_team": "Eyupspor",
-  "kickoff_iso": "2025-05-18T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-321",
-  "home_team": "Kasimpasa",
-  "away_team": "Buyuksehyr",
-  "kickoff_iso": "2025-05-18T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 3,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-322",
-  "home_team": "Rizespor",
-  "away_team": "Goztep",
-  "kickoff_iso": "2025-05-18T00:00:00+00:00",
-  "home_goals": 6,
-  "away_goals": 3,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Fenerbahçe",
@@ -9722,36 +7322,6 @@
   "away_goals": 0
  },
  {
-  "match_id": "fdccouk-2425-T1-324",
-  "home_team": "Eyupspor",
-  "away_team": "Antalyaspor",
-  "kickoff_iso": "2025-05-24T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-325",
-  "home_team": "Gaziantep",
-  "away_team": "Kasimpasa",
-  "kickoff_iso": "2025-05-24T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-326",
-  "home_team": "Goztep",
-  "away_team": "Galatasaray",
-  "kickoff_iso": "2025-05-24T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Eyüpspor",
   "away_team": "Antalyaspor",
   "kickoff_iso": "2025-05-24T13:00:00+00:00",
@@ -9771,36 +7341,6 @@
   "kickoff_iso": "2025-05-24T16:00:00+00:00",
   "home_goals": 2,
   "away_goals": 2
- },
- {
-  "match_id": "fdccouk-2425-T1-327",
-  "home_team": "Besiktas",
-  "away_team": "Rizespor",
-  "kickoff_iso": "2025-05-25T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-328",
-  "home_team": "Buyuksehyr",
-  "away_team": "Ad. Demirspor",
-  "kickoff_iso": "2025-05-25T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 3,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-329",
-  "home_team": "Kayserispor",
-  "away_team": "Bodrumspor",
-  "kickoff_iso": "2025-05-25T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Beşiktaş",
@@ -9838,41 +7378,11 @@
   "away_goals": 1
  },
  {
-  "match_id": "fdccouk-2425-T1-332",
-  "home_team": "Hatayspor",
-  "away_team": "Fenerbahce",
-  "kickoff_iso": "2025-05-26T00:00:00+00:00",
-  "home_goals": 4,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Hatayspor",
   "away_team": "Fenerbahçe",
   "kickoff_iso": "2025-05-26T17:00:00+00:00",
   "home_goals": 4,
   "away_goals": 2
- },
- {
-  "match_id": "fdccouk-2425-T1-334",
-  "home_team": "Galatasaray",
-  "away_team": "Buyuksehyr",
-  "kickoff_iso": "2025-05-30T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 0,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-335",
-  "home_team": "Kasimpasa",
-  "away_team": "Goztep",
-  "kickoff_iso": "2025-05-30T00:00:00+00:00",
-  "home_goals": 1,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Galatasaray",
@@ -9894,26 +7404,6 @@
   "kickoff_iso": "2025-05-30T17:00:00+00:00",
   "home_goals": 0,
   "away_goals": 2
- },
- {
-  "match_id": "fdccouk-2425-T1-336",
-  "home_team": "Fenerbahce",
-  "away_team": "Konyaspor",
-  "kickoff_iso": "2025-05-31T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 1,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
-  "match_id": "fdccouk-2425-T1-338",
-  "home_team": "Ad. Demirspor",
-  "away_team": "Gaziantep",
-  "kickoff_iso": "2025-05-31T00:00:00+00:00",
-  "home_goals": 2,
-  "away_goals": 2,
-  "league": "Super Lig",
-  "season": "2025-26"
  },
  {
   "home_team": "Fenerbahçe",
@@ -9944,16 +7434,6 @@
   "away_goals": 2
  },
  {
-  "match_id": "fdccouk-2425-T1-340",
-  "home_team": "Bodrumspor",
-  "away_team": "Besiktas",
-  "kickoff_iso": "2025-06-01T00:00:00+00:00",
-  "home_goals": 0,
-  "away_goals": 4,
-  "league": "Super Lig",
-  "season": "2025-26"
- },
- {
   "home_team": "Bodrum FK",
   "away_team": "Beşiktaş",
   "kickoff_iso": "2025-06-01T16:00:00+00:00",
@@ -9966,5 +7446,3065 @@
   "kickoff_iso": "2025-06-01T16:00:00+00:00",
   "home_goals": 2,
   "away_goals": 1
+ },
+ {
+  "match_id": "fdccouk-2526-T1-0",
+  "home_team": "Gaziantep",
+  "away_team": "Galatasaray",
+  "kickoff_iso": "2025-08-08T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-1",
+  "home_team": "Samsunspor",
+  "away_team": "Genclerbirligi",
+  "kickoff_iso": "2025-08-09T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-2",
+  "home_team": "Antalyaspor",
+  "away_team": "Kasimpasa",
+  "kickoff_iso": "2025-08-09T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-3",
+  "home_team": "Rizespor",
+  "away_team": "Goztep",
+  "kickoff_iso": "2025-08-10T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-4",
+  "home_team": "Eyupspor",
+  "away_team": "Konyaspor",
+  "kickoff_iso": "2025-08-10T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 4,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-5",
+  "home_team": "Trabzonspor",
+  "away_team": "Kocaelispor",
+  "kickoff_iso": "2025-08-11T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-6",
+  "home_team": "Galatasaray",
+  "away_team": "Karagumruk",
+  "kickoff_iso": "2025-08-15T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-7",
+  "home_team": "Kocaelispor",
+  "away_team": "Samsunspor",
+  "kickoff_iso": "2025-08-16T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-8",
+  "home_team": "Alanyaspor",
+  "away_team": "Rizespor",
+  "kickoff_iso": "2025-08-16T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-9",
+  "home_team": "Goztep",
+  "away_team": "Fenerbahce",
+  "kickoff_iso": "2025-08-16T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-10",
+  "home_team": "Genclerbirligi",
+  "away_team": "Antalyaspor",
+  "kickoff_iso": "2025-08-17T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-11",
+  "home_team": "Konyaspor",
+  "away_team": "Gaziantep",
+  "kickoff_iso": "2025-08-17T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-12",
+  "home_team": "Besiktas",
+  "away_team": "Eyupspor",
+  "kickoff_iso": "2025-08-17T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-13",
+  "home_team": "Buyuksehyr",
+  "away_team": "Kayserispor",
+  "kickoff_iso": "2025-08-17T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-14",
+  "home_team": "Kasimpasa",
+  "away_team": "Trabzonspor",
+  "kickoff_iso": "2025-08-18T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-15",
+  "home_team": "Karagumruk",
+  "away_team": "Goztep",
+  "kickoff_iso": "2025-08-22T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-16",
+  "home_team": "Fenerbahce",
+  "away_team": "Kocaelispor",
+  "kickoff_iso": "2025-08-23T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-17",
+  "home_team": "Gaziantep",
+  "away_team": "Genclerbirligi",
+  "kickoff_iso": "2025-08-23T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-18",
+  "home_team": "Trabzonspor",
+  "away_team": "Antalyaspor",
+  "kickoff_iso": "2025-08-24T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-19",
+  "home_team": "Kayserispor",
+  "away_team": "Galatasaray",
+  "kickoff_iso": "2025-08-24T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 4,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-20",
+  "home_team": "Eyupspor",
+  "away_team": "Alanyaspor",
+  "kickoff_iso": "2025-08-25T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-21",
+  "home_team": "Goztep",
+  "away_team": "Konyaspor",
+  "kickoff_iso": "2025-08-29T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-22",
+  "home_team": "Kasimpasa",
+  "away_team": "Gaziantep",
+  "kickoff_iso": "2025-08-30T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-23",
+  "home_team": "Kocaelispor",
+  "away_team": "Kayserispor",
+  "kickoff_iso": "2025-08-30T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-24",
+  "home_team": "Antalyaspor",
+  "away_team": "Karagumruk",
+  "kickoff_iso": "2025-08-30T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-25",
+  "home_team": "Galatasaray",
+  "away_team": "Rizespor",
+  "kickoff_iso": "2025-08-30T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-26",
+  "home_team": "Buyuksehyr",
+  "away_team": "Eyupspor",
+  "kickoff_iso": "2025-08-31T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-27",
+  "home_team": "Genclerbirligi",
+  "away_team": "Fenerbahce",
+  "kickoff_iso": "2025-08-31T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-28",
+  "home_team": "Alanyaspor",
+  "away_team": "Besiktas",
+  "kickoff_iso": "2025-08-31T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-29",
+  "home_team": "Trabzonspor",
+  "away_team": "Samsunspor",
+  "kickoff_iso": "2025-08-31T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-30",
+  "home_team": "Eyupspor",
+  "away_team": "Galatasaray",
+  "kickoff_iso": "2025-09-13T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-31",
+  "home_team": "Karagumruk",
+  "away_team": "Kasimpasa",
+  "kickoff_iso": "2025-09-13T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-32",
+  "home_team": "Samsunspor",
+  "away_team": "Antalyaspor",
+  "kickoff_iso": "2025-09-13T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-33",
+  "home_team": "Besiktas",
+  "away_team": "Buyuksehyr",
+  "kickoff_iso": "2025-09-13T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-34",
+  "home_team": "Konyaspor",
+  "away_team": "Alanyaspor",
+  "kickoff_iso": "2025-09-13T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-35",
+  "home_team": "Kayserispor",
+  "away_team": "Goztep",
+  "kickoff_iso": "2025-09-14T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-36",
+  "home_team": "Fenerbahce",
+  "away_team": "Trabzonspor",
+  "kickoff_iso": "2025-09-14T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-37",
+  "home_team": "Gaziantep",
+  "away_team": "Kocaelispor",
+  "kickoff_iso": "2025-09-14T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-38",
+  "home_team": "Rizespor",
+  "away_team": "Genclerbirligi",
+  "kickoff_iso": "2025-09-15T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-39",
+  "home_team": "Fenerbahce",
+  "away_team": "Alanyaspor",
+  "kickoff_iso": "2025-09-17T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-40",
+  "home_team": "Karagumruk",
+  "away_team": "Buyuksehyr",
+  "kickoff_iso": "2025-09-17T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-41",
+  "home_team": "Samsunspor",
+  "away_team": "Kasimpasa",
+  "kickoff_iso": "2025-09-17T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-42",
+  "home_team": "Goztep",
+  "away_team": "Besiktas",
+  "kickoff_iso": "2025-09-19T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-43",
+  "home_team": "Genclerbirligi",
+  "away_team": "Eyupspor",
+  "kickoff_iso": "2025-09-20T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-44",
+  "home_team": "Antalyaspor",
+  "away_team": "Kayserispor",
+  "kickoff_iso": "2025-09-20T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-45",
+  "home_team": "Trabzonspor",
+  "away_team": "Gaziantep",
+  "kickoff_iso": "2025-09-20T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-46",
+  "home_team": "Buyuksehyr",
+  "away_team": "Alanyaspor",
+  "kickoff_iso": "2025-09-21T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-47",
+  "home_team": "Kocaelispor",
+  "away_team": "Rizespor",
+  "kickoff_iso": "2025-09-21T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-48",
+  "home_team": "Kasimpasa",
+  "away_team": "Fenerbahce",
+  "kickoff_iso": "2025-09-21T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-49",
+  "home_team": "Samsunspor",
+  "away_team": "Karagumruk",
+  "kickoff_iso": "2025-09-21T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-50",
+  "home_team": "Galatasaray",
+  "away_team": "Konyaspor",
+  "kickoff_iso": "2025-09-22T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-51",
+  "home_team": "Kayserispor",
+  "away_team": "Besiktas",
+  "kickoff_iso": "2025-09-24T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 4,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-52",
+  "home_team": "Alanyaspor",
+  "away_team": "Galatasaray",
+  "kickoff_iso": "2025-09-26T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-53",
+  "home_team": "Eyupspor",
+  "away_team": "Goztep",
+  "kickoff_iso": "2025-09-27T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-54",
+  "home_team": "Gaziantep",
+  "away_team": "Samsunspor",
+  "kickoff_iso": "2025-09-27T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-55",
+  "home_team": "Karagumruk",
+  "away_team": "Trabzonspor",
+  "kickoff_iso": "2025-09-27T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 4,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-56",
+  "home_team": "Konyaspor",
+  "away_team": "Buyuksehyr",
+  "kickoff_iso": "2025-09-28T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-57",
+  "home_team": "Rizespor",
+  "away_team": "Kasimpasa",
+  "kickoff_iso": "2025-09-28T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-58",
+  "home_team": "Fenerbahce",
+  "away_team": "Antalyaspor",
+  "kickoff_iso": "2025-09-28T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-59",
+  "home_team": "Kayserispor",
+  "away_team": "Genclerbirligi",
+  "kickoff_iso": "2025-09-28T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-60",
+  "home_team": "Besiktas",
+  "away_team": "Kocaelispor",
+  "kickoff_iso": "2025-09-29T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-61",
+  "home_team": "Antalyaspor",
+  "away_team": "Rizespor",
+  "kickoff_iso": "2025-10-03T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 5,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-62",
+  "home_team": "Trabzonspor",
+  "away_team": "Kayserispor",
+  "kickoff_iso": "2025-10-03T00:00:00+00:00",
+  "home_goals": 4,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-63",
+  "home_team": "Genclerbirligi",
+  "away_team": "Alanyaspor",
+  "kickoff_iso": "2025-10-04T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-64",
+  "home_team": "Kocaelispor",
+  "away_team": "Eyupspor",
+  "kickoff_iso": "2025-10-04T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-65",
+  "home_team": "Galatasaray",
+  "away_team": "Besiktas",
+  "kickoff_iso": "2025-10-04T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-66",
+  "home_team": "Kasimpasa",
+  "away_team": "Konyaspor",
+  "kickoff_iso": "2025-10-05T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-67",
+  "home_team": "Karagumruk",
+  "away_team": "Gaziantep",
+  "kickoff_iso": "2025-10-05T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-68",
+  "home_team": "Goztep",
+  "away_team": "Buyuksehyr",
+  "kickoff_iso": "2025-10-05T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-69",
+  "home_team": "Samsunspor",
+  "away_team": "Fenerbahce",
+  "kickoff_iso": "2025-10-05T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-70",
+  "home_team": "Konyaspor",
+  "away_team": "Kocaelispor",
+  "kickoff_iso": "2025-10-18T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-71",
+  "home_team": "Besiktas",
+  "away_team": "Genclerbirligi",
+  "kickoff_iso": "2025-10-18T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-72",
+  "home_team": "Rizespor",
+  "away_team": "Trabzonspor",
+  "kickoff_iso": "2025-10-18T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-73",
+  "home_team": "Buyuksehyr",
+  "away_team": "Galatasaray",
+  "kickoff_iso": "2025-10-18T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-74",
+  "home_team": "Kayserispor",
+  "away_team": "Samsunspor",
+  "kickoff_iso": "2025-10-19T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-75",
+  "home_team": "Alanyaspor",
+  "away_team": "Goztep",
+  "kickoff_iso": "2025-10-19T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-76",
+  "home_team": "Gaziantep",
+  "away_team": "Antalyaspor",
+  "kickoff_iso": "2025-10-19T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-77",
+  "home_team": "Fenerbahce",
+  "away_team": "Karagumruk",
+  "kickoff_iso": "2025-10-19T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-78",
+  "home_team": "Eyupspor",
+  "away_team": "Kasimpasa",
+  "kickoff_iso": "2025-10-20T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-79",
+  "home_team": "Konyaspor",
+  "away_team": "Besiktas",
+  "kickoff_iso": "2025-10-22T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-80",
+  "home_team": "Rizespor",
+  "away_team": "Buyuksehyr",
+  "kickoff_iso": "2025-10-22T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-81",
+  "home_team": "Karagumruk",
+  "away_team": "Kayserispor",
+  "kickoff_iso": "2025-10-24T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-82",
+  "home_team": "Kocaelispor",
+  "away_team": "Alanyaspor",
+  "kickoff_iso": "2025-10-25T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-83",
+  "home_team": "Trabzonspor",
+  "away_team": "Eyupspor",
+  "kickoff_iso": "2025-10-25T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-84",
+  "home_team": "Antalyaspor",
+  "away_team": "Buyuksehyr",
+  "kickoff_iso": "2025-10-26T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 4,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-85",
+  "home_team": "Galatasaray",
+  "away_team": "Goztep",
+  "kickoff_iso": "2025-10-26T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-86",
+  "home_team": "Genclerbirligi",
+  "away_team": "Konyaspor",
+  "kickoff_iso": "2025-10-26T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-87",
+  "home_team": "Kasimpasa",
+  "away_team": "Besiktas",
+  "kickoff_iso": "2025-10-26T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-88",
+  "home_team": "Gaziantep",
+  "away_team": "Fenerbahce",
+  "kickoff_iso": "2025-10-27T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 4,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-89",
+  "home_team": "Samsunspor",
+  "away_team": "Rizespor",
+  "kickoff_iso": "2025-10-27T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-90",
+  "home_team": "Buyuksehyr",
+  "away_team": "Kocaelispor",
+  "kickoff_iso": "2025-10-31T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-91",
+  "home_team": "Goztep",
+  "away_team": "Genclerbirligi",
+  "kickoff_iso": "2025-11-01T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-92",
+  "home_team": "Galatasaray",
+  "away_team": "Trabzonspor",
+  "kickoff_iso": "2025-11-01T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-93",
+  "home_team": "Konyaspor",
+  "away_team": "Samsunspor",
+  "kickoff_iso": "2025-11-02T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-94",
+  "home_team": "Kayserispor",
+  "away_team": "Kasimpasa",
+  "kickoff_iso": "2025-11-02T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-95",
+  "home_team": "Besiktas",
+  "away_team": "Fenerbahce",
+  "kickoff_iso": "2025-11-02T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-96",
+  "home_team": "Alanyaspor",
+  "away_team": "Gaziantep",
+  "kickoff_iso": "2025-11-03T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-97",
+  "home_team": "Eyupspor",
+  "away_team": "Antalyaspor",
+  "kickoff_iso": "2025-11-03T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-98",
+  "home_team": "Rizespor",
+  "away_team": "Karagumruk",
+  "kickoff_iso": "2025-11-03T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-99",
+  "home_team": "Genclerbirligi",
+  "away_team": "Buyuksehyr",
+  "kickoff_iso": "2025-11-07T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-100",
+  "home_team": "Gaziantep",
+  "away_team": "Rizespor",
+  "kickoff_iso": "2025-11-08T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-101",
+  "home_team": "Trabzonspor",
+  "away_team": "Alanyaspor",
+  "kickoff_iso": "2025-11-08T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-102",
+  "home_team": "Antalyaspor",
+  "away_team": "Besiktas",
+  "kickoff_iso": "2025-11-08T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-103",
+  "home_team": "Kasimpasa",
+  "away_team": "Goztep",
+  "kickoff_iso": "2025-11-08T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-104",
+  "home_team": "Karagumruk",
+  "away_team": "Konyaspor",
+  "kickoff_iso": "2025-11-09T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-105",
+  "home_team": "Kocaelispor",
+  "away_team": "Galatasaray",
+  "kickoff_iso": "2025-11-09T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-106",
+  "home_team": "Fenerbahce",
+  "away_team": "Kayserispor",
+  "kickoff_iso": "2025-11-09T00:00:00+00:00",
+  "home_goals": 4,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-107",
+  "home_team": "Samsunspor",
+  "away_team": "Eyupspor",
+  "kickoff_iso": "2025-11-09T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-108",
+  "home_team": "Kayserispor",
+  "away_team": "Gaziantep",
+  "kickoff_iso": "2025-11-22T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-109",
+  "home_team": "Eyupspor",
+  "away_team": "Karagumruk",
+  "kickoff_iso": "2025-11-22T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-110",
+  "home_team": "Galatasaray",
+  "away_team": "Genclerbirligi",
+  "kickoff_iso": "2025-11-22T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-111",
+  "home_team": "Goztep",
+  "away_team": "Kocaelispor",
+  "kickoff_iso": "2025-11-23T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-112",
+  "home_team": "Alanyaspor",
+  "away_team": "Kasimpasa",
+  "kickoff_iso": "2025-11-23T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-113",
+  "home_team": "Besiktas",
+  "away_team": "Samsunspor",
+  "kickoff_iso": "2025-11-23T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-114",
+  "home_team": "Rizespor",
+  "away_team": "Fenerbahce",
+  "kickoff_iso": "2025-11-23T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 5,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-115",
+  "home_team": "Buyuksehyr",
+  "away_team": "Trabzonspor",
+  "kickoff_iso": "2025-11-24T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 4,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-116",
+  "home_team": "Konyaspor",
+  "away_team": "Antalyaspor",
+  "kickoff_iso": "2025-11-24T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-117",
+  "home_team": "Kocaelispor",
+  "away_team": "Genclerbirligi",
+  "kickoff_iso": "2025-11-28T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-118",
+  "home_team": "Rizespor",
+  "away_team": "Kayserispor",
+  "kickoff_iso": "2025-11-29T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-119",
+  "home_team": "Gaziantep",
+  "away_team": "Eyupspor",
+  "kickoff_iso": "2025-11-29T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-120",
+  "home_team": "Kasimpasa",
+  "away_team": "Buyuksehyr",
+  "kickoff_iso": "2025-11-29T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-121",
+  "home_team": "Trabzonspor",
+  "away_team": "Konyaspor",
+  "kickoff_iso": "2025-11-29T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-122",
+  "home_team": "Antalyaspor",
+  "away_team": "Goztep",
+  "kickoff_iso": "2025-11-30T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-123",
+  "home_team": "Karagumruk",
+  "away_team": "Besiktas",
+  "kickoff_iso": "2025-11-30T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-124",
+  "home_team": "Fenerbahce",
+  "away_team": "Galatasaray",
+  "kickoff_iso": "2025-12-01T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-125",
+  "home_team": "Samsunspor",
+  "away_team": "Alanyaspor",
+  "kickoff_iso": "2025-12-01T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-126",
+  "home_team": "Galatasaray",
+  "away_team": "Samsunspor",
+  "kickoff_iso": "2025-12-05T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-127",
+  "home_team": "Eyupspor",
+  "away_team": "Kayserispor",
+  "kickoff_iso": "2025-12-06T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-128",
+  "home_team": "Konyaspor",
+  "away_team": "Rizespor",
+  "kickoff_iso": "2025-12-06T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-129",
+  "home_team": "Buyuksehyr",
+  "away_team": "Fenerbahce",
+  "kickoff_iso": "2025-12-06T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-130",
+  "home_team": "Genclerbirligi",
+  "away_team": "Karagumruk",
+  "kickoff_iso": "2025-12-07T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-131",
+  "home_team": "Kocaelispor",
+  "away_team": "Kasimpasa",
+  "kickoff_iso": "2025-12-07T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-132",
+  "home_team": "Goztep",
+  "away_team": "Trabzonspor",
+  "kickoff_iso": "2025-12-07T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-133",
+  "home_team": "Alanyaspor",
+  "away_team": "Antalyaspor",
+  "kickoff_iso": "2025-12-08T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-134",
+  "home_team": "Besiktas",
+  "away_team": "Gaziantep",
+  "kickoff_iso": "2025-12-08T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-135",
+  "home_team": "Kasimpasa",
+  "away_team": "Genclerbirligi",
+  "kickoff_iso": "2025-12-12T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-136",
+  "home_team": "Rizespor",
+  "away_team": "Eyupspor",
+  "kickoff_iso": "2025-12-13T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-137",
+  "home_team": "Kayserispor",
+  "away_team": "Alanyaspor",
+  "kickoff_iso": "2025-12-13T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-138",
+  "home_team": "Antalyaspor",
+  "away_team": "Galatasaray",
+  "kickoff_iso": "2025-12-13T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 4,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-139",
+  "home_team": "Gaziantep",
+  "away_team": "Goztep",
+  "kickoff_iso": "2025-12-14T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-140",
+  "home_team": "Karagumruk",
+  "away_team": "Kocaelispor",
+  "kickoff_iso": "2025-12-14T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-141",
+  "home_team": "Samsunspor",
+  "away_team": "Buyuksehyr",
+  "kickoff_iso": "2025-12-14T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-142",
+  "home_team": "Trabzonspor",
+  "away_team": "Besiktas",
+  "kickoff_iso": "2025-12-14T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-143",
+  "home_team": "Fenerbahce",
+  "away_team": "Konyaspor",
+  "kickoff_iso": "2025-12-15T00:00:00+00:00",
+  "home_goals": 4,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-144",
+  "home_team": "Kocaelispor",
+  "away_team": "Antalyaspor",
+  "kickoff_iso": "2025-12-19T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-145",
+  "home_team": "Konyaspor",
+  "away_team": "Kayserispor",
+  "kickoff_iso": "2025-12-20T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-146",
+  "home_team": "Eyupspor",
+  "away_team": "Fenerbahce",
+  "kickoff_iso": "2025-12-20T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-147",
+  "home_team": "Besiktas",
+  "away_team": "Rizespor",
+  "kickoff_iso": "2025-12-20T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-148",
+  "home_team": "Alanyaspor",
+  "away_team": "Karagumruk",
+  "kickoff_iso": "2025-12-21T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-149",
+  "home_team": "Galatasaray",
+  "away_team": "Kasimpasa",
+  "kickoff_iso": "2025-12-21T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-150",
+  "home_team": "Goztep",
+  "away_team": "Samsunspor",
+  "kickoff_iso": "2025-12-21T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-151",
+  "home_team": "Buyuksehyr",
+  "away_team": "Gaziantep",
+  "kickoff_iso": "2025-12-22T00:00:00+00:00",
+  "home_goals": 5,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-152",
+  "home_team": "Genclerbirligi",
+  "away_team": "Trabzonspor",
+  "kickoff_iso": "2025-12-22T00:00:00+00:00",
+  "home_goals": 4,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-153",
+  "home_team": "Buyuksehyr",
+  "away_team": "Karagumruk",
+  "kickoff_iso": "2026-01-17T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-154",
+  "home_team": "Galatasaray",
+  "away_team": "Gaziantep",
+  "kickoff_iso": "2026-01-17T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-155",
+  "home_team": "Kasimpasa",
+  "away_team": "Antalyaspor",
+  "kickoff_iso": "2026-01-18T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-156",
+  "home_team": "Genclerbirligi",
+  "away_team": "Samsunspor",
+  "kickoff_iso": "2026-01-18T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-157",
+  "home_team": "Kocaelispor",
+  "away_team": "Trabzonspor",
+  "kickoff_iso": "2026-01-18T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-158",
+  "home_team": "Alanyaspor",
+  "away_team": "Fenerbahce",
+  "kickoff_iso": "2026-01-18T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-159",
+  "home_team": "Konyaspor",
+  "away_team": "Eyupspor",
+  "kickoff_iso": "2026-01-19T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-160",
+  "home_team": "Besiktas",
+  "away_team": "Kayserispor",
+  "kickoff_iso": "2026-01-19T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-161",
+  "home_team": "Goztep",
+  "away_team": "Rizespor",
+  "kickoff_iso": "2026-01-19T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-162",
+  "home_team": "Trabzonspor",
+  "away_team": "Kasimpasa",
+  "kickoff_iso": "2026-01-23T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-163",
+  "home_team": "Kayserispor",
+  "away_team": "Buyuksehyr",
+  "kickoff_iso": "2026-01-24T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-164",
+  "home_team": "Samsunspor",
+  "away_team": "Kocaelispor",
+  "kickoff_iso": "2026-01-24T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-165",
+  "home_team": "Karagumruk",
+  "away_team": "Galatasaray",
+  "kickoff_iso": "2026-01-24T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-166",
+  "home_team": "Gaziantep",
+  "away_team": "Konyaspor",
+  "kickoff_iso": "2026-01-25T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-167",
+  "home_team": "Antalyaspor",
+  "away_team": "Genclerbirligi",
+  "kickoff_iso": "2026-01-25T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-168",
+  "home_team": "Rizespor",
+  "away_team": "Alanyaspor",
+  "kickoff_iso": "2026-01-25T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-169",
+  "home_team": "Fenerbahce",
+  "away_team": "Goztep",
+  "kickoff_iso": "2026-01-25T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-170",
+  "home_team": "Eyupspor",
+  "away_team": "Besiktas",
+  "kickoff_iso": "2026-01-26T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-171",
+  "home_team": "Antalyaspor",
+  "away_team": "Trabzonspor",
+  "kickoff_iso": "2026-01-30T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-172",
+  "home_team": "Kasimpasa",
+  "away_team": "Samsunspor",
+  "kickoff_iso": "2026-01-30T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-173",
+  "home_team": "Alanyaspor",
+  "away_team": "Eyupspor",
+  "kickoff_iso": "2026-01-31T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-174",
+  "home_team": "Buyuksehyr",
+  "away_team": "Rizespor",
+  "kickoff_iso": "2026-01-31T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-175",
+  "home_team": "Besiktas",
+  "away_team": "Konyaspor",
+  "kickoff_iso": "2026-01-31T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-176",
+  "home_team": "Goztep",
+  "away_team": "Karagumruk",
+  "kickoff_iso": "2026-01-31T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-177",
+  "home_team": "Genclerbirligi",
+  "away_team": "Gaziantep",
+  "kickoff_iso": "2026-02-01T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-178",
+  "home_team": "Galatasaray",
+  "away_team": "Kayserispor",
+  "kickoff_iso": "2026-02-01T00:00:00+00:00",
+  "home_goals": 4,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-179",
+  "home_team": "Kocaelispor",
+  "away_team": "Fenerbahce",
+  "kickoff_iso": "2026-02-02T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-180",
+  "home_team": "Karagumruk",
+  "away_team": "Antalyaspor",
+  "kickoff_iso": "2026-02-07T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-181",
+  "home_team": "Samsunspor",
+  "away_team": "Trabzonspor",
+  "kickoff_iso": "2026-02-07T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-182",
+  "home_team": "Eyupspor",
+  "away_team": "Buyuksehyr",
+  "kickoff_iso": "2026-02-08T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-183",
+  "home_team": "Konyaspor",
+  "away_team": "Goztep",
+  "kickoff_iso": "2026-02-08T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-184",
+  "home_team": "Rizespor",
+  "away_team": "Galatasaray",
+  "kickoff_iso": "2026-02-08T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-185",
+  "home_team": "Besiktas",
+  "away_team": "Alanyaspor",
+  "kickoff_iso": "2026-02-08T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-186",
+  "home_team": "Kayserispor",
+  "away_team": "Kocaelispor",
+  "kickoff_iso": "2026-02-09T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-187",
+  "home_team": "Fenerbahce",
+  "away_team": "Genclerbirligi",
+  "kickoff_iso": "2026-02-09T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-188",
+  "home_team": "Gaziantep",
+  "away_team": "Kasimpasa",
+  "kickoff_iso": "2026-02-09T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-189",
+  "home_team": "Antalyaspor",
+  "away_team": "Samsunspor",
+  "kickoff_iso": "2026-02-13T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-190",
+  "home_team": "Galatasaray",
+  "away_team": "Eyupspor",
+  "kickoff_iso": "2026-02-13T00:00:00+00:00",
+  "home_goals": 5,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-191",
+  "home_team": "Genclerbirligi",
+  "away_team": "Rizespor",
+  "kickoff_iso": "2026-02-14T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-192",
+  "home_team": "Alanyaspor",
+  "away_team": "Konyaspor",
+  "kickoff_iso": "2026-02-14T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-193",
+  "home_team": "Trabzonspor",
+  "away_team": "Fenerbahce",
+  "kickoff_iso": "2026-02-14T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-194",
+  "home_team": "Kocaelispor",
+  "away_team": "Gaziantep",
+  "kickoff_iso": "2026-02-15T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-195",
+  "home_team": "Goztep",
+  "away_team": "Kayserispor",
+  "kickoff_iso": "2026-02-15T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-196",
+  "home_team": "Buyuksehyr",
+  "away_team": "Besiktas",
+  "kickoff_iso": "2026-02-15T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-197",
+  "home_team": "Kasimpasa",
+  "away_team": "Karagumruk",
+  "kickoff_iso": "2026-02-16T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-198",
+  "home_team": "Rizespor",
+  "away_team": "Kocaelispor",
+  "kickoff_iso": "2026-02-20T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-199",
+  "home_team": "Eyupspor",
+  "away_team": "Genclerbirligi",
+  "kickoff_iso": "2026-02-21T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-200",
+  "home_team": "Alanyaspor",
+  "away_team": "Buyuksehyr",
+  "kickoff_iso": "2026-02-21T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-201",
+  "home_team": "Konyaspor",
+  "away_team": "Galatasaray",
+  "kickoff_iso": "2026-02-21T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-202",
+  "home_team": "Kayserispor",
+  "away_team": "Antalyaspor",
+  "kickoff_iso": "2026-02-22T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-203",
+  "home_team": "Gaziantep",
+  "away_team": "Trabzonspor",
+  "kickoff_iso": "2026-02-22T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-204",
+  "home_team": "Besiktas",
+  "away_team": "Goztep",
+  "kickoff_iso": "2026-02-22T00:00:00+00:00",
+  "home_goals": 4,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-205",
+  "home_team": "Karagumruk",
+  "away_team": "Samsunspor",
+  "kickoff_iso": "2026-02-22T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-206",
+  "home_team": "Fenerbahce",
+  "away_team": "Kasimpasa",
+  "kickoff_iso": "2026-02-23T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-207",
+  "home_team": "Buyuksehyr",
+  "away_team": "Konyaspor",
+  "kickoff_iso": "2026-02-27T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-208",
+  "home_team": "Trabzonspor",
+  "away_team": "Karagumruk",
+  "kickoff_iso": "2026-02-27T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-209",
+  "home_team": "Kasimpasa",
+  "away_team": "Rizespor",
+  "kickoff_iso": "2026-02-28T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-210",
+  "home_team": "Kocaelispor",
+  "away_team": "Besiktas",
+  "kickoff_iso": "2026-02-28T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-211",
+  "home_team": "Galatasaray",
+  "away_team": "Alanyaspor",
+  "kickoff_iso": "2026-02-28T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-212",
+  "home_team": "Goztep",
+  "away_team": "Eyupspor",
+  "kickoff_iso": "2026-02-28T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-213",
+  "home_team": "Genclerbirligi",
+  "away_team": "Kayserispor",
+  "kickoff_iso": "2026-03-01T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-214",
+  "home_team": "Antalyaspor",
+  "away_team": "Fenerbahce",
+  "kickoff_iso": "2026-03-01T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-215",
+  "home_team": "Samsunspor",
+  "away_team": "Gaziantep",
+  "kickoff_iso": "2026-03-01T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-216",
+  "home_team": "Buyuksehyr",
+  "away_team": "Goztep",
+  "kickoff_iso": "2026-03-07T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-217",
+  "home_team": "Besiktas",
+  "away_team": "Galatasaray",
+  "kickoff_iso": "2026-03-07T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-218",
+  "home_team": "Gaziantep",
+  "away_team": "Karagumruk",
+  "kickoff_iso": "2026-03-08T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-219",
+  "home_team": "Rizespor",
+  "away_team": "Antalyaspor",
+  "kickoff_iso": "2026-03-08T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-220",
+  "home_team": "Konyaspor",
+  "away_team": "Kasimpasa",
+  "kickoff_iso": "2026-03-08T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-221",
+  "home_team": "Fenerbahce",
+  "away_team": "Samsunspor",
+  "kickoff_iso": "2026-03-08T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-222",
+  "home_team": "Eyupspor",
+  "away_team": "Kocaelispor",
+  "kickoff_iso": "2026-03-09T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-223",
+  "home_team": "Alanyaspor",
+  "away_team": "Genclerbirligi",
+  "kickoff_iso": "2026-03-09T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-224",
+  "home_team": "Kayserispor",
+  "away_team": "Trabzonspor",
+  "kickoff_iso": "2026-03-09T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-225",
+  "home_team": "Antalyaspor",
+  "away_team": "Gaziantep",
+  "kickoff_iso": "2026-03-13T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 4,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-226",
+  "home_team": "Karagumruk",
+  "away_team": "Fenerbahce",
+  "kickoff_iso": "2026-03-13T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-227",
+  "home_team": "Kocaelispor",
+  "away_team": "Konyaspor",
+  "kickoff_iso": "2026-03-14T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-228",
+  "home_team": "Galatasaray",
+  "away_team": "Buyuksehyr",
+  "kickoff_iso": "2026-03-14T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-229",
+  "home_team": "Goztep",
+  "away_team": "Alanyaspor",
+  "kickoff_iso": "2026-03-14T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-230",
+  "home_team": "Trabzonspor",
+  "away_team": "Rizespor",
+  "kickoff_iso": "2026-03-14T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-231",
+  "home_team": "Kasimpasa",
+  "away_team": "Eyupspor",
+  "kickoff_iso": "2026-03-15T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-232",
+  "home_team": "Genclerbirligi",
+  "away_team": "Besiktas",
+  "kickoff_iso": "2026-03-15T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-233",
+  "home_team": "Samsunspor",
+  "away_team": "Kayserispor",
+  "kickoff_iso": "2026-03-15T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-234",
+  "home_team": "Fenerbahce",
+  "away_team": "Gaziantep",
+  "kickoff_iso": "2026-03-17T00:00:00+00:00",
+  "home_goals": 4,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-235",
+  "home_team": "Alanyaspor",
+  "away_team": "Kocaelispor",
+  "kickoff_iso": "2026-03-18T00:00:00+00:00",
+  "home_goals": 5,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-236",
+  "home_team": "Buyuksehyr",
+  "away_team": "Antalyaspor",
+  "kickoff_iso": "2026-03-18T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-237",
+  "home_team": "Eyupspor",
+  "away_team": "Trabzonspor",
+  "kickoff_iso": "2026-03-18T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-238",
+  "home_team": "Kayserispor",
+  "away_team": "Karagumruk",
+  "kickoff_iso": "2026-03-19T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-239",
+  "home_team": "Besiktas",
+  "away_team": "Kasimpasa",
+  "kickoff_iso": "2026-03-19T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-240",
+  "home_team": "Konyaspor",
+  "away_team": "Genclerbirligi",
+  "kickoff_iso": "2026-03-19T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-241",
+  "home_team": "Genclerbirligi",
+  "away_team": "Goztep",
+  "kickoff_iso": "2026-04-04T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-242",
+  "home_team": "Kasimpasa",
+  "away_team": "Kayserispor",
+  "kickoff_iso": "2026-04-04T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-243",
+  "home_team": "Gaziantep",
+  "away_team": "Alanyaspor",
+  "kickoff_iso": "2026-04-04T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-244",
+  "home_team": "Trabzonspor",
+  "away_team": "Galatasaray",
+  "kickoff_iso": "2026-04-04T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-245",
+  "home_team": "Karagumruk",
+  "away_team": "Rizespor",
+  "kickoff_iso": "2026-04-05T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-246",
+  "home_team": "Samsunspor",
+  "away_team": "Konyaspor",
+  "kickoff_iso": "2026-04-05T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-247",
+  "home_team": "Antalyaspor",
+  "away_team": "Eyupspor",
+  "kickoff_iso": "2026-04-05T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-248",
+  "home_team": "Fenerbahce",
+  "away_team": "Besiktas",
+  "kickoff_iso": "2026-04-05T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-249",
+  "home_team": "Kocaelispor",
+  "away_team": "Buyuksehyr",
+  "kickoff_iso": "2026-04-06T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-250",
+  "home_team": "Goztep",
+  "away_team": "Galatasaray",
+  "kickoff_iso": "2026-04-08T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-251",
+  "home_team": "Rizespor",
+  "away_team": "Samsunspor",
+  "kickoff_iso": "2026-04-09T00:00:00+00:00",
+  "home_goals": 4,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-252",
+  "home_team": "Besiktas",
+  "away_team": "Antalyaspor",
+  "kickoff_iso": "2026-04-10T00:00:00+00:00",
+  "home_goals": 4,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-253",
+  "home_team": "Buyuksehyr",
+  "away_team": "Genclerbirligi",
+  "kickoff_iso": "2026-04-11T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-254",
+  "home_team": "Alanyaspor",
+  "away_team": "Trabzonspor",
+  "kickoff_iso": "2026-04-11T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-255",
+  "home_team": "Kayserispor",
+  "away_team": "Fenerbahce",
+  "kickoff_iso": "2026-04-11T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 4,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-256",
+  "home_team": "Konyaspor",
+  "away_team": "Karagumruk",
+  "kickoff_iso": "2026-04-12T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-257",
+  "home_team": "Goztep",
+  "away_team": "Kasimpasa",
+  "kickoff_iso": "2026-04-12T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-258",
+  "home_team": "Galatasaray",
+  "away_team": "Kocaelispor",
+  "kickoff_iso": "2026-04-12T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-259",
+  "home_team": "Eyupspor",
+  "away_team": "Samsunspor",
+  "kickoff_iso": "2026-04-13T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-260",
+  "home_team": "Rizespor",
+  "away_team": "Gaziantep",
+  "kickoff_iso": "2026-04-13T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-261",
+  "home_team": "Antalyaspor",
+  "away_team": "Konyaspor",
+  "kickoff_iso": "2026-04-17T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-262",
+  "home_team": "Fenerbahce",
+  "away_team": "Rizespor",
+  "kickoff_iso": "2026-04-17T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-263",
+  "home_team": "Karagumruk",
+  "away_team": "Eyupspor",
+  "kickoff_iso": "2026-04-18T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-264",
+  "home_team": "Kocaelispor",
+  "away_team": "Goztep",
+  "kickoff_iso": "2026-04-18T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-265",
+  "home_team": "Genclerbirligi",
+  "away_team": "Galatasaray",
+  "kickoff_iso": "2026-04-18T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-266",
+  "home_team": "Kasimpasa",
+  "away_team": "Alanyaspor",
+  "kickoff_iso": "2026-04-19T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-267",
+  "home_team": "Samsunspor",
+  "away_team": "Besiktas",
+  "kickoff_iso": "2026-04-19T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-268",
+  "home_team": "Trabzonspor",
+  "away_team": "Buyuksehyr",
+  "kickoff_iso": "2026-04-19T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-269",
+  "home_team": "Gaziantep",
+  "away_team": "Kayserispor",
+  "kickoff_iso": "2026-04-20T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-270",
+  "home_team": "Buyuksehyr",
+  "away_team": "Kasimpasa",
+  "kickoff_iso": "2026-04-24T00:00:00+00:00",
+  "home_goals": 4,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-271",
+  "home_team": "Eyupspor",
+  "away_team": "Gaziantep",
+  "kickoff_iso": "2026-04-25T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-272",
+  "home_team": "Kayserispor",
+  "away_team": "Rizespor",
+  "kickoff_iso": "2026-04-25T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-273",
+  "home_team": "Goztep",
+  "away_team": "Antalyaspor",
+  "kickoff_iso": "2026-04-25T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-274",
+  "home_team": "Genclerbirligi",
+  "away_team": "Kocaelispor",
+  "kickoff_iso": "2026-04-26T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-275",
+  "home_team": "Galatasaray",
+  "away_team": "Fenerbahce",
+  "kickoff_iso": "2026-04-26T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-276",
+  "home_team": "Alanyaspor",
+  "away_team": "Samsunspor",
+  "kickoff_iso": "2026-04-27T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-277",
+  "home_team": "Besiktas",
+  "away_team": "Karagumruk",
+  "kickoff_iso": "2026-04-27T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-278",
+  "home_team": "Konyaspor",
+  "away_team": "Trabzonspor",
+  "kickoff_iso": "2026-04-27T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-279",
+  "home_team": "Rizespor",
+  "away_team": "Konyaspor",
+  "kickoff_iso": "2026-05-01T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-280",
+  "home_team": "Gaziantep",
+  "away_team": "Besiktas",
+  "kickoff_iso": "2026-05-01T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-281",
+  "home_team": "Fenerbahce",
+  "away_team": "Buyuksehyr",
+  "kickoff_iso": "2026-05-02T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-282",
+  "home_team": "Samsunspor",
+  "away_team": "Galatasaray",
+  "kickoff_iso": "2026-05-02T00:00:00+00:00",
+  "home_goals": 4,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-283",
+  "home_team": "Trabzonspor",
+  "away_team": "Goztep",
+  "kickoff_iso": "2026-05-02T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-284",
+  "home_team": "Antalyaspor",
+  "away_team": "Alanyaspor",
+  "kickoff_iso": "2026-05-03T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-285",
+  "home_team": "Karagumruk",
+  "away_team": "Genclerbirligi",
+  "kickoff_iso": "2026-05-03T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-286",
+  "home_team": "Kasimpasa",
+  "away_team": "Kocaelispor",
+  "kickoff_iso": "2026-05-03T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-287",
+  "home_team": "Kayserispor",
+  "away_team": "Eyupspor",
+  "kickoff_iso": "2026-05-03T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-288",
+  "home_team": "Alanyaspor",
+  "away_team": "Kayserispor",
+  "kickoff_iso": "2026-05-09T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-289",
+  "home_team": "Besiktas",
+  "away_team": "Trabzonspor",
+  "kickoff_iso": "2026-05-09T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-290",
+  "home_team": "Buyuksehyr",
+  "away_team": "Samsunspor",
+  "kickoff_iso": "2026-05-09T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-291",
+  "home_team": "Eyupspor",
+  "away_team": "Rizespor",
+  "kickoff_iso": "2026-05-09T00:00:00+00:00",
+  "home_goals": 4,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-292",
+  "home_team": "Galatasaray",
+  "away_team": "Antalyaspor",
+  "kickoff_iso": "2026-05-09T00:00:00+00:00",
+  "home_goals": 4,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-293",
+  "home_team": "Genclerbirligi",
+  "away_team": "Kasimpasa",
+  "kickoff_iso": "2026-05-09T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-294",
+  "home_team": "Goztep",
+  "away_team": "Gaziantep",
+  "kickoff_iso": "2026-05-09T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-295",
+  "home_team": "Kocaelispor",
+  "away_team": "Karagumruk",
+  "kickoff_iso": "2026-05-09T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-296",
+  "home_team": "Konyaspor",
+  "away_team": "Fenerbahce",
+  "kickoff_iso": "2026-05-09T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-297",
+  "home_team": "Rizespor",
+  "away_team": "Besiktas",
+  "kickoff_iso": "2026-05-15T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-298",
+  "home_team": "Karagumruk",
+  "away_team": "Alanyaspor",
+  "kickoff_iso": "2026-05-16T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-299",
+  "home_team": "Gaziantep",
+  "away_team": "Buyuksehyr",
+  "kickoff_iso": "2026-05-16T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 2,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-300",
+  "home_team": "Samsunspor",
+  "away_team": "Goztep",
+  "kickoff_iso": "2026-05-16T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-301",
+  "home_team": "Kayserispor",
+  "away_team": "Konyaspor",
+  "kickoff_iso": "2026-05-17T00:00:00+00:00",
+  "home_goals": 2,
+  "away_goals": 1,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-302",
+  "home_team": "Antalyaspor",
+  "away_team": "Kocaelispor",
+  "kickoff_iso": "2026-05-17T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-303",
+  "home_team": "Fenerbahce",
+  "away_team": "Eyupspor",
+  "kickoff_iso": "2026-05-17T00:00:00+00:00",
+  "home_goals": 3,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-304",
+  "home_team": "Kasimpasa",
+  "away_team": "Galatasaray",
+  "kickoff_iso": "2026-05-17T00:00:00+00:00",
+  "home_goals": 1,
+  "away_goals": 0,
+  "league": "Super Lig",
+  "season": "2025-26"
+ },
+ {
+  "match_id": "fdccouk-2526-T1-305",
+  "home_team": "Trabzonspor",
+  "away_team": "Genclerbirligi",
+  "kickoff_iso": "2026-05-17T00:00:00+00:00",
+  "home_goals": 0,
+  "away_goals": 3,
+  "league": "Super Lig",
+  "season": "2025-26"
  }
 ]

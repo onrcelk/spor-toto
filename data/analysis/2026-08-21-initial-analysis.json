@@ -1,0 +1,240 @@
+{
+  "week_id": "2026-08-21_to_2026-08-24",
+  "status": "preliminary_pending_friday_update",
+  "generated_at": "2026-08-18",
+  "sources": {
+    "official_fixture_list": "https://www.sportoto.gov.tr/spor-toto-listeler",
+    "model_baseline": "data/predictions/2026-08-21-predictions_HYBRID.json",
+    "manual_context": "data/predictions/2026-08-21-predictions.json",
+    "lottery_distribution": "data/analysis/2026-08-21-kura-probabilities.json"
+  },
+  "source_policy": "Model probabilities are baseline only; user-provided lottery balls are kept as a separate signal and are used directly for matches 4, 6, 7. No final banko before Friday lineup/odds refresh.",
+  "matches": [
+    {
+      "no": 1,
+      "match": "Erzurumspor FK-Galatasaray",
+      "probabilities": {
+        "1": 0.518,
+        "X": 0.437,
+        "2": 0.044
+      },
+      "primary": "2",
+      "option_set": "1X2",
+      "banko": false,
+      "confidence": "low-medium",
+      "risk": "Friday first match; away favorite; last week draw/upset lesson"
+    },
+    {
+      "no": 2,
+      "match": "Çaykur Rizespor-Samsunspor",
+      "probabilities": {
+        "1": 0.434,
+        "X": 0.398,
+        "2": 0.168
+      },
+      "primary": "1",
+      "option_set": "1X2",
+      "banko": false,
+      "confidence": "low",
+      "risk": "local/close match; draw must remain covered"
+    },
+    {
+      "no": 3,
+      "match": "Arca Çorum FK-Kasımpaşa",
+      "probabilities": {
+        "1": 0.416,
+        "X": 0.259,
+        "2": 0.325
+      },
+      "primary": "1",
+      "option_set": "1X2",
+      "banko": false,
+      "confidence": "low",
+      "risk": "newly promoted/limited history; do not repeat last week 1X omission of away result"
+    },
+    {
+      "no": 4,
+      "match": "Fenerbahçe-Konyaspor",
+      "probabilities": {
+        "1": 0.6,
+        "X": 0.1,
+        "2": 0.3
+      },
+      "probability_source": "user_lottery_balls",
+      "primary": "1",
+      "option_set": "1X2",
+      "banko": false,
+      "confidence": "medium-low",
+      "risk": "lottery favors home, but away upset tail is 30%; Friday update required"
+    },
+    {
+      "no": 5,
+      "match": "Eyüpspor-Gaziantep FK",
+      "probabilities": {
+        "1": 0.913,
+        "X": 0.069,
+        "2": 0.018
+      },
+      "primary": "1",
+      "option_set": "1X",
+      "banko": false,
+      "confidence": "low-medium",
+      "risk": "model is very confident despite weak current-sample context; no blind banko"
+    },
+    {
+      "no": 6,
+      "match": "Trabzonspor-Başakşehir",
+      "probabilities": {
+        "1": 0.2,
+        "X": 0.2,
+        "2": 0.6
+      },
+      "probability_source": "user_lottery_balls",
+      "primary": "2",
+      "option_set": "X2",
+      "banko": false,
+      "confidence": "low-medium",
+      "risk": "away favorite; lottery says 60% but draw/home remain live"
+    },
+    {
+      "no": 7,
+      "match": "Alanyaspor-Beşiktaş",
+      "probabilities": {
+        "1": 0.2,
+        "X": 0.4,
+        "2": 0.4
+      },
+      "probability_source": "user_lottery_balls",
+      "primary": "X",
+      "option_set": "1X2",
+      "banko": false,
+      "confidence": "low",
+      "risk": "X/2 exactly balanced; no banko, full cover preferred"
+    },
+    {
+      "no": 8,
+      "match": "Göztepe-Gençlerbirliği",
+      "probabilities": {
+        "1": 0.213,
+        "X": 0.409,
+        "2": 0.378
+      },
+      "primary": "X",
+      "option_set": "1X2",
+      "banko": false,
+      "confidence": "low",
+      "risk": "draw/away cluster; previous-week away upset signal"
+    },
+    {
+      "no": 9,
+      "match": "Kocaelispor-Amed Sportif Faaliyetler",
+      "probabilities": {
+        "1": 0.415,
+        "X": 0.246,
+        "2": 0.339
+      },
+      "primary": "1",
+      "option_set": "1X2",
+      "banko": false,
+      "confidence": "low",
+      "risk": "new/low-history teams; full cover until Friday"
+    },
+    {
+      "no": 10,
+      "match": "Borussia Dortmund-Bayern Münih",
+      "probabilities": {
+        "1": 0.506,
+        "X": 0.214,
+        "2": 0.28
+      },
+      "primary": "1",
+      "option_set": "1X2",
+      "banko": false,
+      "confidence": "low",
+      "risk": "high-profile derby; model separation not reliable"
+    },
+    {
+      "no": 11,
+      "match": "Marsilya-Strasbourg",
+      "probabilities": {
+        "1": 0.442,
+        "X": 0.293,
+        "2": 0.265
+      },
+      "primary": "1",
+      "option_set": "1X",
+      "banko": false,
+      "confidence": "low-medium",
+      "risk": "Friday match; modest home edge, draw protection"
+    },
+    {
+      "no": 12,
+      "match": "Newcastle United-Liverpool",
+      "probabilities": {
+        "1": 0.543,
+        "X": 0.215,
+        "2": 0.242
+      },
+      "primary": "1",
+      "option_set": "1X2",
+      "banko": false,
+      "confidence": "low",
+      "risk": "strong away-side tail; do not use blind home single"
+    },
+    {
+      "no": 13,
+      "match": "Real Betis-Real Sociedad",
+      "probabilities": {
+        "1": 0.368,
+        "X": 0.288,
+        "2": 0.344
+      },
+      "primary": "1",
+      "option_set": "1X2",
+      "banko": false,
+      "confidence": "low",
+      "risk": "Friday and balanced; all three outcomes plausible"
+    },
+    {
+      "no": 14,
+      "match": "Atlético Madrid-Villarreal",
+      "probabilities": {
+        "1": 0.467,
+        "X": 0.232,
+        "2": 0.3
+      },
+      "primary": "1",
+      "option_set": "1X2",
+      "banko": false,
+      "confidence": "low-medium",
+      "risk": "home edge but Villarreal away threat; no final banko"
+    },
+    {
+      "no": 15,
+      "match": "Torino-Milan",
+      "probabilities": {
+        "1": 0.359,
+        "X": 0.274,
+        "2": 0.367
+      },
+      "primary": "2",
+      "option_set": "X2",
+      "banko": false,
+      "confidence": "low",
+      "risk": "away favorite; protect draw as in last-week lesson"
+    }
+  ],
+  "provisional_main_line": "2-1-1-1-1-2-X-X-1-1-1-1-1-1-2",
+  "provisional_option_sets": "1X2-1X2-1X2-1X2-1X-X2-1X2-1X2-1X2-1X2-1X-1X2-1X2-1X2-X2",
+  "banko_candidates": [],
+  "conditional_banko_review": [
+    4
+  ],
+  "friday_gates": [
+    "refresh official list and kickoff status",
+    "collect current odds/public concentration",
+    "check injuries, suspensions and expected XI",
+    "re-evaluate all Friday matches 1, 11, 13",
+    "do not narrow any set unless omitted result is explicitly justified"
+  ]
+}

@@ -22,11 +22,11 @@ TEAM_ALIASES: dict[str, list[str]] = {
     "Samsunspor A.Ş.": ["samsunspor"],
     "Göztepe A.Ş.": ["goztepe"],
     "Çaykur Rizespor A.Ş.": ["caykur rizespor", "rizespor"],
-    "Kasımpaşa A.Ş.": ["kasimpasa"],
-    "Çorum FK": ["corum", "corum fk"],
+    "Kasımpaşa A.Ş.": ["kasimpasa", "kasmpasa"],
+    "Çorum FK": ["corum", "corum fk", "arca corum fk", "arca çorum fk"],
     "Kocaelispor": ["kocaelispor"],
     "Gençlerbirliği": ["genclerbirligi"],
-    "Amed Sportif": ["amed", "amed sportif"],
+    "Amed Sportif": ["amed", "amed sportif", "amed sportif faaliyetler"],
 }
 
 
