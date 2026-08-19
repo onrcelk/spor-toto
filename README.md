@@ -1,96 +1,73 @@
-# Sportoto
-Spor toto maç tahmini projesi.
+# Sportoto — Hedef15 Tahmin & Filtre Sistemi
 
-## Çoklu kaynak veri çekimi
+[![Tests](https://img.shields.io/badge/tests-168-passing-brightgreen)](tests/)
+[![Python](https://img.shields.io/badge/python-3.11-blue)](pyproject.toml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-Read-only kaynak adaptörleri:
+Spor Toto (Türk bahis sistemi) için **deterministik, kaynak-temelli** bir tahmin ve Hedef15 filtreleme motoru.
+Model tabanlı tahmin yerine, **gerçek tarihsel veri + çok-kaynaklı oran teyidi + YouTube dokümante edilmiş filtre semantiği** kullanır.
 
-- API-Sports: canlı/fikstür verisi (`API_SPORTS_KEY`)
-- football-data.org: fikstür ve final sonuç doğrulaması (`FOOTBALL_DATA_API_TOKEN`)
-- Open Football: ham GitHub JSON tarihsel veri, anahtarsız
+## 🎯 Özellikler
 
-Yerel anahtarlar yalnızca `.env` dosyasından okunur; `.env` Git tarafından ignore edilir.
+- **Walk-forward model eğitimi** (leak-free ELO, zaman-sıralı doğrulama)
+- **4 bağımsız oran kaynağı**: kullanıcı görseli, The Odds API, Flashscore, manuel
+- **Hedef15 filtre sistemi**: 15 filtre (sürpriz, beraberlik, ters sürpriz, ardışıklık, segment bazlı)
+- **Audit pipeline**: oynanmış kuponu gerçek sonuçlarla kıyaslar
+- **Streamlit dashboard**: tahmin + oran + filtre görselleştirme
 
-Örnek komut:
+## 📊 Model Doğrulama (sports-betting ile karşılaştırmalı)
+
+| Model | Accuracy | Lift |
+|---|---|---|
+| Baseline (majority) | 0.4526 | — |
+| **Bizim GB** | 0.4927 | **+0.0401** |
+| sports-betting Logit | 0.5073 | +0.0547 |
+
+Kaynak: `data/analysis/model_comparison_sportsbet.json` (Süper Lig 1370 maç)
+
+## 🏗️ Proje Yapısı
+
+```
+src/sportoto/
+  features.py          # Leak-free ELO, feature mühendisliği
+  train.py             # Walk-forward eğitim
+  audit.py             # Oynanmış kupon audit'i
+  coupon.py            # Hedef15 filtre uygulama
+  dashboard/app.py     # Streamlit görselleştirme
+  mcp_server.py        # Hermes MCP entegrasyonu
+data/
+  predictions/         # Haftalık tahminler
+  live/                # Gerçek sonuçlar, oranlar, audit
+  models/              # Eğitilmiş modeller
+docs/research/         # Hedef15 Filtre Spesifikasyonu
+```
+
+## 🚀 Kullanım
 
 ```bash
-uv run python -m sportoto.cli refresh-sources \
-  --date 2026-08-17 \
-  --openfootball-url https://raw.githubusercontent.com/openfootball/football.json/master/2015-16/en.1.json \
-  --output data/live/multi_source/2026-08-17.json
+# Sanal ortam
+uv sync
+
+# Walk-forward model eğitimi
+python scripts/train_real_walkforward.py
+
+# 21 Ağustos tahmini (oranlarla)
+cat data/predictions/2026-08-21-predictions.json
+
+# Dashboard
+streamlit run src/sportoto/dashboard/app.py
 ```
 
-Çıktı her kaynağın `count`, normalize maç kayıtları, kaynak kimliği, durum, sonuç ve Alt/Üst 2.5 alanlarını içerir. API anahtarları rapora yazılmaz.
+## 📋 Hedef15 Filtre Spesifikasyonu
 
-## Gelişmiş analitik
+Strict source-first: YouTube (Ozan Bey) altyazılarından çıkarılmış 15 filtre.
+Tam spesifikasyon: `docs/research/hedef15-filter-spec-v1.md`
 
-StatsBomb Open Data olay JSON'larını parse etmek için:
+## ⚠️ Yasal Uyarı
 
-```bash
-uv run python -m sportoto.cli advanced-statsbomb \
-  --url https://raw.githubusercontent.com/statsbomb/open-data/master/data/events/8650.json \
-  --output data/analysis/statsbomb-8650.json
-```
+Bu araç **yalnızca araştırma/eğitim** amaçlıdır. Gerçek bahis oynatmaz, oran sağlamaz.
+Tüm oranlar kamuya açık kaynaklardan toplanır.
 
-Çıktı; takım bazında StatsBomb xG toplamı, şut koordinatları, şut sonucu, freeze-frame sayısı, açıkça işaretlenmiş key pass ve defansif aksiyonları içerir. StatsBomb payload'ında doğrudan bulunmayan xA ve exact PPDA boş bırakılır; proxy metrikler resmi xA/PPDA diye etiketlenmez. StatsBomb verisi araştırma/analitik koşulları ve kaynak gösterimiyle kullanılmalıdır.
+## 📄 Lisans
 
-Leakage-safe xG rolling ve Poisson backtest:
-
-```bash
-uv run python -m sportoto.cli advanced-backtest \
-  --input data/advanced_match_rows.json \
-  --min-history 3 \
-  --output data/analysis/advanced-backtest.json
-```
-
-Girdi satırları tarih, takım, gol, xG, xA ve şut alanlarını içerir. Özellikler her maçtan önceki maçlarla hesaplanır; hedef maçın kendi xG/golü feature üretimine girmez. Sonuç raporu 1/X/2 ve Alt/Üst 2.5 doğruluğunu ayrı verir.
-
-Leakage-safe transfer features (Transfermarkt dataset) can be evaluated separately from the base model:
-
-```bash
-uv run python scripts/backtest_transfer_rolling.py \
-  --parquet data/real_training.parquet \
-  --transfer-csv data/raw/transfermarkt/transfers.csv.gz \
-  --output data/models/transfer_counts_rolling_report.json \
-  --model-out data/models/real_superlig_transfer_counts_rolling.joblib \
-  --transfer-mode counts
-```
-
-The same feature vector can be used at prediction time with the transfer-enhanced model:
-
-```python
-from sportoto.predict_week import build_predictions
-build_predictions(
-    list_path="data/current_sportoto_list_2026-08-21.json",
-    history_path="data/superlig_training_2022_2026.parquet",
-    model_path="data/models/real_superlig_transfer_counts_rolling.joblib",
-    output="data/predictions/2026-08-21-superlig-transfer-predictions.json",
-    transfer_csv="data/raw/transfermarkt/transfers.csv.gz",
-    transfer_mode="counts",
-)
-```
-
-Only transfers before each kickoff and within the previous 365 days are used. Transfer features are contextual signals, not guaranteed squad-strength measurements.
-
-
-Model/market/Dixon-Coles comparison for the current week:
-
-```bash
-uv run python scripts/build_ensemble_report.py \
-  --predictions data/predictions/2026-08-21-predictions_HYBRID_TRANSFER_COUNTS.json \
-  --odds data/live/odds_2026-08-21_telegram_visible_tr.json \
-  --output data/analysis/2026-08-21-ensemble-report.json
-```
-
-The ensemble never fills missing odds from memory: rows without market data are marked `market_available=false` and use model + Dixon-Coles only.
-
-## Model güvenilirliği ve audit katmanları
-
-- `sportoto.market`: implied probability, vig removal, EV ve closing-line delta.
-- `sportoto.dixon_coles`: xG'den ortak 1/X/2, Alt/Üst, BTTS ve doğru skor posterioru.
-- `sportoto.calibration`: multiclass Brier, log-loss ve reliability bins.
-- `sportoto.identity`: provider takım adı/alias canonicalization.
-- `sportoto.evidence`: kaynaklı, zaman damgalı ve etkisi etiketli kanıt paketleri.
-- `sportoto.availability`: doğrulanmış/beklenen kadro belirsizliğini xG'ye sınırlı ağırlık olarak yansıtır.
-
-Bu modüller bağımsız ve test edilebilirdir; eksik xA/PPDA veya sakatlık verisi varsayımla doldurulmaz.
+MIT

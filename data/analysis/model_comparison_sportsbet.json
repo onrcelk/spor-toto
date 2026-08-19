@@ -1,0 +1,6 @@
+{
+  "baseline_majority": 0.4526,
+  "our_model_gb_acc": 0.4927,
+  "sportsbet_logit_acc": 0.5073,
+  "our_lift": 0.0401
+}

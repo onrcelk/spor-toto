@@ -1,7 +1,7 @@
 {
   "week": "2026-08-21_to_2026-08-25",
   "generated_at": "2026-08-18T03:30:00+03:00",
-  "status": "pre_match_provisional_REVISED_WITH_ODDS",
+  "status": "pre_match_provisional_FINAL_WITH_ODDS",
   "method": "Açılış haftası cold-start: model tarihsel feature göremediği için manuel analiz + geçen hafta (14-17 Ağu) hata dersleri uygulandı. Model tabanlı tahmin YOK (training setinde 21.08 takımları yok).",
   "last_week_lessons": {
     "coverage_failures": "Maç 3,5,10,11 dar option-set patladı -> bu hafta favori maçlarda geniş set",
@@ -241,5 +241,5 @@
   },
   "caveat": "Model tabanlı tahmin YOK (training setinde 21.08 takımları bulunamadı). Bu manuel açılış-haftası analizidir, gerçek form/iddaa oranı/X kaynakları maç günü güncellenmeli. Preliminer, kesin değil.",
   "odds_applied": true,
-  "revision_note": "Maç 2 (Rizespor-Samsun) 2->1, Maç 5 (Eyüpspor-Gaziantep) X->2 düzeltildi (piyasa oranlarına göre). Diğer 7 TR maçı piyasa favorisiyle uyumlu."
+  "revision_note": "Maç 2 (Rizespor-Samsun) 2->1, Maç 5 (Eyüpspor-Gaziantep) X->2 düzeltildi (piyasa oranlarına göre). Diğer 7 TR maçı piyasa favorisiyle uyumlu. | Avrupa maçları (10-15) piyasa oranlarıyla revize edildi."
 }
